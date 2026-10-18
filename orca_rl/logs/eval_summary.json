@@ -1,0 +1,139 @@
+{
+  "n_seeds": 5,
+  "fixed_goal": [
+    4000.0,
+    2000.0
+  ],
+  "baseline": {
+    "mean_reward": 5814.805389294614,
+    "goal_reach_rate": 1.0,
+    "mean_final_localization_error": 134.95016446664118,
+    "mean_max_uncertainty": 754.1932463699595,
+    "mean_risk_exposure": 0.297791975042849,
+    "mean_final_battery_frac": 0.9859495837565255,
+    "mean_safety_overrides": 0.0,
+    "per_seed": [
+      {
+        "total_reward": 5814.6655477956465,
+        "reached_goal": true,
+        "steps": 183,
+        "final_localization_error_est_to_goal": 129.27307340468155,
+        "final_true_position_error": 244.6968737390487,
+        "max_uncertainty": 365.62925171710515,
+        "mean_risk_exposure": 0.3779322154672041,
+        "final_battery_frac": 0.9859334828550077,
+        "safety_overrides": 0
+      },
+      {
+        "total_reward": 5815.781439175833,
+        "reached_goal": true,
+        "steps": 186,
+        "final_localization_error_est_to_goal": 136.05665467238452,
+        "final_true_position_error": 747.9362517346091,
+        "max_uncertainty": 435.0566787491963,
+        "mean_risk_exposure": 0.26424617964240854,
+        "final_battery_frac": 0.9856919693322386,
+        "safety_overrides": 0
+      },
+      {
+        "total_reward": 5813.810201421163,
+        "reached_goal": true,
+        "steps": 181,
+        "final_localization_error_est_to_goal": 139.6606962110612,
+        "final_true_position_error": 698.2436898776073,
+        "max_uncertainty": 1325.5222715280886,
+        "mean_risk_exposure": 0.24913027311677238,
+        "final_battery_frac": 0.986094491870187,
+        "safety_overrides": 0
+      },
+      {
+        "total_reward": 5818.739622431147,
+        "reached_goal": true,
+        "steps": 182,
+        "final_localization_error_est_to_goal": 130.58878892217143,
+        "final_true_position_error": 641.3809572732075,
+        "max_uncertainty": 571.8548983940287,
+        "mean_risk_exposure": 0.3044928186556292,
+        "final_battery_frac": 0.9860139873625974,
+        "safety_overrides": 0
+      },
+      {
+        "total_reward": 5811.030135649277,
+        "reached_goal": true,
+        "steps": 182,
+        "final_localization_error_est_to_goal": 139.1716091229072,
+        "final_true_position_error": 759.2634581948797,
+        "max_uncertainty": 1072.9031314613792,
+        "mean_risk_exposure": 0.2931583883322306,
+        "final_battery_frac": 0.9860139873625974,
+        "safety_overrides": 0
+      }
+    ]
+  },
+  "rl": {
+    "mean_reward": -294.2820262961292,
+    "goal_reach_rate": 0.0,
+    "mean_final_localization_error": 4719.3338083637045,
+    "mean_max_uncertainty": 704.5146066802047,
+    "mean_risk_exposure": 0.24547342447105006,
+    "mean_final_battery_frac": 0.936454731584913,
+    "mean_safety_overrides": 0.0,
+    "per_seed": [
+      {
+        "total_reward": -267.2639327310414,
+        "reached_goal": false,
+        "steps": 450,
+        "final_localization_error_est_to_goal": 4690.150807514516,
+        "final_true_position_error": 4378.854584461321,
+        "max_uncertainty": 508.60502769371203,
+        "mean_risk_exposure": 0.2536157609251362,
+        "final_battery_frac": 0.9393908863182241,
+        "safety_overrides": 0
+      },
+      {
+        "total_reward": -332.057840675807,
+        "reached_goal": false,
+        "steps": 450,
+        "final_localization_error_est_to_goal": 4776.346085805456,
+        "final_true_position_error": 5145.465130260393,
+        "max_uncertainty": 453.52752365514175,
+        "mean_risk_exposure": 0.1402766211567303,
+        "final_battery_frac": 0.9346960026370016,
+        "safety_overrides": 0
+      },
+      {
+        "total_reward": -404.88788322283654,
+        "reached_goal": false,
+        "steps": 450,
+        "final_localization_error_est_to_goal": 4801.950208202566,
+        "final_true_position_error": 5990.984210338988,
+        "max_uncertainty": 983.5915471981423,
+        "mean_risk_exposure": 0.40156371547978714,
+        "final_battery_frac": 0.9439235024918359,
+        "safety_overrides": 0
+      },
+      {
+        "total_reward": -262.96462891167084,
+        "reached_goal": false,
+        "steps": 450,
+        "final_localization_error_est_to_goal": 4684.690294939029,
+        "final_true_position_error": 5757.1953467971925,
+        "max_uncertainty": 567.4298711346255,
+        "mean_risk_exposure": 0.26433914387263424,
+        "final_battery_frac": 0.9298787099422539,
+        "safety_overrides": 0
+      },
+      {
+        "total_reward": -204.2358459392899,
+        "reached_goal": false,
+        "steps": 450,
+        "final_localization_error_est_to_goal": 4643.53164535696,
+        "final_true_position_error": 5974.489990510338,
+        "max_uncertainty": 1009.419063719402,
+        "mean_risk_exposure": 0.16757188092096234,
+        "final_battery_frac": 0.9343845565352497,
+        "safety_overrides": 0
+      }
+    ]
+  }
+}

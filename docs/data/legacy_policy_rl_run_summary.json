@@ -1,0 +1,15 @@
+{
+ "reason": "max_mission_time reached",
+ "world": "rl",
+ "layout": "legacy12",
+ "nav_mode": "REALISTIC_SENSOR",
+ "waypoints_reached": 1,
+ "waypoints_total": 10,
+ "sim_time_s": 200.0,
+ "steps": 200,
+ "total_reward": -236.4,
+ "shield_overrides": 84,
+ "contacts": [],
+ "min_profiler_clearance_m": 25.24,
+ "log": "/tmp/claude-1000/runs/rl_legacy12_realistic_sensor_20261011_191755.jsonl"
+}

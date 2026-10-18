@@ -1,0 +1,6 @@
+{
+  "_comment": "Stonefish evaluation runs used by the figures, slides and report (newer runs in logs/stonefish_runs are ignored).",
+  "rl": "rl_obstacle_v1_realistic_sensor_20261011_215328",
+  "survey": "survey_obstacle_v1_realistic_sensor_20261011_220147",
+  "multisub": "multisub_obstacle_v1_realistic_sensor_20261011_221151"
+}

@@ -1,0 +1,18 @@
+{
+ "reason": "interrupted",
+ "world": "rl",
+ "layout": "obstacle_v1",
+ "nav_mode": "REALISTIC_SENSOR",
+ "waypoints_reached": 2,
+ "waypoints_skipped": [],
+ "waypoints_done": 2,
+ "waypoints_total": 15,
+ "sim_time_s": 175.3,
+ "steps": 176,
+ "total_reward": 149.3,
+ "shield_overrides": 0,
+ "contacts": [],
+ "physics_resets": 0,
+ "min_profiler_clearance_m": 14.25,
+ "log": "/home/priths/Documents/integrated_Orca_RL/orca_rl/logs/stonefish_runs/rl_obstacle_v1_realistic_sensor_20261014_151143.jsonl"
+}

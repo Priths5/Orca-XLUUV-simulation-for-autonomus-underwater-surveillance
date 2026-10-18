@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<!--
+    orca_multisub_world.scn
+    Scenario 2: the Orca XLUUV surveys the seabed alongside two other
+    independent survey submarines (data/survey_sub.scn) that are running
+    their own lawnmower patterns at the same time. All three vehicles
+    carry a forward "profiler" sensor and react to whatever it detects -
+    for the Orca that mostly means the other hulls, since this world has
+    only a light scatter of rocks (kept from scenario 1 so there is still
+    "real seabed" clutter to react to, not just other vehicles).
+
+    Run with the orca_multisub_sim executable (src/main_multisub.cpp),
+    which attaches one src/OrcaController.cpp instance per vehicle, each
+    on its own survey lane, all with avoidance enabled - so it's genuinely
+    the profiler readings, not scripted choreography, that keep the three
+    hulls apart.
+-->
+<scenario>
+
+    <environment>
+        <ned latitude="36.6" longitude="-121.9"/>
+
+        <ocean>
+            <water density="1025.0" jerlov="0.12"/>
+            <waves height="0.0"/>
+            <current type="uniform">
+                <velocity xyz="0.0 0.0 0.0"/>
+            </current>
+        </ocean>
+
+        <atmosphere>
+            <sun azimuth="20.0" elevation="55.0"/>
+        </atmosphere>
+    </environment>
+
+    <light name="SurveyFill">
+        <specs illuminance="90000.0" radius="140.0"/>
+        <color rgb="0.72 0.86 1.0"/>
+        <world_transform xyz="0.0 0.0 4.0" rpy="0.0 0.0 0.0"/>
+    </light>
+
+    <materials>
+        <material name="Rock" density="2700.0" restitution="0.6"/>
+        <material name="Sand" density="1800.0" restitution="0.3"/>
+        <material name="HullShell" density="4100.0" restitution="0.3"/>
+        <!-- Smaller survey subs have a thicker shell relative to their
+             displacement, so they need a lighter material to stay neutral. -->
+        <material name="SubHull" density="960.0" restitution="0.3"/>
+        <material name="Composite" density="1800.0" restitution="0.4"/>
+        <material name="SyntacticFoam" density="500.0" restitution="0.3"/>
+        <material name="Fish" density="1025.0" restitution="0.2"/>
+
+        <friction_table>
+            <friction material1="Rock" material2="Rock" static="0.7" dynamic="0.5"/>
+            <friction material1="Sand" material2="Sand" static="0.5" dynamic="0.3"/>
+            <friction material1="Rock" material2="Sand" static="0.6" dynamic="0.4"/>
+        </friction_table>
+    </materials>
+
+    <looks>
+        <look name="seabed_look" rgb="0.62 0.58 0.36" roughness="0.92" metalness="0.0"/>
+        <look name="rock_sand" rgb="0.78 0.62 0.38" roughness="0.85" metalness="0.02"/>
+        <look name="rock_olive" rgb="0.42 0.58 0.36" roughness="0.8" metalness="0.02"/>
+        <look name="rock_slate" rgb="0.55 0.62 0.68" roughness="0.7" metalness="0.05"/>
+        <look name="fish_silver" rgb="0.92 0.94 0.78" roughness="0.35" metalness="0.05"/>
+        <look name="fish_dark" rgb="0.15 0.72 0.62" roughness="0.4" metalness="0.04"/>
+        <look name="fish_amber" rgb="0.95 0.62 0.18" roughness="0.4" metalness="0.04"/>
+    </looks>
+
+    <static name="Seabed" type="plane">
+        <material name="Sand"/>
+        <look name="seabed_look"/>
+        <world_transform xyz="0.0 0.0 18.00" rpy="0.0 0.0 0.0"/>
+    </static>
+
+    <!-- Same seabed stones as the survey world, a light scatter. -->
+    <static name="Rock01" type="model">
+        <material name="Rock"/>
+        <look name="rock_sand"/>
+        <physical>
+            <mesh filename="data/rock_a.obj" scale="1.15" convex="true"/>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        </physical>
+        <world_transform xyz="16.73 -38.00 17.85" rpy="0.12 -0.08 0.40"/>
+    </static>
+
+    <static name="Rock02" type="model">
+        <material name="Rock"/>
+        <look name="rock_olive"/>
+        <physical>
+            <mesh filename="data/rock_b.obj" scale="1.45" convex="true"/>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        </physical>
+        <world_transform xyz="-32.08 8.16 17.85" rpy="0.12 -0.08 1.20"/>
+    </static>
+
+    <static name="Rock03" type="model">
+        <material name="Rock"/>
+        <look name="rock_slate"/>
+        <physical>
+            <mesh filename="data/rock_c.obj" scale="0.85" convex="true"/>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        </physical>
+        <world_transform xyz="-59.22 24.47 17.85" rpy="0.12 -0.08 2.40"/>
+    </static>
+
+
+    <animated name="FishA1" type="model" collisions="true">
+        <physical>
+            <mesh filename="data/fish.obj" scale="1.15"/>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        </physical>
+        <material name="Fish"/>
+        <look name="fish_silver"/>
+        <trajectory type="spline" playback="repeat">
+            <keypoint time="0" xyz="16.43 22.16 12.40" rpy="0.0 0.0 -2.287"/>
+            <keypoint time="5" xyz="12.41 17.54 12.40" rpy="0.0 0.0 -1.501"/>
+            <keypoint time="10" xyz="12.84 11.43 12.40" rpy="0.0 0.0 -0.716"/>
+            <keypoint time="15" xyz="17.46 7.41 12.40" rpy="0.0 0.0 0.070"/>
+            <keypoint time="20" xyz="23.57 7.84 12.40" rpy="0.0 0.0 0.855"/>
+            <keypoint time="25" xyz="27.59 12.46 12.40" rpy="0.0 0.0 1.641"/>
+            <keypoint time="30" xyz="27.16 18.57 12.40" rpy="0.0 0.0 2.426"/>
+            <keypoint time="35" xyz="22.54 22.59 12.40" rpy="0.0 0.0 -3.071"/>
+            <keypoint time="40" xyz="16.43 22.16 12.40" rpy="0.0 0.0 -3.071"/>
+        </trajectory>
+    </animated>
+    <animated name="FishA2" type="model" collisions="true">
+        <physical>
+            <mesh filename="data/fish.obj" scale="0.85"/>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        </physical>
+        <material name="Fish"/>
+        <look name="fish_dark"/>
+        <trajectory type="spline" playback="repeat">
+            <keypoint time="0" xyz="17.83 22.76 12.90" rpy="0.0 0.0 -2.287"/>
+            <keypoint time="5" xyz="13.81 18.14 12.90" rpy="0.0 0.0 -1.501"/>
+            <keypoint time="10" xyz="14.24 12.03 12.90" rpy="0.0 0.0 -0.716"/>
+            <keypoint time="15" xyz="18.86 8.01 12.90" rpy="0.0 0.0 0.070"/>
+            <keypoint time="20" xyz="24.97 8.44 12.90" rpy="0.0 0.0 0.855"/>
+            <keypoint time="25" xyz="28.99 13.06 12.90" rpy="0.0 0.0 1.641"/>
+            <keypoint time="30" xyz="28.56 19.17 12.90" rpy="0.0 0.0 2.426"/>
+            <keypoint time="35" xyz="23.94 23.19 12.90" rpy="0.0 0.0 -3.071"/>
+            <keypoint time="40" xyz="17.83 22.76 12.90" rpy="0.0 0.0 -3.071"/>
+        </trajectory>
+    </animated>
+
+    <animated name="FishA3" type="model" collisions="true">
+        <physical>
+            <mesh filename="data/fish.obj" scale="0.70"/>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        </physical>
+        <material name="Fish"/>
+        <look name="fish_amber"/>
+        <trajectory type="spline" playback="repeat">
+            <keypoint time="0" xyz="15.33 23.26 11.80" rpy="0.0 0.0 -2.287"/>
+            <keypoint time="5" xyz="11.31 18.64 11.80" rpy="0.0 0.0 -1.501"/>
+            <keypoint time="10" xyz="11.74 12.53 11.80" rpy="0.0 0.0 -0.716"/>
+            <keypoint time="15" xyz="16.36 8.51 11.80" rpy="0.0 0.0 0.070"/>
+            <keypoint time="20" xyz="22.47 8.94 11.80" rpy="0.0 0.0 0.855"/>
+            <keypoint time="25" xyz="26.49 13.56 11.80" rpy="0.0 0.0 1.641"/>
+            <keypoint time="30" xyz="26.06 19.67 11.80" rpy="0.0 0.0 2.426"/>
+            <keypoint time="35" xyz="21.44 23.69 11.80" rpy="0.0 0.0 -3.071"/>
+            <keypoint time="40" xyz="15.33 23.26 11.80" rpy="0.0 0.0 -3.071"/>
+        </trajectory>
+    </animated>
+
+    <!-- ============================ ORCA XLUUV ============================= -->
+    <!-- Lane 1: sweeps the northern half of the survey box. -->
+    <include file="data/orca_xluuv_survey.scn">
+        <arg name="name" value="OrcaXLUUV"/>
+        <arg name="start_x" value="-50.0"/>
+        <arg name="start_y" value="-10.0"/>
+        <arg name="start_z" value="12.0"/>
+    </include>
+
+    <!-- =========================== OTHER SUBMARINES ======================== -->
+    <!-- Lane 2: sweeps the southern half, offset so its track crosses the
+         Orca's lane near the middle of the box - a deliberate near-miss
+         that the reactive avoidance has to resolve. -->
+    <include file="data/survey_sub.scn">
+        <arg name="name" value="SurveySubAlpha"/>
+        <arg name="start_x" value="20.0"/>
+        <arg name="start_y" value="18.0"/>
+        <arg name="start_z" value="13.0"/>
+        <arg name="start_yaw" value="0.0"/>
+    </include>
+
+    <!-- Lane 3: a slower cross-pattern survey through the same box, at a
+         slightly shallower depth, to add a second, differently-timed
+         encounter. -->
+    <include file="data/survey_sub.scn">
+        <arg name="name" value="SurveySubBravo"/>
+        <arg name="start_x" value="0.0"/>
+        <arg name="start_y" value="-45.0"/>
+        <arg name="start_z" value="10.5"/>
+        <arg name="start_yaw" value="1.5708"/>
+    </include>
+
+</scenario>

@@ -1,0 +1,41 @@
+{
+ "reason": "mission complete",
+ "world": "multisub",
+ "layout": "obstacle_v1",
+ "nav_mode": "REALISTIC_SENSOR",
+ "waypoints_reached": 8,
+ "waypoints_skipped": [
+  {
+   "index": 5,
+   "t": 725.0,
+   "reason": "timeout"
+  }
+ ],
+ "waypoints_done": 9,
+ "waypoints_total": 9,
+ "sim_time_s": 858.0,
+ "steps": 858,
+ "total_reward": -278.3,
+ "shield_overrides": 80,
+ "contacts": [
+  {
+   "t": 183.50498099900003,
+   "entity": "SurveySubAlpha/Hull"
+  },
+  {
+   "t": 188.05119299900002,
+   "entity": "SurveySubAlpha/Hull"
+  },
+  {
+   "t": 194.66386499900003,
+   "entity": "SurveySubAlpha/Hull"
+  },
+  {
+   "t": 253.13801699900003,
+   "entity": "SurveySubAlpha/Hull"
+  }
+ ],
+ "physics_resets": 1,
+ "min_profiler_clearance_m": 0.33,
+ "log": "/home/priths/Documents/integrated_Orca_RL/orca_rl/logs/stonefish_runs/multisub_obstacle_v1_realistic_sensor_20261011_221151.jsonl"
+}

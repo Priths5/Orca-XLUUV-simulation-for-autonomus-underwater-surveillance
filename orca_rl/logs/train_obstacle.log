@@ -1,0 +1,53 @@
+[BC] 68020 planner samples
+[BC] epoch   0  mse 0.0969
+[BC] epoch  20  mse 0.0149
+[BC] epoch  40  mse 0.0099
+[BC] epoch  59  mse 0.0082
+[BC] DAgger round 1: 135915 samples
+[BC] epoch   0  mse 0.0107
+[BC] epoch  20  mse 0.0068
+[BC] epoch  39  mse 0.0057
+[BC] warm-start policy, held-out eval (40 seeds): {'goal_fraction': 0.6166666666666666, 'collision_rate': 0.45, 'all_goals_rate': 0.35, 'mean_steps': 295.2}
+[ES] gen   0/200  mean_fit=  581.55  best_fit=  750.53  elapsed= 18.2s
+[ES] gen   5/200  mean_fit=  524.94  best_fit=  769.15  elapsed=109.6s
+[ES] gen  10/200  mean_fit=  464.70  best_fit=  662.41  elapsed=210.3s
+[ES] gen  15/200  mean_fit=  533.82  best_fit=  700.81  elapsed=323.9s
+[ES] gen  20/200  mean_fit=  591.74  best_fit=  762.26  elapsed=423.3s
+[ES] gen  25/200  mean_fit=  314.72  best_fit=  598.32  elapsed=528.4s
+[ES] gen  30/200  mean_fit=  431.96  best_fit=  718.66  elapsed=634.5s
+[ES] gen  35/200  mean_fit=  568.90  best_fit=  762.35  elapsed=732.5s
+[ES] gen  40/200  mean_fit=  604.94  best_fit=  781.79  elapsed=821.1s
+[ES] gen  45/200  mean_fit=  602.17  best_fit=  704.58  elapsed=922.2s
+[ES] gen  50/200  mean_fit=  413.42  best_fit=  798.61  elapsed=1030.3s
+[ES] gen  55/200  mean_fit=  583.70  best_fit=  746.39  elapsed=1124.2s
+[ES] gen  60/200  mean_fit=  650.05  best_fit=  755.39  elapsed=1220.9s
+[ES] gen  65/200  mean_fit=  616.96  best_fit=  759.52  elapsed=1320.0s
+[ES] gen  70/200  mean_fit=  571.89  best_fit=  771.90  elapsed=1419.3s
+[ES] gen  75/200  mean_fit=  539.95  best_fit=  782.34  elapsed=1518.9s
+[ES] gen  80/200  mean_fit=  645.57  best_fit=  735.20  elapsed=1615.3s
+[ES] gen  85/200  mean_fit=  578.51  best_fit=  745.10  elapsed=1727.1s
+[ES] gen  90/200  mean_fit=  605.35  best_fit=  744.20  elapsed=1833.3s
+[ES] gen  95/200  mean_fit=  384.33  best_fit=  646.84  elapsed=1941.4s
+[ES] gen 100/200  mean_fit=  337.07  best_fit=  674.82  elapsed=2038.4s
+[ES] gen 105/200  mean_fit=  499.15  best_fit=  656.49  elapsed=2137.5s
+[ES] gen 110/200  mean_fit=  573.84  best_fit=  725.98  elapsed=2223.6s
+[ES] gen 115/200  mean_fit=  540.14  best_fit=  700.65  elapsed=2319.9s
+[ES] gen 120/200  mean_fit=  750.89  best_fit=  783.36  elapsed=2416.3s
+[ES] gen 125/200  mean_fit=  588.58  best_fit=  657.67  elapsed=2517.0s
+[ES] gen 130/200  mean_fit=  606.59  best_fit=  712.66  elapsed=2609.2s
+[ES] gen 135/200  mean_fit=  515.11  best_fit=  711.99  elapsed=2706.1s
+[ES] gen 140/200  mean_fit=  607.68  best_fit=  750.17  elapsed=2799.9s
+[ES] gen 145/200  mean_fit=  635.76  best_fit=  730.99  elapsed=2890.4s
+[ES] gen 150/200  mean_fit=  434.15  best_fit=  706.19  elapsed=2978.4s
+[ES] gen 155/200  mean_fit=  472.26  best_fit=  722.27  elapsed=3081.9s
+[ES] gen 160/200  mean_fit=  524.51  best_fit=  744.50  elapsed=3171.3s
+[ES] gen 165/200  mean_fit=  513.39  best_fit=  692.46  elapsed=3264.9s
+[ES] gen 170/200  mean_fit=  632.67  best_fit=  755.23  elapsed=3358.5s
+[ES] gen 175/200  mean_fit=  612.27  best_fit=  740.94  elapsed=3450.9s
+[ES] gen 180/200  mean_fit=  559.85  best_fit=  727.06  elapsed=3541.4s
+[ES] gen 185/200  mean_fit=  627.74  best_fit=  778.91  elapsed=3629.4s
+[ES] gen 190/200  mean_fit=  618.53  best_fit=  787.06  elapsed=3734.5s
+[ES] gen 195/200  mean_fit=  386.96  best_fit=  607.89  elapsed=3835.2s
+[ES] gen 199/200  mean_fit=  659.55  best_fit=  736.50  elapsed=3913.7s
+TRAINING COMPLETE in 3914s; held-out eval (40 seeds): {'goal_fraction': 0.7416666666666666, 'collision_rate': 0.225, 'all_goals_rate': 0.5, 'mean_steps': 301.45}
+saved logs/trained_policy_obstacle.npz

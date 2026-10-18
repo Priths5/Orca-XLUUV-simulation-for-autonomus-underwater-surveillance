@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ORCA-NAV // Mission Playback Console</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+  :root{
+    --bg-abyss:#08131c;
+    --bg-panel:#0d1e2b;
+    --bg-panel-2:#112635;
+    --line:#1d3a4c;
+    --text:#dce8ee;
+    --text-dim:#5c7a8c;
+    --rl-color:#3ddad7;
+    --base-color:#e8a33d;
+    --danger:#e2544a;
+    --good:#5fd67a;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;height:100%;background:var(--bg-abyss);color:var(--text);
+    font-family:'IBM Plex Mono',monospace;overflow:hidden;}
+  h1,h2,h3,.label-font{font-family:'Space Grotesk',sans-serif;}
+
+  #app{display:grid;grid-template-columns:1fr 340px;grid-template-rows:56px 1fr 96px;
+    height:100vh;width:100vw;}
+
+  header{grid-column:1/3;display:flex;align-items:center;justify-content:space-between;
+    padding:0 20px;border-bottom:1px solid var(--line);background:var(--bg-panel);}
+  header .title{display:flex;align-items:center;gap:10px;}
+  header .title .dot{width:8px;height:8px;border-radius:50%;background:var(--rl-color);
+    box-shadow:0 0 8px var(--rl-color);animation:pulse 2s infinite;}
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.35;}}
+  header h1{font-size:15px;letter-spacing:2px;margin:0;font-weight:700;color:var(--text);}
+  header .sub{color:var(--text-dim);font-size:11px;letter-spacing:1px;}
+
+  #methodToggle{display:flex;gap:6px;background:var(--bg-panel-2);border:1px solid var(--line);
+    border-radius:6px;padding:3px;}
+  #methodToggle button{background:transparent;border:none;color:var(--text-dim);
+    font-family:'Space Grotesk',sans-serif;font-size:11px;letter-spacing:1px;padding:6px 12px;
+    border-radius:4px;cursor:pointer;}
+  #methodToggle button.active{background:var(--bg-abyss);color:var(--text);}
+  #methodToggle button[data-m="rl"].active{color:var(--rl-color);box-shadow:inset 0 0 0 1px var(--rl-color);}
+  #methodToggle button[data-m="baseline"].active{color:var(--base-color);box-shadow:inset 0 0 0 1px var(--base-color);}
+  #methodToggle button[data-m="both"].active{color:var(--text);box-shadow:inset 0 0 0 1px var(--text-dim);}
+
+  #loadBar{display:flex;align-items:center;gap:8px;}
+  #loadBar input[type=file]{display:none;}
+  #loadBtn{background:var(--bg-panel-2);border:1px solid var(--line);color:var(--text-dim);
+    font-family:'IBM Plex Mono';font-size:11px;padding:6px 10px;border-radius:5px;cursor:pointer;}
+  #loadBtn:hover{color:var(--text);border-color:var(--rl-color);}
+
+  #mainview{position:relative;background:var(--bg-abyss);overflow:hidden;}
+  canvas{display:block;}
+  #sweepOverlay{position:absolute;inset:0;pointer-events:none;mix-blend-mode:screen;opacity:.5;}
+
+  #hud-topleft{position:absolute;top:14px;left:14px;font-size:11px;color:var(--text-dim);
+    letter-spacing:1px;line-height:1.6;}
+  #hud-topleft b{color:var(--text);}
+
+  aside{background:var(--bg-panel);border-left:1px solid var(--line);padding:16px;
+    overflow-y:auto;}
+  .panel{margin-bottom:18px;}
+  .panel h3{font-size:10px;letter-spacing:2px;color:var(--text-dim);margin:0 0 10px 0;
+    text-transform:uppercase;font-weight:500;}
+  .metric-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;
+    font-size:12px;}
+  .metric-row .k{color:var(--text-dim);}
+  .metric-row .v{color:var(--text);font-weight:600;}
+  .bar-track{height:5px;background:var(--bg-panel-2);border-radius:3px;overflow:hidden;
+    margin-top:3px;}
+  .bar-fill{height:100%;border-radius:3px;transition:width .15s linear;}
+
+  .legend-row{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--text-dim);
+    margin-bottom:6px;}
+  .legend-swatch{width:10px;height:10px;border-radius:2px;}
+
+  footer{grid-column:1/3;background:var(--bg-panel);border-top:1px solid var(--line);
+    display:flex;align-items:center;gap:16px;padding:0 20px;}
+  #playBtn{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);
+    background:var(--bg-panel-2);color:var(--text);font-size:14px;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;}
+  #playBtn:hover{border-color:var(--rl-color);}
+  #scrub{flex:1;-webkit-appearance:none;height:3px;background:var(--line);border-radius:2px;outline:none;}
+  #scrub::-webkit-slider-thumb{-webkit-appearance:none;width:13px;height:13px;border-radius:50%;
+    background:var(--rl-color);cursor:pointer;box-shadow:0 0 6px var(--rl-color);}
+  #timeLabel{font-size:11px;color:var(--text-dim);min-width:120px;text-align:right;}
+  #speedSelect{background:var(--bg-panel-2);color:var(--text);border:1px solid var(--line);
+    border-radius:5px;font-family:'IBM Plex Mono';font-size:11px;padding:5px 8px;}
+
+  #emptyState{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;
+    justify-content:center;gap:14px;color:var(--text-dim);text-align:center;padding:40px;}
+  #emptyState .big{font-family:'Space Grotesk',sans-serif;color:var(--text);font-size:18px;}
+  #emptyState button{margin-top:6px;}
+
+  ::-webkit-scrollbar{width:8px;}
+  ::-webkit-scrollbar-thumb{background:var(--bg-panel-2);border-radius:4px;}
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="title">
+      <div class="dot"></div>
+      <div>
+        <h1>ORCA&#8209;NAV MISSION PLAYBACK</h1>
+        <div class="sub">DEEP RL VS. CLASSICAL ENTROPY-PLANNER &middot; PASSIVE NAVIGATION EVALUATION</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px;">
+      <div id="methodToggle">
+        <button data-m="both" class="active">BOTH</button>
+        <button data-m="rl">RL POLICY</button>
+        <button data-m="baseline">BASELINE</button>
+      </div>
+      <div id="loadBar">
+        <label id="loadBtn" for="fileInput">LOAD eval_trajectories.json</label>
+        <input type="file" id="fileInput" accept=".json">
+      </div>
+    </div>
+  </header>
+
+  <div id="mainview">
+    <canvas id="mapCanvas"></canvas>
+    <canvas id="sweepOverlay"></canvas>
+    <div id="hud-topleft">
+      MISSION AREA &middot; <b id="hudScale">--</b><br>
+      SIM TIME &middot; <b id="hudTime">T+0000s</b><br>
+      STEP &middot; <b id="hudStep">0 / 0</b>
+    </div>
+    <div id="emptyState">
+      <div class="big">NO MISSION DATA LOADED</div>
+      <div style="max-width:420px;font-size:12px;line-height:1.7;">
+        Run <span style="color:var(--rl-color)">python3 evaluate.py</span> to generate
+        <span style="color:var(--text)">logs/eval_trajectories.json</span>, then load it here
+        for full live playback: trajectory, uncertainty ellipse, health telemetry, and risk
+        exposure, replayed step by step for both the RL policy and the classical baseline.
+      </div>
+      <label id="loadBtn2" style="cursor:pointer;background:var(--bg-panel-2);border:1px solid var(--line);
+        color:var(--text);padding:9px 16px;border-radius:6px;font-size:11px;letter-spacing:1px;">
+        LOAD JSON FILE
+      </label>
+    </div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3>Legend</h3>
+      <div class="legend-row"><div class="legend-swatch" style="background:var(--rl-color)"></div>RL policy trajectory</div>
+      <div class="legend-row"><div class="legend-swatch" style="background:var(--base-color)"></div>Classical baseline trajectory</div>
+      <div class="legend-row"><div class="legend-swatch" style="background:#2a4a5e"></div>Bathymetric depth (dark = deep)</div>
+      <div class="legend-row"><div class="legend-swatch" style="background:rgba(226,84,74,.35)"></div>Detection-risk zone</div>
+      <div class="legend-row"><div class="legend-swatch" style="background:#fff"></div>Goal waypoint</div>
+    </div>
+
+    <div class="panel">
+      <h3>Vehicle Health &mdash; RL</h3>
+      <div id="rlHealth"></div>
+    </div>
+    <div class="panel">
+      <h3>Vehicle Health &mdash; Baseline</h3>
+      <div id="baseHealth"></div>
+    </div>
+
+    <div class="panel">
+      <h3>Environment Context</h3>
+      <div id="envHealth"></div>
+    </div>
+
+    <div class="panel">
+      <h3>Localization Uncertainty</h3>
+      <canvas id="uncSpark" height="50" style="width:100%;height:50px;"></canvas>
+    </div>
+
+    <div class="panel">
+      <h3>Mission Progress</h3>
+      <canvas id="rewSpark" height="50" style="width:100%;height:50px;"></canvas>
+    </div>
+  </aside>
+
+  <footer>
+    <button id="playBtn">&#9654;</button>
+    <input type="range" id="scrub" min="0" max="0" value="0">
+    <select id="speedSelect">
+      <option value="4">0.25x</option>
+      <option value="2">0.5x</option>
+      <option value="1" selected>1x</option>
+      <option value="0.5">2x</option>
+      <option value="0.2">5x</option>
+    </select>
+    <div id="timeLabel">STEP 0 / 0</div>
+  </footer>
+</div>
+
+<script>
+const state = {
+  data: null,
+  method: 'both',
+  idx: 0,
+  playing: false,
+  speedMs: 60,
+  bounds: null,
+};
+
+const mapCanvas = document.getElementById('mapCanvas');
+const ctx = mapCanvas.getContext('2d');
+const sweepCanvas = document.getElementById('sweepOverlay');
+const sctx = sweepCanvas.getContext('2d');
+
+function resizeCanvases(){
+  const el = document.getElementById('mainview');
+  const w = el.clientWidth, h = el.clientHeight;
+  [mapCanvas, sweepCanvas].forEach(c=>{c.width=w;c.height=h;});
+}
+window.addEventListener('resize', resizeCanvases);
+resizeCanvases();
+
+function wireFileInput(input){
+  input.addEventListener('change', (e)=>{
+    const file = e.target.files[0];
+    if(!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev)=>{
+      try{
+        const json = JSON.parse(ev.target.result);
+        loadData(json);
+      }catch(err){ alert('Could not parse JSON: '+err); }
+    };
+    reader.readAsText(file);
+  });
+}
+wireFileInput(document.getElementById('fileInput'));
+document.getElementById('loadBtn2').addEventListener('click', ()=>document.getElementById('fileInput').click());
+
+fetch('logs/eval_trajectories.json').then(r=>{
+  if(r.ok) return r.json();
+  throw new Error('not found');
+}).then(loadData).catch(()=>{ /* silent - user can load manually */ });
+
+function computeBounds(data){
+  let xs=[], ys=[];
+  ['baseline','rl'].forEach(m=>{
+    if(!data[m]) return;
+    data[m].log.forEach(s=>{ xs.push(s.true_x, s.est_x); ys.push(s.true_y, s.est_y); });
+    xs.push(data[m].goal[0]); ys.push(data[m].goal[1]);
+  });
+  const pad = 400;
+  return {
+    minX: Math.min(...xs)-pad, maxX: Math.max(...xs)+pad,
+    minY: Math.min(...ys)-pad, maxY: Math.max(...ys)+pad,
+  };
+}
+
+function loadData(json){
+  state.data = json;
+  state.bounds = computeBounds(json);
+  const maxLen = Math.max(
+    json.rl ? json.rl.log.length : 0,
+    json.baseline ? json.baseline.log.length : 0
+  );
+  document.getElementById('scrub').max = maxLen-1;
+  document.getElementById('emptyState').style.display = 'none';
+  state.idx = 0;
+  render();
+}
+
+function worldToScreen(x,y){
+  const b = state.bounds;
+  const w = mapCanvas.width, h = mapCanvas.height;
+  const sx = (x - b.minX) / (b.maxX - b.minX) * w;
+  const sy = h - (y - b.minY) / (b.maxY - b.minY) * h;
+  return [sx, sy];
+}
+
+function drawBackground(){
+  const w = mapCanvas.width, h = mapCanvas.height;
+  const grad = ctx.createRadialGradient(w*0.5,h*0.5,0,w*0.5,h*0.5,Math.max(w,h)*0.75);
+  grad.addColorStop(0, '#123448');
+  grad.addColorStop(0.55, '#0d2233');
+  grad.addColorStop(1, '#08131c');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0,0,w,h);
+
+  ctx.strokeStyle = 'rgba(93,150,170,0.08)';
+  ctx.lineWidth = 1;
+  for(let r=60; r<Math.max(w,h); r+=70){
+    ctx.beginPath();
+    ctx.ellipse(w*0.5,h*0.5,r,r*0.7,0,0,Math.PI*2);
+    ctx.stroke();
+  }
+
+  ctx.strokeStyle = 'rgba(93,150,170,0.06)';
+  for(let gx=0; gx<w; gx+=60){ ctx.beginPath(); ctx.moveTo(gx,0); ctx.lineTo(gx,h); ctx.stroke(); }
+  for(let gy=0; gy<h; gy+=60){ ctx.beginPath(); ctx.moveTo(0,gy); ctx.lineTo(w,gy); ctx.stroke(); }
+}
+
+function drawTrajectory(log, idx, color){
+  if(!log || log.length===0) return;
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 2;
+  ctx.globalAlpha = 0.85;
+  ctx.beginPath();
+  for(let i=0;i<=idx && i<log.length;i++){
+    const [sx,sy] = worldToScreen(log[i].est_x, log[i].est_y);
+    if(i===0) ctx.moveTo(sx,sy); else ctx.lineTo(sx,sy);
+  }
+  ctx.stroke();
+  ctx.globalAlpha = 1;
+
+  const cur = log[Math.min(idx, log.length-1)];
+  const [vx,vy] = worldToScreen(cur.est_x, cur.est_y);
+
+  const uncPix = Math.sqrt(Math.max(cur.uncertainty,1)) * (mapCanvas.width/(state.bounds.maxX-state.bounds.minX));
+  ctx.strokeStyle = color;
+  ctx.globalAlpha = 0.5;
+  ctx.beginPath();
+  ctx.ellipse(vx,vy, Math.min(uncPix,300), Math.min(uncPix,300)*0.7, 0, 0, Math.PI*2);
+  ctx.stroke();
+  ctx.globalAlpha = 1;
+
+  ctx.fillStyle = color;
+  ctx.beginPath();
+  ctx.arc(vx,vy,5,0,Math.PI*2);
+  ctx.fill();
+  ctx.strokeStyle = '#08131c';
+  ctx.lineWidth = 1.5;
+  ctx.stroke();
+
+  if(cur.risk > 0.4){
+    ctx.strokeStyle = 'rgba(226,84,74,0.9)';
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.arc(vx,vy,10,0,Math.PI*2);
+    ctx.stroke();
+  }
+}
+
+function drawGoal(goal){
+  const [gx,gy] = worldToScreen(goal[0], goal[1]);
+  ctx.strokeStyle = '#ffffff';
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  ctx.moveTo(gx-10,gy); ctx.lineTo(gx+10,gy);
+  ctx.moveTo(gx,gy-10); ctx.lineTo(gx,gy+10);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(gx,gy,14,0,Math.PI*2);
+  ctx.strokeStyle = 'rgba(255,255,255,0.4)';
+  ctx.stroke();
+}
+
+function drawSweep(){
+  const w=sweepCanvas.width, h=sweepCanvas.height;
+  sctx.clearRect(0,0,w,h);
+  const t = performance.now()/3000;
+  const cx=w*0.5, cy=h*0.5, R=Math.max(w,h);
+  const angle = (t % 1) * Math.PI*2;
+  if(sctx.createConicGradient){
+    const grad = sctx.createConicGradient(angle, cx, cy);
+    grad.addColorStop(0, 'rgba(61,218,215,0.10)');
+    grad.addColorStop(0.05, 'rgba(61,218,215,0.0)');
+    grad.addColorStop(1, 'rgba(61,218,215,0.0)');
+    sctx.fillStyle = grad;
+    sctx.beginPath(); sctx.arc(cx,cy,R,0,Math.PI*2); sctx.fill();
+  }
+}
+
+function render(){
+  drawBackground();
+  if(state.data){
+    const showRL = state.method==='both' || state.method==='rl';
+    const showBase = state.method==='both' || state.method==='baseline';
+    if(showBase && state.data.baseline){
+      drawTrajectory(state.data.baseline.log, state.idx, getCSS('--base-color'));
+      drawGoal(state.data.baseline.goal);
+    }
+    if(showRL && state.data.rl){
+      drawTrajectory(state.data.rl.log, state.idx, getCSS('--rl-color'));
+      drawGoal(state.data.rl.goal);
+    }
+    updateHUD();
+    updateSidebar();
+  }
+}
+
+function getCSS(varName){
+  return getComputedStyle(document.documentElement).getPropertyValue(varName).trim();
+}
+
+function updateHUD(){
+  const b = state.bounds;
+  document.getElementById('hudScale').textContent =
+    Math.round((b.maxX-b.minX)) + ' m x ' + Math.round((b.maxY-b.minY)) + ' m';
+  const refLog = (state.data.rl && state.data.rl.log) || (state.data.baseline && state.data.baseline.log);
+  const total = refLog ? refLog.length : 0;
+  const cur = refLog ? refLog[Math.min(state.idx, total-1)] : null;
+  document.getElementById('hudTime').textContent = cur ? ('T+' + Math.round(cur.t) + 's') : 'T+0s';
+  document.getElementById('hudStep').textContent = state.idx + ' / ' + (total-1);
+  document.getElementById('timeLabel').textContent = 'STEP ' + state.idx + ' / ' + (total-1);
+}
+
+function healthRows(target, log, idx, color){
+  target.innerHTML = '';
+  if(!log || log.length===0){ target.innerHTML = '<div class="metric-row"><span class="k">n/a</span></div>'; return; }
+  const s = log[Math.min(idx, log.length-1)];
+  const rows = [
+    ['Battery', (s.battery_frac*100).toFixed(1)+'%', s.battery_frac, s.battery_frac<0.15?'var(--danger)':color],
+    ['Depth', s.depth.toFixed(0)+' m', s.depth/3400, 'var(--text-dim)'],
+    ['Uncertainty (tr. cov.)', s.uncertainty.toFixed(0)+' m^2', Math.min(s.uncertainty/8000,1), s.uncertainty>3000?'var(--danger)':color],
+    ['Risk exposure', (s.risk*100).toFixed(0)+'%', s.risk, s.risk>0.5?'var(--danger)':color],
+    ['Safety override', s.overridden ? 'ACTIVE' : 'nominal', s.overridden?1:0, s.overridden?'var(--danger)':'var(--good)'],
+  ];
+  rows.forEach(([k,v,frac,barColor])=>{
+    const row = document.createElement('div');
+    row.className='metric-row';
+    row.style.flexDirection='column';
+    row.style.alignItems='stretch';
+    row.innerHTML = `<div style="display:flex;justify-content:space-between;">
+        <span class="k">${k}</span><span class="v">${v}</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:${Math.min(frac,1)*100}%;background:${barColor}"></div></div>`;
+    target.appendChild(row);
+  });
+}
+
+function updateSidebar(){
+  const rlLog = state.data.rl ? state.data.rl.log : null;
+  const baseLog = state.data.baseline ? state.data.baseline.log : null;
+  healthRows(document.getElementById('rlHealth'), rlLog, state.idx, getCSS('--rl-color'));
+  healthRows(document.getElementById('baseHealth'), baseLog, state.idx, getCSS('--base-color'));
+
+  const envTarget = document.getElementById('envHealth');
+  const refLog = rlLog || baseLog;
+  if(refLog){
+    const s = refLog[Math.min(state.idx, refLog.length-1)];
+    envTarget.innerHTML = `
+      <div class="metric-row"><span class="k">Detection risk (local)</span><span class="v">${(s.risk*100).toFixed(0)}%</span></div>
+      <div class="metric-row"><span class="k">Propulsion power</span><span class="v">${(s.power_w/1000).toFixed(1)} kW</span></div>
+    `;
+  }
+  drawSpark('uncSpark', rlLog, baseLog, state.idx, 'uncertainty');
+  drawProgressBar('rewSpark', rlLog, baseLog, state.idx);
+}
+
+function drawSpark(canvasId, rlLog, baseLog, idx, field){
+  const c = document.getElementById(canvasId);
+  const cctx = c.getContext('2d');
+  const w = c.clientWidth, h = 50;
+  c.width = w; c.height = h;
+  cctx.clearRect(0,0,w,h);
+
+  function plot(log, color){
+    if(!log || log.length<2) return;
+    const vals = log.slice(0, Math.max(idx+1,2)).map(s=>s[field] ?? 0);
+    const mn = Math.min(...vals), mx = Math.max(...vals, mn+1e-6);
+    cctx.strokeStyle = color; cctx.lineWidth = 1.5; cctx.beginPath();
+    vals.forEach((v,i)=>{
+      const x = i/(vals.length-1) * w;
+      const y = h - ((v-mn)/(mx-mn)) * (h-6) - 3;
+      i===0 ? cctx.moveTo(x,y) : cctx.lineTo(x,y);
+    });
+    cctx.stroke();
+  }
+  plot(rlLog, getCSS('--rl-color'));
+  plot(baseLog, getCSS('--base-color'));
+}
+
+function drawProgressBar(canvasId, rlLog, baseLog, idx){
+  const c = document.getElementById(canvasId);
+  const cctx = c.getContext('2d');
+  const w = c.clientWidth, h = 50;
+  c.width = w; c.height = h;
+  cctx.clearRect(0,0,w,h);
+  const refLog = rlLog || baseLog;
+  const total = refLog ? refLog.length-1 : 1;
+  const frac = total>0 ? idx/total : 0;
+  cctx.fillStyle = 'rgba(93,150,170,0.15)';
+  cctx.fillRect(0,h/2-6,w,12);
+  cctx.fillStyle = getCSS('--rl-color');
+  cctx.fillRect(0,h/2-6,w*frac,12);
+  cctx.fillStyle = getCSS('--text-dim');
+  cctx.font = '10px IBM Plex Mono';
+  cctx.fillText((frac*100).toFixed(0)+'% of mission elapsed', 4, h-4);
+}
+
+document.getElementById('playBtn').addEventListener('click', ()=>{
+  state.playing = !state.playing;
+  document.getElementById('playBtn').innerHTML = state.playing ? '&#10073;&#10073;' : '&#9654;';
+  if(state.playing) tick();
+});
+
+function tick(){
+  if(!state.playing) return;
+  const maxIdx = parseInt(document.getElementById('scrub').max);
+  state.idx = Math.min(state.idx+1, maxIdx);
+  document.getElementById('scrub').value = state.idx;
+  render();
+  if(state.idx >= maxIdx){ state.playing=false; document.getElementById('playBtn').innerHTML='&#9654;'; return; }
+  setTimeout(tick, state.speedMs * parseFloat(document.getElementById('speedSelect').value));
+}
+
+document.getElementById('scrub').addEventListener('input', (e)=>{
+  state.idx = parseInt(e.target.value);
+  render();
+});
+
+document.querySelectorAll('#methodToggle button').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('#methodToggle button').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    state.method = btn.dataset.m;
+    render();
+  });
+});
+
+setInterval(drawSweep, 50);
+render();
+</script>
+</body>
+</html>

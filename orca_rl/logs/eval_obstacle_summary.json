@@ -1,0 +1,33 @@
+{
+ "classical_planner": {
+  "n": 100,
+  "goal_fraction": 0.6833333333333332,
+  "all_goals_rate": 0.46,
+  "collision_rate": 0.28,
+  "mean_reward": 419.0982812070342,
+  "mean_shield_steps": 1.49,
+  "median_min_clearance_m": 1.6988840064105086
+ },
+ "trained_policy_obstacle.npz": {
+  "n": 100,
+  "goal_fraction": 0.8166666666666665,
+  "all_goals_rate": 0.63,
+  "collision_rate": 0.13,
+  "mean_reward": 559.0421402803644,
+  "mean_shield_steps": 8.83,
+  "median_min_clearance_m": 5.890120421172904
+ },
+ "trained_policy_obstacle_bc.npz": {
+  "n": 100,
+  "goal_fraction": 0.6733333333333333,
+  "all_goals_rate": 0.47,
+  "collision_rate": 0.32,
+  "mean_reward": 398.865796628506,
+  "mean_shield_steps": 1.94,
+  "median_min_clearance_m": 1.6850068530335252
+ },
+ "seeds": [
+  7000,
+  100
+ ]
+}

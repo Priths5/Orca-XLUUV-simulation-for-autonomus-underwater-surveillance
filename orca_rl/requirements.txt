@@ -1,0 +1,18 @@
+# ---- Core (already used in this sandbox, pre-installed) ----
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+pandas>=2.0
+
+# ---- Needed on a machine with full internet access, to swap ES -> real PPO ----
+# (not installable inside the sandboxed environment this project was built in -
+#  see README.md "Environment Notes" section)
+gymnasium>=0.29
+stable-baselines3>=2.2
+torch>=2.1
+filterpy>=1.4.5          # optional: drop-in alternative particle/Kalman filter library
+
+# ---- Needed only for the Stonefish / ROS 2 integration (see ../README.md) ----
+# rclpy + std_msgs/sensor_msgs/nav_msgs/geometry_msgs/std_srvs/rosgraph_msgs
+#   come with a ROS 2 install (tested: Jazzy on Ubuntu 24.04), not pip.
+# Stonefish 1.6 must be built/installed for ../stonefish_sim (C++).

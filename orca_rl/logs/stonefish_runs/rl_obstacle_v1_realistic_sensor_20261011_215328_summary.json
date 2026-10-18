@@ -1,0 +1,69 @@
+{
+ "reason": "mission complete",
+ "world": "rl",
+ "layout": "obstacle_v1",
+ "nav_mode": "REALISTIC_SENSOR",
+ "waypoints_reached": 14,
+ "waypoints_skipped": [
+  {
+   "index": 4,
+   "t": 452.0,
+   "reason": "blocked"
+  }
+ ],
+ "waypoints_done": 15,
+ "waypoints_total": 15,
+ "sim_time_s": 1485.0,
+ "steps": 1485,
+ "total_reward": 559.6,
+ "shield_overrides": 96,
+ "contacts": [
+  {
+   "t": 416.90830499900005,
+   "entity": "Pinnacle05"
+  },
+  {
+   "t": 651.444848999,
+   "entity": "FishC3"
+  },
+  {
+   "t": 652.1781089990001,
+   "entity": "FishC3"
+  },
+  {
+   "t": 653.417984999,
+   "entity": "FishC2"
+  },
+  {
+   "t": 656.204372999,
+   "entity": "FishC1"
+  },
+  {
+   "t": 656.404352999,
+   "entity": "FishC1"
+  },
+  {
+   "t": 673.669292999,
+   "entity": "Pinnacle06"
+  },
+  {
+   "t": 685.334792999,
+   "entity": "Pinnacle06"
+  },
+  {
+   "t": 764.2735649990001,
+   "entity": "Pinnacle05"
+  },
+  {
+   "t": 780.3919529990001,
+   "entity": "Pinnacle05"
+  },
+  {
+   "t": 835.5731009990001,
+   "entity": "Pinnacle04"
+  }
+ ],
+ "physics_resets": 0,
+ "min_profiler_clearance_m": 4.28,
+ "log": "/home/priths/Documents/integrated_Orca_RL/orca_rl/logs/stonefish_runs/rl_obstacle_v1_realistic_sensor_20261011_215328.jsonl"
+}

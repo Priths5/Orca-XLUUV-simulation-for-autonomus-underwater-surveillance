@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<!--
+    survey_sub.scn
+    A smaller, independent survey submarine (same construction pattern as
+    orca_xluuv_survey.scn, scaled down) used to populate the multi-sub
+    scenario with other vehicles that are also surveying the seabed and
+    that the Orca has to avoid. Reuses the same materials/looks defined in
+    the including world file (orca_multisub_world.scn), same as the other
+    robot files in this project.
+-->
+<scenario>
+
+    <looks>
+        <look name="sub_hull"  rgb="0.28 0.62 0.48" roughness="0.5" metalness="0.05"/>
+        <look name="sub_fin"   rgb="0.16 0.40 0.32" roughness="0.5" metalness="0.05"/>
+        <look name="prop_bronze" rgb="0.86 0.58 0.22" roughness="0.32" metalness="0.25"/>
+    </looks>
+
+    <robot name="$(arg name)" fixed="false" self_collisions="false">
+
+        <world_transform xyz="$(arg start_x) $(arg start_y) $(arg start_z)" rpy="0.0 0.0 $(arg start_yaw)"/>
+
+        <base_link name="Hull" type="compound" physics="submerged">
+
+            <external_part name="MainHull" type="cylinder">
+                <material name="SubHull"/>
+                <look name="sub_hull"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 1.5708 0.0"/>
+                <dimensions radius="0.7" height="12.0" thickness="0.03"/>
+                <compound_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </external_part>
+
+            <external_part name="NoseCone" type="sphere">
+                <material name="SubHull"/>
+                <look name="sub_hull"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions radius="0.70" thickness="0.03"/>
+                <compound_transform xyz="5.7 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </external_part>
+
+            <external_part name="SternCap" type="sphere">
+                <material name="SubHull"/>
+                <look name="sub_hull"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions radius="0.62" thickness="0.03"/>
+                <compound_transform xyz="-5.55 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </external_part>
+
+            <external_part name="Sail" type="box">
+                <material name="SyntacticFoam"/>
+                <look name="sub_fin"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions xyz="1.6 0.22 0.7"/>
+                <compound_transform xyz="2.0 0.0 -0.95" rpy="0.0 0.0 0.0"/>
+            </external_part>
+
+            <external_part name="FinTop" type="box">
+                <material name="SyntacticFoam"/>
+                <look name="sub_fin"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions xyz="0.95 0.08 0.75"/>
+                <compound_transform xyz="-5.4 0.0 -1.00" rpy="0.0 0.0 0.0"/>
+            </external_part>
+            <external_part name="FinBottom" type="box">
+                <material name="SyntacticFoam"/>
+                <look name="sub_fin"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions xyz="0.95 0.08 0.75"/>
+                <compound_transform xyz="-5.4 0.0 1.00" rpy="0.0 0.0 0.0"/>
+            </external_part>
+            <external_part name="FinPort" type="box">
+                <material name="SyntacticFoam"/>
+                <look name="sub_fin"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions xyz="0.95 0.75 0.08"/>
+                <compound_transform xyz="-5.4 -1.00 0.0" rpy="0.0 0.0 0.0"/>
+            </external_part>
+            <external_part name="FinStbd" type="box">
+                <material name="SyntacticFoam"/>
+                <look name="sub_fin"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions xyz="0.95 0.75 0.08"/>
+                <compound_transform xyz="-5.4 1.00 0.0" rpy="0.0 0.0 0.0"/>
+            </external_part>
+
+            <!-- Hydrostatic trim (added for the RL integration): the solid
+                 Composite sail/fins put the CG above and 0.2 m aft of the CB
+                 and the hull was 237 kg heavy, so it rolled over and sank to
+                 the seabed. Foam sail + fins and this low ballast: ~neutral
+                 (+5 kg), CG under the CB, ~0.13 m righting arm. -->
+            <internal_part name="KeelBallast" type="box">
+                <material name="Composite"/>
+                <look name="sub_fin"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions xyz="1.0 0.3 0.1"/>
+                <mass value="405.1"/>
+                <compound_transform xyz="-0.989 0.0 0.55" rpy="0.0 0.0 0.0"/>
+            </internal_part>
+
+        </base_link>
+
+        <actuator name="MainThruster" type="simple_thruster">
+            <link name="Hull"/>
+            <origin xyz="-6.35 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <propeller right="true">
+                <mesh filename="data/propeller.obj" scale="0.85"/>
+                <material name="Composite"/>
+                <look name="prop_bronze"/>
+            </propeller>
+            <specs inverted="false" lower_thrust_limit="-8000.0" upper_thrust_limit="8000.0"/>
+        </actuator>
+
+        <actuator name="YawThruster" type="push">
+            <link name="Hull"/>
+            <origin xyz="5.2 0.0 0.0" rpy="0.0 0.0 1.5708"/>
+            <specs inverted="false" lower_limit="-2500.0" upper_limit="2500.0"/>
+        </actuator>
+
+        <actuator name="HeaveThruster" type="push">
+            <link name="Hull"/>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 -1.5708 0.0"/>
+            <specs inverted="false" lower_limit="-12000.0" upper_limit="12000.0"/>
+        </actuator>
+
+        <sensor name="IMU" type="imu" rate="100.0">
+            <link name="Hull"/>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <noise angle="0.0001" angular_velocity="0.0001"/>
+        </sensor>
+
+        <sensor name="Odometry" type="odometry" rate="20.0">
+            <link name="Hull"/>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <noise position="0.05" velocity="0.01" angle="0.05" angular_velocity="0.02"/>
+            <history samples="1"/>
+        </sensor>
+
+        <sensor name="Profiler" type="profiler" rate="10.0">
+            <link name="Hull"/>
+            <origin xyz="6.55 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <specs fov="160.0" steps="64"/>
+            <range distance_min="0.3" distance_max="25.0"/>
+            <noise distance="0.05"/>
+            <!-- >= one full back-and-forth sweep (2*steps) -->
+            <history samples="150"/>
+        </sensor>
+
+        <sensor name="Pressure" type="pressure" rate="10.0">
+            <link name="Hull"/>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <noise pressure="10.0"/>
+        </sensor>
+
+        <sensor name="DVL" type="dvl" rate="10.0">
+            <link name="Hull"/>
+            <origin xyz="0.0 0.0 0.82" rpy="0.0 3.14159 0.0"/>
+            <specs beam_angle="30.0"/>
+            <range velocity="8.0" altitude_min="0.5" altitude_max="100.0"/>  <!-- explicit altitude range: without it Stonefish uses ~1e30 and the DVL ray-march never runs (no bottom lock, ever) -->
+            <noise velocity="0.002"/>
+        </sensor>
+
+        <sensor name="Multibeam" type="multibeam" rate="2.0">
+            <link name="Hull"/>
+            <origin xyz="0.0 0.0 0.85" rpy="0.0 -1.5708 0.0"/>
+            <specs fov="110.0" steps="96"/>
+            <range distance_min="0.3" distance_max="60.0"/>
+            <noise distance="0.1"/>
+            <history samples="1"/>
+        </sensor>
+
+        <light name="DownLight">
+            <link name="Hull"/>
+            <origin xyz="0.5 0.0 0.6" rpy="0.0 3.14159 0.0"/>
+            <specs illuminance="40000.0" radius="16.0" cone_angle="50.0"/>
+            <color rgb="0.75 0.9 0.85"/>
+        </light>
+
+    </robot>
+</scenario>

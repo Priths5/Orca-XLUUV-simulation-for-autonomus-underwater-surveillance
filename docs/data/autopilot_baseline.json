@@ -1,0 +1,26 @@
+{
+ "rl": {
+  "reached": 9,
+  "total": 10,
+  "static": 4,
+  "fish": 10,
+  "sub": 1,
+  "resets": 0
+ },
+ "multisub": {
+  "reached": 6,
+  "total": 6,
+  "static": 4,
+  "fish": 10,
+  "sub": 3,
+  "resets": 0
+ },
+ "survey": {
+  "reached": 3,
+  "total": 12,
+  "static": 6,
+  "fish": 1,
+  "sub": 0,
+  "resets": 1
+ }
+}

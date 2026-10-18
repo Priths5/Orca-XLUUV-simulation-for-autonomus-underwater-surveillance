@@ -1,0 +1,31 @@
+{
+ "reason": "interrupted",
+ "world": "rl",
+ "layout": "obstacle_v1",
+ "nav_mode": "REALISTIC_SENSOR",
+ "waypoints_reached": 4,
+ "waypoints_skipped": [],
+ "waypoints_done": 4,
+ "waypoints_total": 15,
+ "sim_time_s": 331.9,
+ "steps": 332,
+ "total_reward": 145.4,
+ "shield_overrides": 24,
+ "contacts": [
+  {
+   "t": 327.63723299900005,
+   "entity": "FishB3"
+  },
+  {
+   "t": 329.183744999,
+   "entity": "FishB3"
+  },
+  {
+   "t": 331.143548999,
+   "entity": "FishB3"
+  }
+ ],
+ "physics_resets": 0,
+ "min_profiler_clearance_m": 10.31,
+ "log": "/home/priths/Documents/integrated_Orca_RL/orca_rl/logs/stonefish_runs/rl_obstacle_v1_realistic_sensor_20261014_142257.jsonl"
+}

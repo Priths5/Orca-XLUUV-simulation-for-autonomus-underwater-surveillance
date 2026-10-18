@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<!--
+    orca_xluuv.scn
+    Stonefish robot description for a Boeing Orca-class XLUUV.
+
+    Every tag/attribute name below was checked against the actual
+    ScenarioParser.cpp source (patrykcieslak/stonefish), not assumed -
+    see ScenarioParser::ParseSolid / ParseRobot / ParseActuator / ParseSensor.
+
+    IMPORTANT: an <include>-d file must itself have a <scenario> root
+    element (ScenarioParser::IncludeFiles looks for
+    includedDoc.FirstChildElement("scenario") and fails otherwise -
+    this is what caused the "Root node not found" error). Its <robot>
+    and <looks> children get merged into the parent scenario's root.
+    Do NOT put a second <materials> block in here - ScenarioParser only
+    ever reads the FIRST <materials> element in the final merged
+    document, so all materials (including HullShell/Composite used
+    below) are defined once, in orca_world.scn.
+-->
+<scenario>
+
+    <looks>
+        <look name="hull_grey"  rgb="0.55 0.64 0.70" roughness="0.48" metalness="0.06"/>
+        <look name="hull_bow"   rgb="0.72 0.78 0.80" roughness="0.42" metalness="0.05"/>
+        <look name="mast_black" rgb="0.18 0.20 0.22" roughness="0.55" metalness="0.08"/>
+        <look name="fin_grey"   rgb="0.30 0.42 0.48" roughness="0.5" metalness="0.05"/>
+        <look name="band_amber" rgb="0.92 0.55 0.12" roughness="0.45" metalness="0.04"/>
+        <look name="cargo_look" rgb="0.45 0.40 0.32" roughness="0.6"  metalness="0.04"/>
+        <look name="prop_bronze" rgb="0.86 0.58 0.22" roughness="0.32" metalness="0.25"/>
+    </looks>
+
+    <robot name="$(arg name)" fixed="false" self_collisions="false">
+
+        <!-- Initial pose in the world (NED) frame -->
+        <world_transform xyz="$(arg start_x) $(arg start_y) $(arg start_z)" rpy="0.0 0.0 0.0"/>
+
+        <!-- ============================================================
+             BASE LINK: hull built as a compound of primitives.
+             physics="submerged" -> buoyancy/hydrodynamics computed from
+             the shapes below (attribute is "physics", not "physical").
+             ============================================================ -->
+        <base_link name="Hull" type="compound" physics="submerged">
+
+            <!-- Main pressure hull: 26 m long, 1.3 m radius (radius from
+                 the publicly reported ~2.6 m Orca beam - not given in the
+                 source spec). thickness="0.04" -> 4 cm shell, so mass is
+                 computed from shell volume rather than a solid cylinder,
+                 to land near the target 80-85 t. Verify the actual value
+                 Stonefish computes (console/log on load) and adjust
+                 thickness or HullShell density in orca_world.scn if off. -->
+            <external_part name="MainHull" type="cylinder">
+                <material name="HullShell"/>
+                <look name="hull_grey"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 1.5708 0.0"/>
+                <dimensions radius="1.3" height="26.0" thickness="0.04"/>
+                <compound_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </external_part>
+
+            <!-- Hemispherical bow. Centered on the cylinder's forward face
+                 (hull runs x = -13..13) so the dome meets the hull. -->
+            <external_part name="NoseCone" type="sphere">
+                <material name="HullShell"/>
+                <look name="hull_bow"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions radius="1.30" thickness="0.04"/>
+                <compound_transform xyz="12.55 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </external_part>
+
+            <external_part name="SternCap" type="sphere">
+                <material name="HullShell"/>
+                <look name="hull_grey"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions radius="1.15" thickness="0.04"/>
+                <compound_transform xyz="-12.15 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </external_part>
+
+            <external_part name="Sail" type="box">
+                <material name="SyntacticFoam"/>
+                <look name="fin_grey"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions xyz="3.4 0.42 1.35"/>
+                <compound_transform xyz="5.2 0.0 -1.82" rpy="0.0 0.0 0.0"/>
+            </external_part>
+
+            <external_part name="CommsMast" type="cylinder">
+                <material name="SyntacticFoam"/>
+                <look name="mast_black"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions radius="0.07" height="1.1" thickness="0.01"/>
+                <compound_transform xyz="6.2 0.0 -2.85" rpy="0.0 0.0 0.0"/>
+            </external_part>
+
+            <!-- Payload bay: internal mass block equal to the 8,000 kg
+                 rated capacity, distributed over the 10 m modular
+                 section amidships. Not rendered (always_visible defaults
+                 to false) - attach your own (non-weapon) payload model
+                 here if you want it visible/interactive. -->
+            <internal_part name="PayloadMass" type="cylinder">
+                <material name="Composite"/>
+                <look name="cargo_look"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 1.5708 0.0"/>
+                <dimensions radius="1.1" height="10.0"/>
+                <mass value="4000.0"/>
+                <compound_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </internal_part>
+
+            <!-- Hydrostatic trim (added for the RL integration; numbers from
+                 Stonefish's own mass properties). With a solid Composite sail
+                 the CG sat 0.05 m ABOVE the CB and the hull pitched up and
+                 rolled over within ~35 s in every scenario. Sail + mast are now
+                 syntactic foam and the removed 2.5 t is carried low here,
+                 placed so CG and CB line up fore-aft: same net buoyancy as
+                 before (+42 kg), CG now ~0.08 m below CB. -->
+            <internal_part name="KeelBallast" type="box">
+                <material name="Composite"/>
+                <look name="cargo_look"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions xyz="2.0 0.5 0.25"/>
+                <mass value="2768.7"/>
+                <compound_transform xyz="4.176 0.0 1.05" rpy="0.0 0.0 0.0"/>
+            </internal_part>
+
+            <!-- Fins are boxes whose roots sit inside the hull skin so the
+                 stern reads as one body. NACA wing shells produced NaN inertia. -->
+            <external_part name="FinTop" type="box">
+                <material name="Composite"/>
+                <look name="fin_grey"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions xyz="1.7 0.16 1.35"/>
+                <compound_transform xyz="-11.6 0.0 -1.85" rpy="0.0 0.0 0.0"/>
+            </external_part>
+            <external_part name="FinBottom" type="box">
+                <material name="Composite"/>
+                <look name="fin_grey"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions xyz="1.7 0.16 1.35"/>
+                <compound_transform xyz="-11.6 0.0 1.85" rpy="0.0 0.0 0.0"/>
+            </external_part>
+            <external_part name="FinPort" type="box">
+                <material name="Composite"/>
+                <look name="fin_grey"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions xyz="1.7 1.35 0.16"/>
+                <compound_transform xyz="-11.6 -1.85 0.0" rpy="0.0 0.0 0.0"/>
+            </external_part>
+            <external_part name="FinStbd" type="box">
+                <material name="Composite"/>
+                <look name="fin_grey"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions xyz="1.7 1.35 0.16"/>
+                <compound_transform xyz="-11.6 1.85 0.0" rpy="0.0 0.0 0.0"/>
+            </external_part>
+
+            <external_part name="BandBow" type="torus">
+                <material name="Composite"/>
+                <look name="band_amber"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 1.5708 0.0"/>
+                <dimensions major_radius="1.34" minor_radius="0.07"/>
+                <compound_transform xyz="8.5 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </external_part>
+            <external_part name="BandStern" type="torus">
+                <material name="Composite"/>
+                <look name="band_amber"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 1.5708 0.0"/>
+                <dimensions major_radius="1.34" minor_radius="0.07"/>
+                <compound_transform xyz="-8.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </external_part>
+
+        </base_link>
+
+        <!-- ============================================================
+             PROPULSION
+             Using "push" rather than "thruster"/"propeller"/
+             "simple_thruster": those all require a propeller mesh file
+             (ParseActuator looks for <propeller><mesh filename="..."/>),
+             which this project doesn't ship. "push" applies a simple
+             force/torque along the link with no mesh dependency - a
+             reasonable stand-in until you have a propeller model to
+             swap in. The diesel-electric generator that would drive a
+             real propulsor isn't modeled either - see README.
+             ============================================================ -->
+        <!-- Propeller mesh spins about the thrust axis. Scale 1.8 -> 1.8 m diameter. -->
+        <actuator name="MainThruster" type="simple_thruster">
+            <link name="Hull"/>
+            <origin xyz="-13.55 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <propeller right="true">
+                <mesh filename="data/propeller.obj" scale="1.8"/>
+                <material name="Composite"/>
+                <look name="prop_bronze"/>
+            </propeller>
+            <specs inverted="false" lower_thrust_limit="-40000.0" upper_thrust_limit="40000.0"/>
+        </actuator>
+
+        <light name="BowLight">
+            <link name="Hull"/>
+            <!-- Spot axis is local -Z. Pitch -90 points it forward. -->
+            <origin xyz="13.9 0.0 0.2" rpy="0.0 -1.5708 0.0"/>
+            <specs illuminance="120000.0" radius="30.0" cone_angle="28.0"/>
+            <color rgb="0.75 0.86 1.0"/>
+        </light>
+        <light name="DownLight">
+            <link name="Hull"/>
+            <!-- Pitch 180 points local -Z downward (NED +Z). -->
+            <origin xyz="2.0 0.0 1.5" rpy="0.0 3.14159 0.0"/>
+            <specs illuminance="90000.0" radius="22.0" cone_angle="50.0"/>
+            <color rgb="0.80 0.90 1.0"/>
+        </light>
+
+        <!-- ============================================================
+             SENSORS
+             ============================================================ -->
+        <sensor name="IMU" type="imu" rate="100.0">
+            <link name="Hull"/>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <noise angle="0.0001" angular_velocity="0.0001"/>
+        </sensor>
+
+        <sensor name="DVL" type="dvl" rate="10.0">
+            <link name="Hull"/>
+            <origin xyz="-5.0 0.0 1.3" rpy="0.0 3.14159 0.0"/>
+            <specs beam_angle="30.0"/>
+            <range velocity="15.0" altitude_min="0.5" altitude_max="100.0"/>  <!-- explicit altitude range: without it Stonefish uses ~1e30 and the DVL ray-march never runs (no bottom lock, ever) -->
+            <noise velocity="0.0015"/>
+        </sensor>
+
+        <sensor name="Pressure" type="pressure" rate="10.0">
+            <link name="Hull"/>
+            <origin xyz="12.0 0.0 -1.3" rpy="0.0 0.0 0.0"/>
+            <noise pressure="10.0"/>
+        </sensor>
+
+        <sensor name="GPS" type="gps" rate="1.0">
+            <link name="Hull"/>
+            <origin xyz="9.0 0.0 -3.2" rpy="0.0 0.0 0.0"/>
+            <noise ned_position="0.5"/>
+            <history samples="10"/>
+        </sensor>
+
+    </robot>
+</scenario>

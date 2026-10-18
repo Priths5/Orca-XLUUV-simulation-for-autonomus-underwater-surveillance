@@ -1,0 +1,318 @@
+{
+ "reason": "max_mission_time reached",
+ "world": "survey",
+ "layout": "obstacle_v1",
+ "nav_mode": "REALISTIC_SENSOR",
+ "waypoints_reached": 4,
+ "waypoints_skipped": [
+  {
+   "index": 4,
+   "t": 468.0,
+   "reason": "timeout"
+  },
+  {
+   "index": 5,
+   "t": 738.0,
+   "reason": "timeout"
+  },
+  {
+   "index": 6,
+   "t": 889.0,
+   "reason": "timeout"
+  },
+  {
+   "index": 7,
+   "t": 1160.0,
+   "reason": "timeout"
+  },
+  {
+   "index": 8,
+   "t": 1431.0,
+   "reason": "timeout"
+  },
+  {
+   "index": 9,
+   "t": 1582.0,
+   "reason": "timeout"
+  }
+ ],
+ "waypoints_done": 10,
+ "waypoints_total": 12,
+ "sim_time_s": 1800.0,
+ "steps": 1800,
+ "total_reward": -1112.3,
+ "shield_overrides": 291,
+ "contacts": [
+  {
+   "t": 46.905308999000006,
+   "entity": "FishC1"
+  },
+  {
+   "t": 47.531912999000006,
+   "entity": "FishC3"
+  },
+  {
+   "t": 59.507381999,
+   "entity": "FishC2"
+  },
+  {
+   "t": 59.827349999000006,
+   "entity": "FishC3"
+  },
+  {
+   "t": 83.384993999,
+   "entity": "FishC2"
+  },
+  {
+   "t": 83.584973999,
+   "entity": "FishC2"
+  },
+  {
+   "t": 329.080421999,
+   "entity": "Seabed"
+  },
+  {
+   "t": 343.345661999,
+   "entity": "FishD3"
+  },
+  {
+   "t": 359.770685999,
+   "entity": "Seabed"
+  },
+  {
+   "t": 362.143781999,
+   "entity": "Seabed"
+  },
+  {
+   "t": 362.86370999900004,
+   "entity": "FishD2"
+  },
+  {
+   "t": 364.210241999,
+   "entity": "Seabed"
+  },
+  {
+   "t": 407.819213999,
+   "entity": "FishD2"
+  },
+  {
+   "t": 408.739121999,
+   "entity": "FishD3"
+  },
+  {
+   "t": 408.95243399900005,
+   "entity": "Wreck02"
+  },
+  {
+   "t": 410.805581999,
+   "entity": "FishBig2"
+  },
+  {
+   "t": 413.605301999,
+   "entity": "FishBig1"
+  },
+  {
+   "t": 415.97839799900004,
+   "entity": "FishB2"
+  },
+  {
+   "t": 416.605001999,
+   "entity": "FishB2"
+  },
+  {
+   "t": 425.270801999,
+   "entity": "FishBig2"
+  },
+  {
+   "t": 426.09738599900004,
+   "entity": "Seabed"
+  },
+  {
+   "t": 433.44331799900004,
+   "entity": "FishBig1"
+  },
+  {
+   "t": 440.562605999,
+   "entity": "FishB1"
+  },
+  {
+   "t": 441.189209999,
+   "entity": "FishD3"
+  },
+  {
+   "t": 442.01579399900004,
+   "entity": "Rock04"
+  },
+  {
+   "t": 447.175277999,
+   "entity": "Seabed"
+  },
+  {
+   "t": 447.495245999,
+   "entity": "Rock04"
+  },
+  {
+   "t": 462.880373999,
+   "entity": "FishBig1"
+  },
+  {
+   "t": 481.588502999,
+   "entity": "FishB3"
+  },
+  {
+   "t": 482.201774999,
+   "entity": "Seabed"
+  },
+  {
+   "t": 485.61476699900004,
+   "entity": "FishB1"
+  },
+  {
+   "t": 498.42681899900003,
+   "entity": "FishBig1"
+  },
+  {
+   "t": 503.279666999,
+   "entity": "FishB2"
+  },
+  {
+   "t": 503.49297899900006,
+   "entity": "FishB2"
+  },
+  {
+   "t": 504.10625099900005,
+   "entity": "FishB2"
+  },
+  {
+   "t": 505.039490999,
+   "entity": "FishB3"
+  },
+  {
+   "t": 515.891738999,
+   "entity": "Seabed"
+  },
+  {
+   "t": 524.1575789990001,
+   "entity": "Pillar01"
+  },
+  {
+   "t": 526.010726999,
+   "entity": "FishB2"
+  },
+  {
+   "t": 526.947299999,
+   "entity": "Pillar01"
+  },
+  {
+   "t": 532.320095999,
+   "entity": "Pillar01"
+  },
+  {
+   "t": 543.065687999,
+   "entity": "Pillar01"
+  },
+  {
+   "t": 546.4786799990001,
+   "entity": "FishB3"
+  },
+  {
+   "t": 547.811879999,
+   "entity": "Pillar01"
+  },
+  {
+   "t": 552.1581119990001,
+   "entity": "Seabed"
+  },
+  {
+   "t": 562.597067999,
+   "entity": "Seabed"
+  },
+  {
+   "t": 570.236303999,
+   "entity": "FishC1"
+  },
+  {
+   "t": 570.649595999,
+   "entity": "Seabed"
+  },
+  {
+   "t": 578.8087799990001,
+   "entity": "FishBig2"
+  },
+  {
+   "t": 579.222071999,
+   "entity": "Seabed"
+  },
+  {
+   "t": 579.955331999,
+   "entity": "Seabed"
+  },
+  {
+   "t": 590.3809559990001,
+   "entity": "FishBig1"
+  },
+  {
+   "t": 591.007559999,
+   "entity": "Pillar01"
+  },
+  {
+   "t": 592.447415999,
+   "entity": "FishBig2"
+  },
+  {
+   "t": 592.767383999,
+   "entity": "Seabed"
+  },
+  {
+   "t": 996.860303999,
+   "entity": "FishB2"
+  },
+  {
+   "t": 997.380251999,
+   "entity": "FishB2"
+  },
+  {
+   "t": 997.793543999,
+   "entity": "FishB2"
+  },
+  {
+   "t": 997.9935239990001,
+   "entity": "FishB2"
+  },
+  {
+   "t": 998.2068359990001,
+   "entity": "FishB2"
+  },
+  {
+   "t": 998.7134519990001,
+   "entity": "FishB3"
+  },
+  {
+   "t": 999.0334199990001,
+   "entity": "FishB2"
+  },
+  {
+   "t": 999.4467119990001,
+   "entity": "FishB3"
+  },
+  {
+   "t": 999.860003999,
+   "entity": "FishB2"
+  },
+  {
+   "t": 1000.166639999,
+   "entity": "FishB3"
+  },
+  {
+   "t": 1000.366619999,
+   "entity": "FishB2"
+  },
+  {
+   "t": 1000.7799119990001,
+   "entity": "FishB3"
+  }
+ ],
+ "physics_resets": 15,
+ "min_profiler_clearance_m": 0.51,
+ "log": "/home/priths/Documents/integrated_Orca_RL/orca_rl/logs/stonefish_runs/survey_obstacle_v1_realistic_sensor_20261011_220147.jsonl"
+}

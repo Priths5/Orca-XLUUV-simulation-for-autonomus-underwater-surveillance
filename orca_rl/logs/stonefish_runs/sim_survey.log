@@ -1,0 +1,1442 @@
+[INFO] [1791736303.995227157] [orca_stonefish]: orca_stonefish ROS 2 interface up for robot 'OrcaXLUUV' (frames world_ned / orca/base_link_frd)
+[INFO] Welcome to Stonefish 1.6.
+[INFO] Initializing simulation:
+[INFO] Building scenario...
+[INFO] Scenario parser: Loading scenario from '/home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/orca_survey_world.scn'.
+[INFO] Scenario parser: Including file '/home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/orca_xluuv_survey.scn'
+[INFO] Material Rock (0) created.
+[INFO] Material Sand (1) created.
+[INFO] Material HullShell (2) created.
+[INFO] Material Composite (3) created.
+[INFO] Material SyntacticFoam (4) created.
+[INFO] Material Fish (5) created.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_a.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_b.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_c.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_a.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_c.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_b.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_a.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_c.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_b.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_a.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_c.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_b.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_a.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_c.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_b.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_a.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_c.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_b.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_c.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_a.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/rock_b.obj
+[INFO] Loaded mesh with 80 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/fish.obj
+[INFO] Loaded mesh with 168 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/fish.obj
+[INFO] Loaded mesh with 168 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/fish.obj
+[INFO] Loaded mesh with 168 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/fish.obj
+[INFO] Loaded mesh with 168 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/fish.obj
+[INFO] Loaded mesh with 168 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/fish.obj
+[INFO] Loaded mesh with 168 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/fish.obj
+[INFO] Loaded mesh with 168 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/fish.obj
+[INFO] Loaded mesh with 168 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/fish.obj
+[INFO] Loaded mesh with 168 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/fish.obj
+[INFO] Loaded mesh with 168 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/fish.obj
+[INFO] Loaded mesh with 168 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/fish.obj
+[INFO] Loaded mesh with 168 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/fish.obj
+[INFO] Loaded mesh with 168 faces in 0 ms.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/fish.obj
+[INFO] Loaded mesh with 168 faces in 0 ms.
+[INFO] Built multibody link OrcaXLUUV/Hull (mass[kg]: 53625.379; inertia[kgm2]: 161876.034, 10388678.804, 10417908.734; volume[cm3]: 52358326.0)
+[INFO] Building kinematic tree of robot 'OrcaXLUUV', consisting of 1 links and 0 joints.
+[INFO] Loading geometry from: /home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/data/propeller.obj
+[INFO] Loaded mesh with 100 faces in 0 ms.
+[INFO] Scenario parser: Log saved to file '/home/priths/Documents/integrated_Orca_RL/stonefish_sim/build/resources/orca_survey_world.scn_parse.log'.
+[INFO] Synchronizing motion states...
+[INFO] Simulation initialized -> using Bullet Physics 3.26.
+[INFO] Ready for running...
+[INFO] Multithreading physics using 8 threads.
+[INFO] IC problem solved with 1 iterations in 0.000119 s.
+[INFO] orca_rl_sim bound to OrcaXLUUV (world=survey mode=rl), DVL=1 GPS=1 Multibeam=1
+[INFO] OrcaXLUUV controller bound (heave=1 pressure=1 imu=1 dvl=1 multibeam=1)
+[INFO] orca_rl_sim t=1 src=0 xyz=-45.0 -35.0 11.9 rpy=-0.0 0.0 0.0 deg u=0.00 r=0.000 alt=4.6 F=[-14 -7 -137]
+[INFO] orca_rl_sim t=3 src=0 xyz=-45.0 -35.0 12.1 rpy=-0.0 0.0 0.0 deg u=0.00 r=0.000 alt=4.6 F=[-61 -35 946]
+[INFO] OrcaXLUUV t=5 xyz=-44.9 -35.1 11.98 (target 12.0) wp 0/12 coverage 5 surveying
+[INFO] orca_rl_sim t=5 src=0 xyz=-44.9 -35.1 12.0 rpy=0.0 -0.0 0.0 deg u=-0.00 r=0.000 alt=4.6 F=[22 -10 -548]
+[INFO] orca_rl_sim t=7 src=0 xyz=-45.0 -34.9 12.0 rpy=0.0 -0.0 0.0 deg u=0.00 r=0.000 alt=4.6 F=[-6 -7 91]
+[INFO] orca_rl_sim t=9 src=0 xyz=-45.0 -35.0 11.9 rpy=-0.0 -0.0 0.0 deg u=0.00 r=-0.000 alt=4.6 F=[-25 18 254]
+[INFO] OrcaXLUUV t=10 xyz=-45.0 -35.1 11.98 (target 12.0) wp 0/12 coverage 5 surveying
+[INFO] orca_rl_sim t=11 src=1 xyz=-44.9 -34.9 12.0 rpy=-0.1 -0.0 0.3 deg u=0.17 r=0.009 alt=4.5 F=[40000 8000 21527]
+[INFO] orca_rl_sim t=13 src=1 xyz=-44.3 -34.8 12.5 rpy=-0.4 -0.0 2.1 deg u=0.44 r=0.022 alt=4.1 F=[40000 8000 13622]
+[INFO] OrcaXLUUV t=15 xyz=-43.3 -34.5 12.88 (target 12.0) wp 0/12 coverage 9 surveying
+[INFO] orca_rl_sim t=15 src=1 xyz=-43.3 -34.5 12.8 rpy=-0.8 0.0 5.1 deg u=0.60 r=0.030 alt=3.7 F=[40000 5931 -66]
+[INFO] orca_rl_sim t=17 src=1 xyz=-42.0 -34.3 13.3 rpy=-0.8 0.1 8.4 deg u=0.70 r=0.026 alt=3.2 F=[40000 -2586 -5576]
+[INFO] orca_rl_sim t=19 src=1 xyz=-40.5 -34.0 13.6 rpy=-0.3 0.2 10.5 deg u=0.80 r=0.009 alt=3.0 F=[39820 -6964 -6067]
+[INFO] OrcaXLUUV t=20 xyz=-39.7 -33.9 13.59 (target 12.0) wp 0/12 coverage 11 surveying
+[INFO] orca_rl_sim t=21 src=1 xyz=-38.8 -33.8 13.6 rpy=0.6 0.3 10.5 deg u=0.89 r=-0.007 alt=2.9 F=[37878 -6988 -6339]
+[INFO] orca_rl_sim t=23 src=1 xyz=-37.0 -33.6 13.6 rpy=1.1 0.5 9.1 deg u=0.92 r=-0.016 alt=3.0 F=[37163 -5028 -668]
+[INFO] OrcaXLUUV t=25 xyz=-35.2 -33.6 13.46 (target 12.0) wp 0/12 coverage 15 surveying
+[INFO] orca_rl_sim t=25 src=1 xyz=-35.2 -33.6 13.5 rpy=1.0 0.6 7.1 deg u=0.93 r=-0.018 alt=3.1 F=[37062 -2986 -1316]
+[INFO] orca_rl_sim t=27 src=1 xyz=-33.3 -33.4 13.4 rpy=0.5 0.7 5.2 deg u=0.93 r=-0.016 alt=3.1 F=[36854 -997 -359]
+[INFO] orca_rl_sim t=29 src=1 xyz=-31.5 -33.3 13.3 rpy=-0.1 0.9 3.6 deg u=0.94 r=-0.011 alt=3.2 F=[35883 305 -272]
+[INFO] OrcaXLUUV t=30 xyz=-30.4 -33.2 13.29 (target 12.0) wp 0/12 coverage 20 surveying
+[INFO] orca_rl_sim t=31 src=1 xyz=-29.5 -33.1 13.3 rpy=-0.4 1.0 2.7 deg u=0.96 r=-0.006 alt=3.3 F=[34324 1783 -863]
+[INFO] orca_rl_sim t=33 src=1 xyz=-27.7 -33.0 13.2 rpy=-0.4 1.1 2.4 deg u=0.96 r=0.000 alt=3.3 F=[32642 2958 433]
+[INFO] OrcaXLUUV t=35 xyz=-25.8 -32.9 13.11 (target 12.0) wp 0/12 coverage 24 surveying
+[INFO] orca_rl_sim t=35 src=1 xyz=-25.6 -32.9 13.1 rpy=-0.3 1.2 2.8 deg u=0.95 r=0.006 alt=3.4 F=[30931 4111 104]
+[INFO] orca_rl_sim t=37 src=1 xyz=-23.8 -32.6 13.1 rpy=-0.3 1.3 3.8 deg u=0.92 r=0.012 alt=3.5 F=[29492 4686 1805]
+[INFO] orca_rl_sim t=39 src=1 xyz=-22.1 -32.4 13.0 rpy=-0.4 1.4 5.5 deg u=0.88 r=0.017 alt=3.5 F=[27676 4842 -47]
+[INFO] OrcaXLUUV t=40 xyz=-21.2 -32.2 12.97 (target 12.0) wp 0/12 coverage 28 surveying
+[INFO] orca_rl_sim t=41 src=1 xyz=-20.4 -32.1 13.0 rpy=-0.5 1.5 7.6 deg u=0.83 r=0.020 alt=3.6 F=[26495 4507 882]
+[INFO] orca_rl_sim t=43 src=1 xyz=-18.8 -31.8 13.0 rpy=-0.4 1.6 10.0 deg u=0.80 r=0.022 alt=3.6 F=[25187 3761 989]
+[INFO] OrcaXLUUV t=45 xyz=-17.3 -31.5 12.92 (target 12.0) wp 0/12 coverage 33 surveying
+[INFO] orca_rl_sim t=45 src=1 xyz=-17.2 -31.4 12.9 rpy=-0.2 1.7 12.1 deg u=0.79 r=0.010 alt=3.6 F=[29017 -7567 6647]
+[WARN] CONTACT: OrcaXLUUV touched FishC1 at t=46.9
+[INFO] orca_rl_sim t=47 src=1 xyz=-15.6 -31.3 13.0 rpy=0.8 1.2 10.3 deg u=1.08 r=-0.301 alt=3.5 F=[10817 8000 -6561]
+[WARN] CONTACT: OrcaXLUUV touched FishC3 at t=47.5
+[WARN] PHYSICS DIVERGENCE #1 at t=48.1 (speed 1680.6 m/s, xyz 11.7 0.4 -21.0): OrcaXLUUV respawned at its pose ~2 s earlier
+[INFO] orca_rl_sim t=49 src=1 xyz=-16.7 -31.3 13.0 rpy=-0.1 1.8 12.6 deg u=0.04 r=0.007 alt=3.6 F=[32147 -3399 2827]
+[INFO] OrcaXLUUV t=50 xyz=-16.5 -31.3 12.95 (target 12.0) wp 0/12 coverage 37 surveying
+[INFO] orca_rl_sim t=51 src=1 xyz=-16.2 -31.2 12.9 rpy=-0.1 1.7 13.0 deg u=0.28 r=-0.001 alt=3.6 F=[27182 -3466 2814]
+[INFO] orca_rl_sim t=53 src=1 xyz=-15.6 -31.0 13.0 rpy=0.1 1.7 12.4 deg u=0.42 r=-0.008 alt=3.5 F=[21470 -3451 2012]
+[INFO] OrcaXLUUV t=55 xyz=-14.6 -31.0 13.00 (target 12.0) wp 0/12 coverage 37 surveying
+[INFO] orca_rl_sim t=55 src=1 xyz=-14.6 -31.0 12.9 rpy=0.3 1.6 11.3 deg u=0.48 r=-0.013 alt=3.5 F=[16346 -3306 470]
+[INFO] orca_rl_sim t=57 src=1 xyz=-13.6 -30.9 13.1 rpy=0.4 1.6 9.7 deg u=0.48 r=-0.015 alt=3.5 F=[11083 3160 -2160]
+[INFO] orca_rl_sim t=59 src=1 xyz=-12.7 -31.2 13.2 rpy=1.6 0.5 4.0 deg u=0.38 r=-0.199 alt=3.4 F=[8620 8000 -28226]
+[WARN] CONTACT: OrcaXLUUV touched FishC2 at t=59.5
+[WARN] CONTACT: OrcaXLUUV touched FishC3 at t=59.8
+[INFO] OrcaXLUUV t=60 xyz=-12.4 -32.1 13.39 (target 12.0) wp 0/12 coverage 39 surveying
+[INFO] orca_rl_sim t=61 src=1 xyz=-12.0 -33.1 13.4 rpy=11.1 -6.3 -15.9 deg u=0.32 r=-0.060 alt=2.9 F=[-6277 8000 -32123]
+[INFO] orca_rl_sim t=63 src=1 xyz=-11.6 -33.8 13.0 rpy=8.8 -8.9 -20.7 deg u=0.17 r=-0.021 alt=3.3 F=[-3370 8000 -10857]
+[INFO] OrcaXLUUV t=65 xyz=-11.5 -34.0 12.46 (target 12.0) wp 0/12 coverage 40 surveying
+[INFO] orca_rl_sim t=65 src=1 xyz=-11.4 -34.0 12.4 rpy=1.2 -10.7 -22.0 deg u=0.10 r=-0.001 alt=3.9 F=[-1947 8000 7838]
+[INFO] orca_rl_sim t=67 src=1 xyz=-11.2 -34.2 12.0 rpy=-4.5 -11.7 -21.2 deg u=0.09 r=0.014 alt=4.1 F=[5365 8000 19702]
+[INFO] orca_rl_sim t=69 src=1 xyz=-10.9 -34.0 12.0 rpy=-5.2 -12.2 -18.7 deg u=0.11 r=0.027 alt=4.1 F=[5095 8000 2655]
+[INFO] OrcaXLUUV t=70 xyz=-10.6 -34.1 12.10 (target 12.0) wp 0/12 coverage 42 surveying
+[INFO] orca_rl_sim t=71 src=1 xyz=-10.4 -34.0 12.2 rpy=-2.4 -12.3 -14.9 deg u=0.17 r=0.034 alt=4.1 F=[18242 4889 11974]
+[INFO] orca_rl_sim t=73 src=1 xyz=-10.1 -33.8 12.4 rpy=0.5 -12.0 -10.9 deg u=0.27 r=0.035 alt=3.9 F=[18866 5564 2477]
+[INFO] OrcaXLUUV t=75 xyz=-9.5 -33.6 12.64 (target 12.0) wp 0/12 coverage 43 surveying
+[INFO] orca_rl_sim t=75 src=1 xyz=-9.5 -33.7 12.6 rpy=1.1 -11.5 -6.7 deg u=0.33 r=0.037 alt=3.7 F=[18786 6504 -9460]
+[INFO] orca_rl_sim t=77 src=1 xyz=-8.9 -33.5 12.7 rpy=-0.1 -10.9 -2.3 deg u=0.37 r=0.039 alt=3.6 F=[17139 6791 -15105]
+[INFO] orca_rl_sim t=79 src=1 xyz=-8.1 -33.3 12.7 rpy=-1.4 -10.4 2.4 deg u=0.39 r=0.040 alt=3.6 F=[11462 7668 -20372]
+[INFO] OrcaXLUUV t=80 xyz=-7.5 -33.2 12.59 (target 12.0) wp 0/12 coverage 46 surveying
+[INFO] orca_rl_sim t=81 src=1 xyz=-7.2 -33.0 12.5 rpy=-1.6 -9.7 7.1 deg u=0.34 r=0.041 alt=3.9 F=[1771 7862 -10586]
+[INFO] orca_rl_sim t=83 src=1 xyz=-6.5 -32.8 12.0 rpy=-1.3 -9.2 11.8 deg u=0.30 r=0.039 alt=4.3 F=[12011 4169 18351]
+[WARN] CONTACT: OrcaXLUUV touched FishC2 at t=83.4
+[WARN] CONTACT: OrcaXLUUV touched FishC2 at t=83.6
+[INFO] OrcaXLUUV t=85 xyz=-5.7 -36.6 12.74 (target 12.0) wp 0/12 coverage 47 surveying
+[INFO] orca_rl_sim t=85 src=1 xyz=-5.6 -36.8 12.8 rpy=-1.2 -12.2 4.2 deg u=0.27 r=0.003 alt=3.6 F=[18442 8000 -37115]
+[INFO] orca_rl_sim t=87 src=1 xyz=-4.8 -38.5 12.8 rpy=1.5 -12.5 5.0 deg u=0.28 r=0.010 alt=3.6 F=[13428 8000 -13458]
+[INFO] orca_rl_sim t=89 src=1 xyz=-4.2 -39.7 12.4 rpy=2.7 -12.3 6.6 deg u=0.27 r=0.017 alt=3.8 F=[18882 -690 4893]
+[INFO] OrcaXLUUV t=90 xyz=-3.9 -39.9 12.42 (target 12.0) wp 0/12 coverage 51 surveying
+[INFO] orca_rl_sim t=91 src=1 xyz=-3.5 -40.3 12.4 rpy=2.0 -12.0 8.2 deg u=0.30 r=0.012 alt=3.9 F=[14826 1121 8054]
+[INFO] orca_rl_sim t=93 src=1 xyz=-2.9 -40.7 12.5 rpy=0.7 -11.6 9.2 deg u=0.35 r=0.003 alt=3.8 F=[3307 -8000 12315]
+[INFO] OrcaXLUUV t=95 xyz=-2.1 -41.2 12.72 (target 12.0) wp 0/12 coverage 53 surveying
+[INFO] orca_rl_sim t=95 src=1 xyz=-2.1 -41.3 12.8 rpy=0.4 -11.1 8.5 deg u=0.28 r=-0.015 alt=3.6 F=[4547 -8000 6739]
+[INFO] orca_rl_sim t=97 src=1 xyz=-1.5 -41.8 13.1 rpy=1.2 -10.5 6.0 deg u=0.24 r=-0.026 alt=3.3 F=[5000 -8000 12228]
+[INFO] orca_rl_sim t=99 src=1 xyz=-1.2 -42.2 13.3 rpy=1.9 -9.9 2.5 deg u=0.22 r=-0.034 alt=3.0 F=[5118 -8000 8182]
+[INFO] OrcaXLUUV t=100 xyz=-0.9 -42.4 13.51 (target 12.0) wp 0/12 coverage 53 surveying
+[INFO] orca_rl_sim t=101 src=1 xyz=-0.8 -42.8 13.7 rpy=1.9 -9.1 -1.6 deg u=0.29 r=-0.038 alt=2.7 F=[21370 -7998 -16234]
+[INFO] orca_rl_sim t=103 src=1 xyz=-0.0 -43.3 13.7 rpy=1.4 -8.2 -6.3 deg u=0.37 r=-0.041 alt=2.7 F=[19464 -7908 -11216]
+[INFO] OrcaXLUUV t=105 xyz=0.7 -43.7 13.57 (target 12.0) wp 0/12 coverage 56 surveying
+[INFO] orca_rl_sim t=105 src=1 xyz=0.6 -43.7 13.6 rpy=0.7 -7.5 -11.0 deg u=0.41 r=-0.042 alt=2.9 F=[18673 -7986 -6521]
+[INFO] orca_rl_sim t=107 src=1 xyz=1.4 -44.2 13.5 rpy=0.2 -6.9 -15.9 deg u=0.44 r=-0.043 alt=3.0 F=[40000 -7239 13899]
+[INFO] orca_rl_sim t=109 src=1 xyz=2.3 -44.8 13.4 rpy=0.1 -6.3 -20.2 deg u=0.60 r=-0.024 alt=3.0 F=[35094 8000 -4969]
+[INFO] OrcaXLUUV t=110 xyz=3.0 -44.8 13.47 (target 12.0) wp 0/12 coverage 59 surveying
+[INFO] orca_rl_sim t=111 src=1 xyz=3.6 -45.0 13.5 rpy=-0.5 -5.9 -21.6 deg u=0.72 r=-0.001 alt=2.9 F=[35203 8000 -8434]
+[INFO] orca_rl_sim t=113 src=1 xyz=5.2 -45.5 13.4 rpy=-1.1 -5.4 -20.8 deg u=0.79 r=0.014 alt=3.0 F=[40000 8000 -4381]
+[INFO] OrcaXLUUV t=115 xyz=6.6 -45.7 13.41 (target 12.0) wp 0/12 coverage 62 surveying
+[INFO] orca_rl_sim t=115 src=1 xyz=6.8 -45.8 13.3 rpy=-1.3 -5.1 -18.7 deg u=0.85 r=0.021 alt=3.0 F=[40000 5930 15813]
+[INFO] orca_rl_sim t=117 src=1 xyz=8.4 -46.2 13.7 rpy=-1.1 -4.7 -16.1 deg u=0.89 r=0.024 alt=2.9 F=[40000 5291 -11697]
+[INFO] orca_rl_sim t=119 src=1 xyz=10.2 -46.4 13.7 rpy=-0.6 -4.3 -13.4 deg u=0.91 r=0.024 alt=2.8 F=[40000 5318 -8947]
+[INFO] OrcaXLUUV t=120 xyz=11.0 -46.6 13.62 (target 12.0) wp 0/12 coverage 65 surveying
+[INFO] orca_rl_sim t=121 src=1 xyz=11.9 -46.8 13.7 rpy=-0.3 -3.9 -10.6 deg u=0.92 r=0.024 alt=2.9 F=[40000 5622 -7712]
+[INFO] orca_rl_sim t=123 src=1 xyz=13.8 -47.2 13.4 rpy=-0.2 -3.6 -7.8 deg u=0.91 r=0.024 alt=3.0 F=[40000 5968 15132]
+[INFO] OrcaXLUUV t=125 xyz=15.5 -47.3 13.50 (target 12.0) wp 0/12 coverage 69 surveying
+[INFO] orca_rl_sim t=125 src=1 xyz=15.7 -47.4 13.5 rpy=-0.3 -3.3 -5.0 deg u=0.93 r=0.026 alt=3.0 F=[40000 5872 -8059]
+[INFO] orca_rl_sim t=127 src=1 xyz=17.5 -47.4 13.5 rpy=-0.5 -3.1 -1.9 deg u=0.93 r=0.027 alt=2.9 F=[40000 5932 -8127]
+[INFO] orca_rl_sim t=129 src=1 xyz=19.4 -47.4 13.5 rpy=-0.5 -2.8 1.2 deg u=0.92 r=0.026 alt=3.0 F=[40000 5659 -5431]
+[INFO] OrcaXLUUV t=130 xyz=20.2 -47.3 13.49 (target 12.0) wp 0/12 coverage 76 surveying
+[INFO] orca_rl_sim t=131 src=1 xyz=21.3 -47.3 13.4 rpy=-0.3 -2.5 4.1 deg u=0.92 r=0.026 alt=3.1 F=[40000 5361 13764]
+[INFO] orca_rl_sim t=133 src=1 xyz=23.1 -47.3 13.5 rpy=-0.1 -2.3 7.1 deg u=0.93 r=0.025 alt=3.0 F=[40000 4925 8767]
+[INFO] OrcaXLUUV t=135 xyz=24.7 -47.0 13.61 (target 12.0) wp 0/12 coverage 81 surveying
+[INFO] orca_rl_sim t=135 src=1 xyz=24.9 -46.9 13.7 rpy=-0.2 -2.0 9.9 deg u=0.93 r=0.025 alt=2.9 F=[40000 5178 -9126]
+[INFO] orca_rl_sim t=137 src=1 xyz=26.7 -46.6 13.6 rpy=-0.2 -1.8 12.8 deg u=0.94 r=0.025 alt=2.9 F=[40000 5975 -4772]
+[INFO] orca_rl_sim t=139 src=1 xyz=28.6 -46.3 13.5 rpy=-0.2 -1.6 15.7 deg u=0.93 r=0.026 alt=3.0 F=[40000 6408 -4601]
+[INFO] OrcaXLUUV t=140 xyz=29.4 -46.0 13.46 (target 12.0) wp 0/12 coverage 84 surveying
+[INFO] orca_rl_sim t=141 src=1 xyz=30.3 -45.7 13.4 rpy=-0.2 -1.3 18.8 deg u=0.93 r=0.028 alt=3.1 F=[40000 6478 7725]
+[INFO] orca_rl_sim t=143 src=1 xyz=32.1 -45.1 13.5 rpy=-0.3 -1.1 22.0 deg u=0.93 r=0.029 alt=3.0 F=[40000 6934 3962]
+[INFO] OrcaXLUUV t=145 xyz=33.7 -44.4 13.58 (target 12.0) wp 0/12 coverage 88 surveying
+[INFO] orca_rl_sim t=145 src=1 xyz=33.8 -44.4 13.6 rpy=-0.4 -0.9 25.4 deg u=0.92 r=0.031 alt=2.9 F=[38783 7543 -7949]
+[INFO] orca_rl_sim t=147 src=1 xyz=35.4 -43.6 13.6 rpy=-0.5 -0.8 29.1 deg u=0.90 r=0.033 alt=2.9 F=[37219 7681 -7570]
+[INFO] orca_rl_sim t=149 src=1 xyz=36.9 -42.7 13.4 rpy=-0.4 -0.6 32.9 deg u=0.87 r=0.033 alt=3.0 F=[35397 7386 5240]
+[INFO] OrcaXLUUV t=150 xyz=37.6 -42.2 13.46 (target 12.0) wp 0/12 coverage 93 surveying
+[INFO] orca_rl_sim t=151 src=1 xyz=38.3 -41.6 13.5 rpy=-0.3 -0.4 36.8 deg u=0.84 r=0.034 alt=3.1 F=[34291 7143 3233]
+[INFO] orca_rl_sim t=153 src=1 xyz=39.6 -40.6 13.4 rpy=-0.3 -0.2 40.8 deg u=0.85 r=0.035 alt=3.1 F=[40000 8000 13336]
+[INFO] OrcaXLUUV t=155 xyz=40.8 -39.6 13.63 (target 12.0) wp 0/12 coverage 98 surveying
+[INFO] orca_rl_sim t=155 src=1 xyz=41.0 -39.5 13.7 rpy=-0.5 -0.0 44.9 deg u=0.86 r=0.036 alt=2.9 F=[40000 8000 -9527]
+[INFO] orca_rl_sim t=157 src=1 xyz=42.1 -38.2 13.6 rpy=-0.6 0.1 49.1 deg u=0.87 r=0.037 alt=2.9 F=[40000 8000 -7365]
+[INFO] orca_rl_sim t=159 src=1 xyz=43.2 -36.8 13.5 rpy=-0.4 0.3 53.4 deg u=0.87 r=0.037 alt=3.1 F=[40000 8000 17580]
+[INFO] OrcaXLUUV t=160 xyz=43.7 -36.2 13.44 (target 12.0) wp 0/12 coverage 101 surveying
+[INFO] orca_rl_sim t=161 src=1 xyz=44.2 -35.5 13.5 rpy=-0.3 0.4 57.6 deg u=0.87 r=0.037 alt=3.0 F=[40000 8000 9581]
+[INFO] orca_rl_sim t=163 src=1 xyz=45.1 -34.0 13.5 rpy=-0.4 0.6 61.9 deg u=0.77 r=0.038 alt=3.0 F=[18156 7881 -19520]
+[INFO] OrcaXLUUV t=165 xyz=45.6 -33.0 13.38 (target 12.0) wp 0/12 coverage 104 surveying
+[INFO] orca_rl_sim t=165 src=1 xyz=45.7 -32.8 13.3 rpy=-0.3 0.7 66.2 deg u=0.64 r=0.038 alt=3.2 F=[18353 6660 -11221]
+[INFO] orca_rl_sim t=167 src=1 xyz=46.1 -31.7 12.9 rpy=-0.1 0.9 70.5 deg u=0.57 r=0.037 alt=3.5 F=[18592 6173 -1700]
+[INFO] orca_rl_sim t=169 src=1 xyz=46.5 -30.6 12.7 rpy=0.1 1.0 74.6 deg u=0.53 r=0.036 alt=3.8 F=[17129 5385 9935]
+[INFO] OrcaXLUUV t=170 xyz=46.6 -30.2 12.67 (target 12.0) wp 0/12 coverage 108 surveying
+[INFO] orca_rl_sim t=171 src=1 xyz=46.7 -29.7 12.7 rpy=0.1 1.0 78.7 deg u=0.50 r=0.035 alt=3.9 F=[15131 3820 10691]
+[INFO] orca_rl_sim t=173 src=1 xyz=46.8 -28.7 12.8 rpy=-0.2 1.1 82.5 deg u=0.47 r=0.031 alt=3.8 F=[14244 1804 4995]
+[INFO] OrcaXLUUV t=175 xyz=47.0 -27.8 12.90 (target 12.0) wp 0/12 coverage 112 surveying
+[INFO] orca_rl_sim t=175 src=1 xyz=46.8 -27.7 12.8 rpy=-0.3 1.1 85.7 deg u=0.45 r=0.024 alt=3.6 F=[13439 -291 -2960]
+[INFO] orca_rl_sim t=177 src=1 xyz=47.1 -26.9 13.0 rpy=-0.1 1.1 88.0 deg u=0.43 r=0.016 alt=3.5 F=[12545 -1164 -5844]
+[INFO] orca_rl_sim t=179 src=1 xyz=47.2 -26.0 13.0 rpy=0.2 1.1 89.5 deg u=0.42 r=0.011 alt=3.5 F=[11832 -588 -2514]
+[INFO] OrcaXLUUV t=180 xyz=47.3 -25.7 12.93 (target 12.0) wp 0/12 coverage 113 surveying
+[INFO] orca_rl_sim t=181 src=1 xyz=47.3 -25.2 13.0 rpy=0.4 1.1 90.5 deg u=0.41 r=0.008 alt=3.6 F=[11252 655 110]
+[INFO] orca_rl_sim t=183 src=1 xyz=47.4 -24.4 12.8 rpy=0.3 1.2 91.4 deg u=0.40 r=0.008 alt=3.7 F=[10817 1709 6218]
+[INFO] OrcaXLUUV t=185 xyz=47.4 -23.6 12.77 (target 12.0) wp 0/12 coverage 117 surveying
+[INFO] orca_rl_sim t=185 src=1 xyz=47.3 -23.7 12.8 rpy=-0.0 1.2 92.5 deg u=0.39 r=0.010 alt=3.7 F=[10456 2193 2934]
+[INFO] orca_rl_sim t=187 src=1 xyz=47.4 -22.9 12.8 rpy=-0.3 1.2 93.8 deg u=0.38 r=0.012 alt=3.7 F=[10193 2081 1056]
+[INFO] orca_rl_sim t=189 src=1 xyz=47.3 -22.1 12.8 rpy=-0.3 1.2 95.3 deg u=0.37 r=0.014 alt=3.7 F=[9970 1887 -872]
+[INFO] OrcaXLUUV t=190 xyz=47.3 -21.7 12.82 (target 12.0) wp 0/12 coverage 117 surveying
+[INFO] orca_rl_sim t=191 src=1 xyz=47.2 -21.4 12.8 rpy=-0.1 1.2 97.0 deg u=0.36 r=0.015 alt=3.7 F=[9775 1900 -589]
+[INFO] orca_rl_sim t=193 src=1 xyz=47.1 -20.6 12.8 rpy=0.0 1.2 98.7 deg u=0.36 r=0.015 alt=3.7 F=[9590 2040 1706]
+[INFO] OrcaXLUUV t=195 xyz=47.0 -20.0 12.78 (target 12.0) wp 0/12 coverage 120 surveying
+[INFO] orca_rl_sim t=195 src=1 xyz=47.0 -20.0 12.8 rpy=0.0 1.2 100.5 deg u=0.35 r=0.016 alt=3.7 F=[9523 2242 2605]
+[INFO] orca_rl_sim t=197 src=1 xyz=46.8 -19.3 12.7 rpy=-0.1 1.2 102.5 deg u=0.34 r=0.018 alt=3.7 F=[9343 2362 439]
+[INFO] orca_rl_sim t=199 src=1 xyz=46.6 -18.5 12.7 rpy=-0.3 1.2 104.8 deg u=0.50 r=0.026 alt=3.7 F=[40000 7827 144]
+[INFO] OrcaXLUUV t=200 xyz=46.5 -18.1 12.78 (target 12.0) wp 0/12 coverage 122 surveying
+[INFO] orca_rl_sim t=201 src=1 xyz=46.1 -17.4 12.8 rpy=-0.6 1.2 108.3 deg u=0.67 r=0.033 alt=3.7 F=[40000 7429 3043]
+[INFO] orca_rl_sim t=203 src=1 xyz=45.6 -16.1 12.7 rpy=-0.7 1.2 112.3 deg u=0.77 r=0.036 alt=3.7 F=[40000 7443 4421]
+[INFO] OrcaXLUUV t=205 xyz=44.9 -14.8 12.79 (target 12.0) wp 0/12 coverage 127 surveying
+[INFO] orca_rl_sim t=205 src=1 xyz=44.8 -14.7 12.7 rpy=-0.7 1.2 116.5 deg u=0.82 r=0.037 alt=3.7 F=[40000 7676 3214]
+[INFO] orca_rl_sim t=207 src=1 xyz=44.0 -13.2 12.7 rpy=-0.6 1.3 120.7 deg u=0.84 r=0.038 alt=3.7 F=[40000 7963 1562]
+[INFO] orca_rl_sim t=209 src=1 xyz=43.0 -11.8 12.9 rpy=-0.5 1.4 125.0 deg u=0.85 r=0.038 alt=3.6 F=[40000 7957 -499]
+[INFO] OrcaXLUUV t=210 xyz=42.6 -11.2 12.89 (target 12.0) wp 0/12 coverage 132 surveying
+[INFO] orca_rl_sim t=211 src=1 xyz=41.9 -10.5 12.9 rpy=-0.4 1.5 129.4 deg u=0.86 r=0.038 alt=3.6 F=[40000 7963 -1068]
+[INFO] orca_rl_sim t=213 src=1 xyz=40.9 -9.1 12.9 rpy=-0.4 1.6 133.7 deg u=0.87 r=0.037 alt=3.6 F=[39593 6809 2195]
+[INFO] OrcaXLUUV t=215 xyz=40.0 -8.2 12.97 (target 12.0) wp 0/12 coverage 138 surveying
+[INFO] orca_rl_sim t=215 src=1 xyz=40.3 -8.2 13.0 rpy=1.4 -0.3 132.3 deg u=-0.80 r=-0.149 alt=3.5 F=[40000 8000 -16464]
+[INFO] orca_rl_sim t=217 src=1 xyz=41.1 -8.1 13.0 rpy=4.2 -4.6 123.5 deg u=-0.08 r=-0.041 alt=3.3 F=[33083 8000 -19742]
+[INFO] orca_rl_sim t=219 src=1 xyz=41.1 -7.8 12.8 rpy=2.2 -7.1 120.3 deg u=0.18 r=-0.014 alt=3.5 F=[27578 8000 -9590]
+[INFO] OrcaXLUUV t=220 xyz=41.1 -7.7 12.73 (target 12.0) wp 0/12 coverage 139 surveying
+[INFO] orca_rl_sim t=221 src=1 xyz=40.8 -7.3 12.5 rpy=-1.1 -8.8 119.8 deg u=0.40 r=0.005 alt=3.7 F=[20187 8000 10955]
+[INFO] orca_rl_sim t=223 src=1 xyz=40.4 -6.5 12.7 rpy=-2.6 -9.9 120.5 deg u=0.45 r=-0.001 alt=3.6 F=[17415 -5836 -897]
+[INFO] OrcaXLUUV t=225 xyz=39.9 -5.8 12.75 (target 12.0) wp 0/12 coverage 139 surveying
+[INFO] orca_rl_sim t=225 src=1 xyz=39.8 -5.8 12.7 rpy=-1.2 -10.6 120.1 deg u=0.46 r=-0.004 alt=3.6 F=[13510 -120 -5777]
+[INFO] orca_rl_sim t=227 src=1 xyz=39.4 -4.9 12.8 rpy=0.7 -10.9 119.2 deg u=0.48 r=-0.014 alt=3.6 F=[18243 -8000 -7153]
+[INFO] orca_rl_sim t=229 src=1 xyz=39.1 -3.9 12.7 rpy=2.1 -10.9 116.8 deg u=0.40 r=-0.026 alt=3.6 F=[1957 -8000 -6550]
+[INFO] OrcaXLUUV t=230 xyz=38.9 -3.6 12.63 (target 12.0) wp 0/12 coverage 141 surveying
+[INFO] orca_rl_sim t=231 src=1 xyz=38.9 -3.1 12.5 rpy=2.0 -10.7 113.3 deg u=0.30 r=-0.034 alt=3.8 F=[3528 -8000 -277]
+[INFO] orca_rl_sim t=233 src=1 xyz=38.8 -2.5 12.4 rpy=1.1 -10.2 109.0 deg u=0.25 r=-0.040 alt=3.9 F=[4412 -7761 5121]
+[INFO] OrcaXLUUV t=235 xyz=38.9 -2.2 12.31 (target 12.0) wp 0/12 coverage 143 surveying
+[INFO] orca_rl_sim t=235 src=1 xyz=38.9 -2.0 12.3 rpy=0.2 -9.7 104.2 deg u=0.41 r=-0.041 alt=4.0 F=[40000 -3235 -9945]
+[INFO] orca_rl_sim t=237 src=1 xyz=38.9 -1.1 12.3 rpy=-0.1 -9.2 99.7 deg u=0.46 r=-0.040 alt=4.1 F=[15582 -7857 3813]
+[INFO] orca_rl_sim t=239 src=1 xyz=38.9 -0.1 12.3 rpy=0.3 -8.7 94.9 deg u=0.47 r=-0.042 alt=4.1 F=[40000 -7697 -4858]
+[INFO] OrcaXLUUV t=240 xyz=38.9 0.3 12.22 (target 12.0) wp 0/12 coverage 148 surveying
+[INFO] orca_rl_sim t=241 src=1 xyz=39.0 1.0 12.4 rpy=0.9 -8.2 90.0 deg u=0.63 r=-0.041 alt=4.1 F=[40000 -5913 6389]
+[INFO] orca_rl_sim t=243 src=1 xyz=39.1 2.4 12.5 rpy=1.2 -7.6 85.3 deg u=0.73 r=-0.039 alt=3.9 F=[40000 -7450 8470]
+[INFO] OrcaXLUUV t=245 xyz=39.4 3.6 12.78 (target 12.0) wp 0/12 coverage 151 surveying
+[INFO] orca_rl_sim t=245 src=1 xyz=39.4 3.9 12.9 rpy=1.2 -7.1 80.9 deg u=0.78 r=-0.039 alt=3.6 F=[40000 -8000 3491]
+[INFO] orca_rl_sim t=247 src=1 xyz=39.7 5.4 13.3 rpy=1.1 -6.6 76.5 deg u=0.81 r=-0.038 alt=3.2 F=[38286 -7836 502]
+[INFO] orca_rl_sim t=249 src=1 xyz=40.2 6.9 13.5 rpy=1.0 -6.1 72.1 deg u=0.82 r=-0.037 alt=2.9 F=[36691 -7460 -14376]
+[INFO] OrcaXLUUV t=250 xyz=40.3 7.4 13.59 (target 12.0) wp 0/12 coverage 155 surveying
+[INFO] orca_rl_sim t=251 src=1 xyz=40.6 8.4 13.4 rpy=0.4 -5.6 68.8 deg u=0.85 r=-0.015 alt=2.9 F=[40000 7859 -26820]
+[INFO] orca_rl_sim t=253 src=1 xyz=41.2 10.2 13.2 rpy=-0.8 -5.2 68.2 deg u=0.85 r=0.004 alt=3.2 F=[40000 8000 -17361]
+[INFO] OrcaXLUUV t=255 xyz=41.4 11.6 12.82 (target 12.0) wp 0/12 coverage 160 surveying
+[INFO] orca_rl_sim t=255 src=1 xyz=41.5 11.9 12.8 rpy=-1.4 -4.8 69.4 deg u=0.83 r=0.016 alt=3.7 F=[40000 8000 -415]
+[INFO] orca_rl_sim t=257 src=1 xyz=41.8 13.6 12.4 rpy=-1.5 -4.6 71.7 deg u=0.83 r=0.024 alt=4.0 F=[40000 8000 8564]
+[INFO] orca_rl_sim t=259 src=1 xyz=42.1 15.2 12.3 rpy=-1.1 -4.4 74.8 deg u=0.86 r=0.029 alt=4.0 F=[40000 8000 9173]
+[INFO] OrcaXLUUV t=260 xyz=42.3 15.9 12.39 (target 12.0) wp 0/12 coverage 166 surveying
+[INFO] orca_rl_sim t=261 src=1 xyz=42.4 16.9 12.6 rpy=-0.8 -4.1 78.3 deg u=0.88 r=0.033 alt=3.9 F=[40000 8000 3849]
+[INFO] orca_rl_sim t=263 src=1 xyz=42.6 18.7 12.7 rpy=-0.7 -3.8 82.2 deg u=0.89 r=0.035 alt=3.8 F=[40000 8000 -3152]
+[INFO] OrcaXLUUV t=265 xyz=42.8 20.3 12.70 (target 12.0) wp 0/12 coverage 172 surveying
+[INFO] orca_rl_sim t=265 src=1 xyz=42.7 20.5 12.7 rpy=-0.7 -3.5 86.2 deg u=0.89 r=0.035 alt=3.7 F=[40000 8000 -6821]
+[INFO] orca_rl_sim t=267 src=1 xyz=42.7 22.3 12.7 rpy=-0.7 -3.2 90.3 deg u=0.88 r=0.036 alt=3.8 F=[40000 8000 -5466]
+[INFO] orca_rl_sim t=269 src=1 xyz=42.7 24.0 12.6 rpy=-0.5 -2.8 94.4 deg u=0.88 r=0.036 alt=3.8 F=[40000 7965 -4364]
+[INFO] OrcaXLUUV t=270 xyz=42.6 24.6 12.59 (target 12.0) wp 0/12 coverage 177 surveying
+[INFO] orca_rl_sim t=271 src=1 xyz=42.5 25.7 12.5 rpy=-0.3 -2.5 98.5 deg u=0.87 r=0.036 alt=3.9 F=[40000 8000 -2983]
+[INFO] orca_rl_sim t=273 src=1 xyz=42.1 27.4 12.5 rpy=-0.3 -2.3 102.6 deg u=0.87 r=0.036 alt=3.9 F=[38801 8000 15963]
+[INFO] OrcaXLUUV t=275 xyz=41.8 28.8 12.74 (target 12.0) wp 0/12 coverage 182 surveying
+[INFO] orca_rl_sim t=275 src=1 xyz=41.7 29.1 12.9 rpy=-0.5 -2.0 106.8 deg u=0.85 r=0.036 alt=3.7 F=[39259 8000 6734]
+[INFO] orca_rl_sim t=277 src=1 xyz=41.2 30.7 13.0 rpy=-0.8 -1.8 110.9 deg u=0.84 r=0.036 alt=3.4 F=[38869 8000 -2596]
+[INFO] orca_rl_sim t=279 src=1 xyz=40.5 32.2 13.3 rpy=-0.9 -1.6 115.1 deg u=0.85 r=0.037 alt=3.2 F=[39924 8000 -6934]
+[INFO] OrcaXLUUV t=280 xyz=40.2 32.8 13.28 (target 12.0) wp 0/12 coverage 186 surveying
+[INFO] orca_rl_sim t=281 src=1 xyz=39.7 33.8 13.2 rpy=-0.7 -1.3 119.4 deg u=0.87 r=0.038 alt=3.2 F=[40000 8000 -3976]
+[INFO] orca_rl_sim t=283 src=1 xyz=38.9 35.3 13.3 rpy=-0.4 -1.1 123.6 deg u=0.87 r=0.037 alt=3.2 F=[40000 8000 -3212]
+[INFO] OrcaXLUUV t=285 xyz=38.0 36.5 13.23 (target 12.0) wp 0/12 coverage 190 surveying
+[INFO] orca_rl_sim t=285 src=1 xyz=37.8 36.7 13.2 rpy=-0.2 -0.8 127.9 deg u=0.87 r=0.037 alt=3.3 F=[40000 8000 -1220]
+[INFO] orca_rl_sim t=287 src=1 xyz=36.7 38.0 13.1 rpy=-0.2 -0.6 132.2 deg u=0.87 r=0.037 alt=3.4 F=[40000 8000 72]
+[INFO] orca_rl_sim t=289 src=1 xyz=35.5 39.2 13.2 rpy=-0.3 -0.4 136.5 deg u=0.88 r=0.037 alt=3.4 F=[40000 8000 -837]
+[INFO] OrcaXLUUV t=290 xyz=35.2 39.7 13.13 (target 12.0) wp 0/12 coverage 195 surveying
+[INFO] orca_rl_sim t=291 src=1 xyz=34.2 40.4 13.1 rpy=-0.4 -0.2 140.8 deg u=0.88 r=0.038 alt=3.4 F=[40000 8000 670]
+[INFO] orca_rl_sim t=293 src=1 xyz=32.9 41.6 13.2 rpy=-0.4 -0.1 145.1 deg u=0.88 r=0.038 alt=3.4 F=[40000 8000 1990]
+[INFO] OrcaXLUUV t=295 xyz=31.6 42.4 13.14 (target 12.0) wp 0/12 coverage 199 surveying
+[INFO] orca_rl_sim t=295 src=1 xyz=31.5 42.5 13.2 rpy=-0.4 0.1 149.4 deg u=0.88 r=0.038 alt=3.4 F=[40000 8000 2766]
+[INFO] orca_rl_sim t=297 src=1 xyz=29.9 43.3 13.2 rpy=-0.4 0.3 153.8 deg u=0.88 r=0.038 alt=3.3 F=[40000 8000 1077]
+[INFO] orca_rl_sim t=299 src=1 xyz=28.3 44.2 13.2 rpy=-0.4 0.4 158.1 deg u=0.87 r=0.038 alt=3.3 F=[40000 8000 2354]
+[INFO] OrcaXLUUV t=300 xyz=27.7 44.4 13.26 (target 12.0) wp 0/12 coverage 205 surveying
+[INFO] orca_rl_sim t=301 src=1 xyz=26.6 44.7 13.3 rpy=-0.4 0.5 162.4 deg u=0.88 r=0.038 alt=3.2 F=[40000 8000 604]
+[INFO] orca_rl_sim t=303 src=1 xyz=25.0 45.2 13.4 rpy=-0.5 0.7 166.7 deg u=0.87 r=0.037 alt=3.1 F=[40000 8000 1884]
+[INFO] OrcaXLUUV t=305 xyz=23.5 45.5 13.44 (target 12.0) wp 0/12 coverage 209 surveying
+[INFO] orca_rl_sim t=305 src=1 xyz=23.4 45.6 13.5 rpy=-0.5 0.8 171.0 deg u=0.87 r=0.037 alt=3.1 F=[40000 8000 1980]
+[INFO] orca_rl_sim t=307 src=1 xyz=21.5 45.8 13.5 rpy=-0.4 0.9 175.3 deg u=0.87 r=0.037 alt=3.0 F=[40000 8000 -565]
+[INFO] orca_rl_sim t=309 src=1 xyz=19.8 45.9 13.5 rpy=-0.4 1.0 179.6 deg u=0.87 r=0.038 alt=3.0 F=[39567 8000 -6322]
+[INFO] OrcaXLUUV t=310 xyz=19.3 45.8 13.52 (target 12.0) wp 0/12 coverage 213 surveying
+[INFO] orca_rl_sim t=311 src=1 xyz=18.1 45.9 13.5 rpy=-0.4 1.1 -176.1 deg u=0.87 r=0.038 alt=3.0 F=[39547 8000 6888]
+[INFO] orca_rl_sim t=313 src=1 xyz=16.4 45.8 13.5 rpy=-0.3 1.2 -171.8 deg u=0.87 r=0.036 alt=3.1 F=[40000 7234 -9512]
+[INFO] OrcaXLUUV t=315 xyz=15.0 45.5 13.21 (target 12.0) wp 0/12 coverage 217 surveying
+[INFO] orca_rl_sim t=315 src=1 xyz=14.6 45.5 13.2 rpy=-0.1 1.4 -167.7 deg u=0.87 r=0.036 alt=3.3 F=[40000 8000 -4318]
+[INFO] orca_rl_sim t=317 src=1 xyz=13.0 45.0 13.0 rpy=0.0 1.5 -163.6 deg u=0.86 r=0.036 alt=3.6 F=[40000 8000 3341]
+[INFO] orca_rl_sim t=320 src=1 xyz=11.3 44.5 12.8 rpy=-0.0 1.6 -159.4 deg u=0.86 r=0.036 alt=3.7 F=[40000 8000 5904]
+[INFO] OrcaXLUUV t=320 xyz=10.7 44.4 12.75 (target 12.0) wp 0/12 coverage 221 surveying
+[INFO] orca_rl_sim t=322 src=1 xyz=9.8 43.9 12.8 rpy=-0.3 1.6 -155.2 deg u=0.87 r=0.037 alt=3.8 F=[40000 8000 6514]
+[INFO] orca_rl_sim t=324 src=1 xyz=8.2 43.2 12.8 rpy=-0.5 1.7 -150.9 deg u=0.87 r=0.037 alt=3.7 F=[40000 8000 5098]
+[INFO] OrcaXLUUV t=325 xyz=6.9 42.4 12.84 (target 12.0) wp 0/12 coverage 226 surveying
+[INFO] orca_rl_sim t=326 src=1 xyz=6.7 42.2 12.9 rpy=-0.6 1.7 -146.6 deg u=0.86 r=0.036 alt=3.6 F=[38038 6086 -7140]
+[INFO] orca_rl_sim t=328 src=1 xyz=5.9 42.4 12.5 rpy=0.8 10.8 -151.0 deg u=0.49 r=-0.017 alt=3.9 F=[40000 8000 16666]
+[WARN] CONTACT: OrcaXLUUV touched Seabed at t=329.1
+[INFO] orca_rl_sim t=330 src=1 xyz=5.0 42.1 12.4 rpy=-0.4 15.0 -151.6 deg u=0.54 r=0.001 alt=4.0 F=[40000 8000 27818]
+[INFO] OrcaXLUUV t=330 xyz=4.6 41.9 12.31 (target 12.0) wp 0/12 coverage 230 surveying
+[INFO] orca_rl_sim t=332 src=1 xyz=3.8 41.6 12.2 rpy=-4.6 15.0 -150.6 deg u=0.67 r=0.015 alt=3.9 F=[40000 8000 19029]
+[INFO] orca_rl_sim t=334 src=1 xyz=2.6 40.8 12.4 rpy=-4.8 14.6 -148.3 deg u=0.74 r=0.022 alt=3.8 F=[40000 8000 11747]
+[INFO] OrcaXLUUV t=335 xyz=1.5 39.9 12.49 (target 12.0) wp 0/12 coverage 234 surveying
+[INFO] orca_rl_sim t=336 src=1 xyz=1.2 39.6 12.6 rpy=-2.3 14.1 -145.4 deg u=0.77 r=0.027 alt=3.8 F=[40000 8000 9109]
+[INFO] orca_rl_sim t=338 src=1 xyz=-0.0 38.6 12.6 rpy=0.3 13.8 -142.0 deg u=0.80 r=0.030 alt=3.8 F=[40000 8000 8588]
+[INFO] orca_rl_sim t=340 src=1 xyz=-1.2 37.5 12.6 rpy=1.3 13.5 -138.4 deg u=0.80 r=0.031 alt=3.7 F=[40000 8000 6298]
+[INFO] OrcaXLUUV t=340 xyz=-1.6 37.1 12.61 (target 12.0) wp 0/12 coverage 239 surveying
+[INFO] orca_rl_sim t=342 src=1 xyz=-2.4 36.2 12.6 rpy=0.8 13.2 -134.7 deg u=0.81 r=0.033 alt=3.7 F=[40000 8000 8791]
+[WARN] CONTACT: OrcaXLUUV touched FishD3 at t=343.3
+[INFO] orca_rl_sim t=344 src=1 xyz=-3.5 35.2 12.1 rpy=-0.2 13.5 -131.1 deg u=0.75 r=0.013 alt=4.1 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=345 xyz=-4.5 35.3 10.30 (target 12.0) wp 0/12 coverage 247 surveying
+[INFO] orca_rl_sim t=346 src=1 xyz=-4.5 35.3 10.1 rpy=1.3 15.1 -129.2 deg u=0.56 r=0.018 alt=6.1 F=[40000 7941 50981]
+[INFO] orca_rl_sim t=348 src=1 xyz=-5.6 34.7 9.5 rpy=2.0 15.9 -127.7 deg u=0.67 r=0.002 alt=6.6 F=[40000 -8000 41434]
+[INFO] orca_rl_sim t=350 src=1 xyz=-7.0 33.9 9.6 rpy=1.6 16.1 -128.4 deg u=0.72 r=-0.013 alt=6.6 F=[40000 -8000 33512]
+[INFO] OrcaXLUUV t=350 xyz=-7.4 33.6 9.57 (target 12.0) wp 0/12 coverage 254 surveying
+[INFO] orca_rl_sim t=352 src=1 xyz=-8.3 32.9 9.8 rpy=0.9 16.3 -130.5 deg u=0.71 r=-0.021 alt=6.3 F=[40000 -6794 29837]
+[INFO] orca_rl_sim t=354 src=1 xyz=-9.6 31.8 10.4 rpy=0.2 16.5 -132.8 deg u=0.70 r=-0.012 alt=5.8 F=[40000 6438 27235]
+[INFO] OrcaXLUUV t=355 xyz=-10.5 31.0 10.84 (target 12.0) wp 0/12 coverage 258 surveying
+[INFO] orca_rl_sim t=356 src=1 xyz=-10.8 30.8 10.9 rpy=-0.1 16.5 -133.0 deg u=0.70 r=0.007 alt=5.3 F=[40000 8000 22863]
+[INFO] orca_rl_sim t=358 src=1 xyz=-11.8 29.6 11.5 rpy=0.1 16.4 -131.5 deg u=0.70 r=0.018 alt=4.7 F=[40000 8000 21751]
+[INFO] orca_rl_sim t=360 src=1 xyz=-12.8 28.2 12.0 rpy=0.5 16.2 -128.9 deg u=0.70 r=0.024 alt=4.2 F=[40000 8000 9697]
+[WARN] CONTACT: OrcaXLUUV touched Seabed at t=359.8
+[INFO] OrcaXLUUV t=360 xyz=-12.0 27.0 12.55 (target 12.0) wp 0/12 coverage 266 surveying
+[INFO] orca_rl_sim t=362 src=1 xyz=-11.2 26.6 12.4 rpy=10.1 14.3 -129.8 deg u=-1.04 r=0.128 alt=3.7 F=[40000 -4739 55000]
+[WARN] CONTACT: OrcaXLUUV touched Seabed at t=362.2
+[WARN] CONTACT: OrcaXLUUV touched FishD2 at t=362.9
+[INFO] orca_rl_sim t=364 src=1 xyz=-11.6 27.3 12.4 rpy=-37.1 16.4 -121.9 deg u=0.14 r=0.048 alt=4.0 F=[40000 5855 43805]
+[WARN] CONTACT: OrcaXLUUV touched Seabed at t=364.2
+[INFO] OrcaXLUUV t=365 xyz=-11.9 27.0 12.48 (target 12.0) wp 0/12 coverage 276 surveying
+[INFO] orca_rl_sim t=366 src=1 xyz=-11.8 26.9 12.5 rpy=-42.4 17.3 -118.9 deg u=0.19 r=0.008 alt=4.1 F=[40000 8000 48898]
+[INFO] orca_rl_sim t=368 src=1 xyz=-11.8 26.5 12.3 rpy=-34.0 17.2 -118.0 deg u=0.23 r=0.003 alt=4.1 F=[40000 8000 44552]
+[INFO] orca_rl_sim t=370 src=1 xyz=-11.6 25.8 12.0 rpy=-16.0 16.8 -117.2 deg u=0.31 r=0.007 alt=4.0 F=[38692 8000 44960]
+[INFO] OrcaXLUUV t=370 xyz=-11.5 25.5 12.01 (target 12.0) wp 0/12 coverage 279 surveying
+[INFO] orca_rl_sim t=372 src=1 xyz=-11.3 25.0 11.9 rpy=4.2 16.8 -116.3 deg u=0.28 r=0.008 alt=4.2 F=[35679 8000 53397]
+[INFO] orca_rl_sim t=374 src=1 xyz=-11.1 24.3 12.1 rpy=20.5 16.9 -115.1 deg u=0.28 r=0.011 alt=4.0 F=[34787 8000 45514]
+[INFO] OrcaXLUUV t=375 xyz=-11.2 23.6 12.27 (target 12.0) wp 0/12 coverage 287 surveying
+[INFO] orca_rl_sim t=376 src=1 xyz=-11.2 23.5 12.3 rpy=28.6 16.4 -113.2 deg u=0.37 r=0.024 alt=3.9 F=[39900 8000 31025]
+[INFO] orca_rl_sim t=378 src=1 xyz=-11.4 22.5 12.6 rpy=21.0 14.2 -110.4 deg u=0.53 r=0.032 alt=3.5 F=[40000 8000 9692]
+[INFO] orca_rl_sim t=380 src=1 xyz=-11.9 21.2 12.8 rpy=4.6 12.0 -107.2 deg u=0.60 r=0.029 alt=3.4 F=[33434 8000 4051]
+[INFO] OrcaXLUUV t=380 xyz=-12.1 20.8 12.92 (target 12.0) wp 0/12 coverage 295 surveying
+[INFO] orca_rl_sim t=382 src=1 xyz=-12.2 19.9 13.0 rpy=-6.0 10.4 -103.8 deg u=0.66 r=0.029 alt=3.3 F=[35710 8000 4355]
+[INFO] orca_rl_sim t=384 src=1 xyz=-12.7 18.5 13.1 rpy=-6.9 9.6 -100.2 deg u=0.72 r=0.032 alt=3.2 F=[36165 7922 4381]
+[INFO] OrcaXLUUV t=385 xyz=-12.7 17.4 13.04 (target 12.0) wp 0/12 coverage 297 surveying
+[INFO] orca_rl_sim t=386 src=1 xyz=-12.7 17.0 13.0 rpy=-2.5 9.2 -96.3 deg u=0.76 r=0.033 alt=3.3 F=[36951 7624 7554]
+[INFO] orca_rl_sim t=388 src=1 xyz=-12.8 15.3 13.0 rpy=1.4 9.0 -92.5 deg u=0.78 r=0.033 alt=3.3 F=[37522 6535 8016]
+[INFO] orca_rl_sim t=390 src=1 xyz=-12.6 13.8 13.2 rpy=28.4 7.7 -86.1 deg u=0.83 r=0.128 alt=3.2 F=[36605 -8000 3321]
+[INFO] OrcaXLUUV t=390 xyz=-12.2 13.3 13.46 (target 12.0) wp 0/12 coverage 311 surveying
+[INFO] orca_rl_sim t=392 src=1 xyz=-11.5 12.5 14.3 rpy=35.9 -1.0 -77.1 deg u=0.64 r=0.054 alt=2.4 F=[40000 -8000 -36963]
+[INFO] orca_rl_sim t=394 src=1 xyz=-10.7 11.4 14.7 rpy=11.1 -4.2 -74.9 deg u=0.59 r=0.009 alt=1.9 F=[19334 -8000 -25816]
+[INFO] OrcaXLUUV t=395 xyz=-10.3 10.5 14.34 (target 12.0) wp 0/12 coverage 320 surveying
+[INFO] orca_rl_sim t=396 src=1 xyz=-10.2 10.2 14.2 rpy=-7.2 -5.6 -75.3 deg u=0.55 r=-0.013 alt=2.1 F=[19643 -8000 -13427]
+[INFO] orca_rl_sim t=398 src=1 xyz=-9.9 9.1 14.0 rpy=-10.3 -6.4 -77.3 deg u=0.52 r=-0.024 alt=2.5 F=[20151 -8000 -10191]
+[INFO] orca_rl_sim t=400 src=1 xyz=-9.7 8.0 13.5 rpy=-4.0 -7.0 -80.4 deg u=0.50 r=-0.030 alt=2.9 F=[20453 -8000 -2761]
+[INFO] OrcaXLUUV t=400 xyz=-9.7 7.7 13.36 (target 12.0) wp 0/12 coverage 323 surveying
+[INFO] orca_rl_sim t=402 src=1 xyz=-9.8 7.0 13.2 rpy=2.9 -7.4 -84.1 deg u=0.49 r=-0.034 alt=3.2 F=[20539 -8000 1756]
+[INFO] orca_rl_sim t=404 src=1 xyz=-9.8 6.0 12.8 rpy=4.6 -7.6 -87.1 deg u=0.49 r=-0.013 alt=3.4 F=[17483 8000 -13850]
+[INFO] OrcaXLUUV t=405 xyz=-9.7 5.2 12.54 (target 12.0) wp 0/12 coverage 325 surveying
+[INFO] orca_rl_sim t=406 src=1 xyz=-9.6 5.0 12.4 rpy=1.7 -7.6 -87.4 deg u=0.36 r=0.007 alt=3.9 F=[243 8000 -13461]
+[INFO] orca_rl_sim t=408 src=1 xyz=-9.2 4.4 12.0 rpy=-1.9 -7.6 -85.8 deg u=0.26 r=0.020 alt=4.4 F=[1054 8000 -3622]
+[WARN] CONTACT: OrcaXLUUV touched FishD2 at t=407.8
+[WARN] CONTACT: OrcaXLUUV touched FishD3 at t=408.7
+[WARN] CONTACT: OrcaXLUUV touched Wreck02 at t=409.0
+[INFO] orca_rl_sim t=410 src=1 xyz=-7.8 4.5 13.6 rpy=-14.9 -2.4 -87.8 deg u=-0.04 r=-0.026 alt=-1.0 F=[40000 8000 -55000]
+[INFO] OrcaXLUUV t=410 xyz=-7.8 4.5 13.71 (target 12.0) wp 0/12 coverage 328 surveying
+[WARN] CONTACT: OrcaXLUUV touched FishBig2 at t=410.8
+[WARN] PHYSICS DIVERGENCE #2 at t=410.9 (speed 1661.1 m/s, xyz -21.4 8.6 16.6): OrcaXLUUV respawned at its pose ~2 s earlier
+[WARN] PHYSICS DIVERGENCE #3 at t=411.2 (speed 1735.4 m/s, xyz 47.4 43.9 -66.3): OrcaXLUUV respawned at its pose ~2 s earlier
+[INFO] orca_rl_sim t=412 src=1 xyz=-8.1 4.4 13.0 rpy=-4.6 -6.5 -85.0 deg u=0.07 r=0.004 alt=2.0 F=[40000 8000 -8292]
+[WARN] CONTACT: OrcaXLUUV touched FishBig1 at t=413.6
+[INFO] orca_rl_sim t=414 src=1 xyz=-7.9 3.9 12.8 rpy=-0.7 -6.2 -83.5 deg u=0.33 r=0.035 alt=2.3 F=[31983 8000 -30218]
+[INFO] OrcaXLUUV t=415 xyz=-9.5 3.9 13.92 (target 12.0) wp 0/12 coverage 334 surveying
+[INFO] orca_rl_sim t=416 src=1 xyz=-9.7 3.9 14.0 rpy=9.2 3.5 -77.6 deg u=0.00 r=0.005 alt=2.4 F=[27372 8000 -55000]
+[WARN] CONTACT: OrcaXLUUV touched FishB2 at t=416.0
+[WARN] CONTACT: OrcaXLUUV touched FishB2 at t=416.6
+[INFO] orca_rl_sim t=418 src=1 xyz=-11.5 3.4 14.9 rpy=-22.8 0.8 -81.3 deg u=0.16 r=-0.021 alt=1.6 F=[14305 8000 -55000]
+[INFO] orca_rl_sim t=420 src=1 xyz=-13.2 2.8 15.4 rpy=-19.8 -0.5 -81.4 deg u=0.22 r=0.004 alt=1.2 F=[15738 8000 -55000]
+[INFO] OrcaXLUUV t=420 xyz=-13.5 2.5 15.24 (target 12.0) wp 0/12 coverage 337 surveying
+[INFO] orca_rl_sim t=422 src=1 xyz=-14.3 2.1 14.8 rpy=-7.0 -0.5 -80.4 deg u=0.25 r=0.012 alt=1.7 F=[17149 8000 -55000]
+[INFO] orca_rl_sim t=424 src=1 xyz=-15.0 1.4 13.6 rpy=1.6 0.1 -78.7 deg u=0.33 r=0.018 alt=2.9 F=[33811 8000 -55000]
+[WARN] PHYSICS DIVERGENCE #4 at t=425.3 (speed 11.0 m/s, xyz -15.3 0.6 12.3): OrcaXLUUV respawned at its pose ~2 s earlier
+[INFO] OrcaXLUUV t=425 xyz=-15.3 0.6 12.42 (target 12.0) wp 0/12 coverage 340 surveying
+[WARN] CONTACT: OrcaXLUUV touched FishBig2 at t=425.3
+[INFO] orca_rl_sim t=426 src=1 xyz=-15.4 1.5 15.0 rpy=0.6 -1.2 -79.9 deg u=0.10 r=-0.008 alt=1.6 F=[40000 -8000 -55000]
+[WARN] CONTACT: OrcaXLUUV touched Seabed at t=426.1
+[INFO] orca_rl_sim t=428 src=1 xyz=-16.4 1.1 15.8 rpy=-12.9 -2.9 -79.6 deg u=0.04 r=0.006 alt=-1.0 F=[2488 -1734 -55000]
+[INFO] orca_rl_sim t=430 src=1 xyz=-17.2 0.8 15.0 rpy=-13.5 -2.8 -79.3 deg u=0.05 r=0.003 alt=1.5 F=[3961 1753 -31911]
+[INFO] OrcaXLUUV t=430 xyz=-17.5 0.7 14.65 (target 12.0) wp 0/12 coverage 340 surveying
+[INFO] orca_rl_sim t=432 src=1 xyz=-17.9 0.3 13.8 rpy=-5.8 -2.6 -79.2 deg u=0.29 r=0.003 alt=2.5 F=[40000 7137 -7897]
+[WARN] CONTACT: OrcaXLUUV touched FishBig1 at t=433.4
+[INFO] orca_rl_sim t=434 src=1 xyz=-18.2 0.2 13.2 rpy=-0.9 -4.8 -74.8 deg u=-1.94 r=0.138 alt=3.3 F=[40000 -8000 -49791]
+[INFO] OrcaXLUUV t=435 xyz=-18.2 1.6 13.02 (target 12.0) wp 0/12 coverage 340 surveying
+[INFO] orca_rl_sim t=436 src=1 xyz=-18.3 1.8 12.9 rpy=-1.8 -10.8 -67.8 deg u=-0.45 r=0.029 alt=3.4 F=[40000 -7143 -13783]
+[INFO] orca_rl_sim t=438 src=1 xyz=-18.0 2.2 12.5 rpy=-0.9 -13.8 -64.6 deg u=-0.01 r=0.030 alt=3.7 F=[28527 7990 -25433]
+[WARN] PHYSICS DIVERGENCE #5 at t=439.5 (speed 32.1 m/s, xyz -18.5 1.8 12.7): OrcaXLUUV respawned at its pose ~2 s earlier
+[INFO] orca_rl_sim t=440 src=1 xyz=119.4 142.5 -141.7 rpy=-145.5 -49.4 -30.4 deg u=1586.16 r=683.589 alt=-1.0 F=[-40000 -8000 -55000]
+[WARN] PHYSICS DIVERGENCE #6 at t=439.8 (speed 1707.9 m/s, xyz 219.4 242.6 -241.7): OrcaXLUUV respawned at its pose ~2 s earlier
+[INFO] OrcaXLUUV t=440 xyz=-18.0 2.2 12.74 (target 12.0) wp 0/12 coverage 340 surveying
+[WARN] CONTACT: OrcaXLUUV touched FishB1 at t=440.6
+[WARN] CONTACT: OrcaXLUUV touched FishD3 at t=441.2
+[INFO] orca_rl_sim t=442 src=1 xyz=-21.4 0.2 12.5 rpy=2.7 -15.5 -61.4 deg u=0.22 r=0.030 alt=3.7 F=[-2773 3815 -20063]
+[WARN] CONTACT: OrcaXLUUV touched Rock04 at t=442.0
+[INFO] orca_rl_sim t=444 src=1 xyz=-23.0 -0.8 12.1 rpy=-1.7 -17.0 -56.1 deg u=-0.07 r=0.032 alt=3.0 F=[6358 -941 -4630]
+[INFO] OrcaXLUUV t=445 xyz=-23.5 -1.2 11.71 (target 12.0) wp 0/12 coverage 342 surveying
+[INFO] orca_rl_sim t=446 src=1 xyz=-23.5 -1.3 11.6 rpy=-2.8 -16.9 -53.0 deg u=-0.03 r=0.024 alt=2.9 F=[3286 6115 -2186]
+[WARN] PHYSICS DIVERGENCE #7 at t=447.1 (speed 12.3 m/s, xyz -24.2 -1.9 11.3): OrcaXLUUV respawned at its pose ~2 s earlier
+[WARN] CONTACT: OrcaXLUUV touched Seabed at t=447.2
+[WARN] PHYSICS DIVERGENCE #8 at t=447.4 (speed 1736.4 m/s, xyz -196.7 189.0 -174.8): OrcaXLUUV respawned at its pose ~2 s earlier
+[WARN] CONTACT: OrcaXLUUV touched Rock04 at t=447.5
+[INFO] orca_rl_sim t=448 src=1 xyz=-23.2 -1.0 11.9 rpy=-2.8 -17.1 -54.6 deg u=0.00 r=0.003 alt=2.8 F=[1303 8000 -23347]
+[INFO] orca_rl_sim t=450 src=1 xyz=-23.1 -1.0 11.7 rpy=-1.9 -16.8 -53.3 deg u=0.06 r=0.018 alt=2.8 F=[6218 8000 -17629]
+[INFO] OrcaXLUUV t=450 xyz=-23.1 -1.1 11.61 (target 12.0) wp 0/12 coverage 342 surveying
+[INFO] orca_rl_sim t=452 src=1 xyz=-22.9 -1.2 11.3 rpy=-0.9 -16.3 -50.5 deg u=0.10 r=0.027 alt=3.2 F=[6045 7075 -8796]
+[INFO] orca_rl_sim t=454 src=1 xyz=-22.5 -1.3 10.9 rpy=-0.6 -15.8 -47.0 deg u=0.16 r=0.032 alt=3.9 F=[10969 7944 355]
+[INFO] OrcaXLUUV t=455 xyz=-22.1 -1.4 10.59 (target 12.0) wp 0/12 coverage 343 surveying
+[INFO] orca_rl_sim t=456 src=1 xyz=-22.1 -1.4 10.5 rpy=-1.0 -15.2 -42.8 deg u=0.15 r=0.038 alt=5.6 F=[685 8000 16380]
+[INFO] orca_rl_sim t=458 src=1 xyz=-21.6 -1.4 10.5 rpy=-1.5 -14.5 -37.9 deg u=0.13 r=0.043 alt=5.6 F=[768 7998 4986]
+[INFO] orca_rl_sim t=460 src=1 xyz=-21.2 -1.2 10.6 rpy=-1.4 -13.7 -32.7 deg u=0.11 r=0.046 alt=5.6 F=[1215 7656 -10545]
+[INFO] OrcaXLUUV t=460 xyz=-21.2 -1.2 10.58 (target 12.0) wp 0/12 coverage 345 surveying
+[INFO] orca_rl_sim t=462 src=1 xyz=-20.9 -1.1 10.7 rpy=-1.1 -12.7 -27.3 deg u=0.13 r=0.046 alt=5.5 F=[2452 7084 21056]
+[WARN] CONTACT: OrcaXLUUV touched FishBig1 at t=462.9
+[WARN] PHYSICS DIVERGENCE #9 at t=463.0 (speed 963.2 m/s, xyz -31.2 0.1 10.6): OrcaXLUUV respawned at its pose ~2 s earlier
+[WARN] PHYSICS DIVERGENCE #10 at t=463.3 (speed 1729.4 m/s, xyz 160.5 223.3 -220.5): OrcaXLUUV respawned at its pose ~2 s earlier
+[WARN] PHYSICS DIVERGENCE #11 at t=463.6 (speed 1666.7 m/s, xyz 186.6 206.9 -202.3): OrcaXLUUV respawned at its pose ~2 s earlier
+[INFO] orca_rl_sim t=464 src=1 xyz=-132.6 105.7 -100.9 rpy=141.3 2.8 119.3 deg u=703.79 r=-666.055 alt=-1.0 F=[-40000 8000 55000]
+[WARN] PHYSICS DIVERGENCE #12 at t=463.9 (speed 1694.1 m/s, xyz -282.5 255.8 -251.0): OrcaXLUUV respawned at its pose ~2 s earlier
+[INFO] OrcaXLUUV t=465 xyz=-21.0 -1.2 10.66 (target 12.0) wp 0/12 coverage 346 surveying
+[INFO] orca_rl_sim t=466 src=1 xyz=-20.9 -1.1 10.7 rpy=-1.1 -13.1 -29.2 deg u=0.07 r=0.013 alt=5.5 F=[6939 8000 4287]
+[INFO] orca_rl_sim t=468 src=1 xyz=-20.8 -1.0 10.9 rpy=-0.9 -12.8 -26.8 deg u=0.10 r=0.027 alt=4.9 F=[6211 8000 6270]
+[INFO] orca_rl_sim t=470 src=1 xyz=-20.5 -0.9 11.2 rpy=-1.0 -12.3 -23.1 deg u=0.13 r=0.036 alt=4.3 F=[5690 8000 16746]
+[INFO] OrcaXLUUV t=470 xyz=-20.4 -0.9 11.35 (target 12.0) wp 0/12 coverage 347 surveying
+[INFO] orca_rl_sim t=472 src=1 xyz=-20.2 -0.7 11.7 rpy=-1.3 -11.7 -18.6 deg u=0.14 r=0.040 alt=4.4 F=[5388 7849 13024]
+[INFO] orca_rl_sim t=474 src=1 xyz=-19.9 -0.6 12.4 rpy=-0.9 -10.9 -15.3 deg u=0.33 r=0.015 alt=3.9 F=[27920 -8000 10006]
+[INFO] OrcaXLUUV t=475 xyz=-19.4 -0.6 12.96 (target 12.0) wp 0/12 coverage 347 surveying
+[INFO] orca_rl_sim t=476 src=1 xyz=-19.2 -0.7 13.0 rpy=0.6 -10.3 -14.8 deg u=0.43 r=-0.005 alt=3.3 F=[23173 -8000 2299]
+[INFO] orca_rl_sim t=478 src=1 xyz=-18.5 -0.9 13.8 rpy=1.6 -9.7 -16.2 deg u=0.47 r=-0.019 alt=2.7 F=[19230 -8000 -18873]
+[INFO] orca_rl_sim t=480 src=1 xyz=-17.8 -1.4 13.8 rpy=1.6 -9.0 -19.1 deg u=0.44 r=-0.029 alt=2.6 F=[6760 -6949 -11848]
+[INFO] OrcaXLUUV t=480 xyz=-17.5 -1.4 13.84 (target 12.0) wp 0/12 coverage 348 surveying
+[WARN] CONTACT: OrcaXLUUV touched FishB3 at t=481.6
+[INFO] orca_rl_sim t=482 src=1 xyz=-16.9 -1.6 14.0 rpy=30.6 -9.2 -19.7 deg u=0.36 r=0.108 alt=2.5 F=[8245 -8000 -55000]
+[WARN] CONTACT: OrcaXLUUV touched Seabed at t=482.2
+[INFO] orca_rl_sim t=484 src=1 xyz=-17.3 -0.9 14.2 rpy=69.7 -7.0 -28.4 deg u=-0.06 r=-0.045 alt=4.2 F=[15138 -6338 -29969]
+[INFO] OrcaXLUUV t=485 xyz=-16.7 -0.6 13.79 (target 12.0) wp 0/12 coverage 353 surveying
+[WARN] CONTACT: OrcaXLUUV touched FishB1 at t=485.6
+[INFO] orca_rl_sim t=486 src=1 xyz=-16.8 -0.9 13.7 rpy=42.5 -5.0 -33.9 deg u=0.35 r=0.141 alt=3.1 F=[1577 -8000 -55000]
+[INFO] orca_rl_sim t=488 src=1 xyz=-17.3 -1.8 12.9 rpy=24.5 -3.2 -25.0 deg u=0.07 r=0.025 alt=3.3 F=[9467 -8000 27226]
+[INFO] orca_rl_sim t=490 src=1 xyz=-17.5 -2.7 12.8 rpy=6.9 -1.3 -22.9 deg u=0.10 r=0.003 alt=3.6 F=[7744 -8000 33636]
+[INFO] OrcaXLUUV t=490 xyz=-17.7 -3.0 12.84 (target 12.0) wp 0/12 coverage 357 surveying
+[INFO] orca_rl_sim t=492 src=1 xyz=-17.7 -3.6 13.1 rpy=-3.3 0.0 -23.5 deg u=0.19 r=-0.013 alt=3.4 F=[26760 -8000 17157]
+[INFO] orca_rl_sim t=494 src=1 xyz=-17.6 -4.6 13.5 rpy=-4.1 0.9 -25.6 deg u=0.32 r=-0.023 alt=2.9 F=[23764 -8000 1901]
+[INFO] OrcaXLUUV t=495 xyz=-17.4 -5.4 13.84 (target 12.0) wp 0/12 coverage 358 surveying
+[INFO] orca_rl_sim t=496 src=1 xyz=-17.2 -5.6 13.8 rpy=-0.4 1.4 -28.7 deg u=0.36 r=-0.030 alt=2.7 F=[10193 -8000 -18731]
+[INFO] orca_rl_sim t=498 src=1 xyz=-16.9 -6.3 13.8 rpy=2.9 1.8 -32.5 deg u=0.40 r=-0.035 alt=2.7 F=[27927 -7961 -9332]
+[WARN] CONTACT: OrcaXLUUV touched FishBig1 at t=498.4
+[INFO] orca_rl_sim t=500 src=1 xyz=-14.7 -4.2 13.0 rpy=-9.0 6.4 -22.8 deg u=0.49 r=0.012 alt=3.2 F=[21949 -8000 24797]
+[INFO] OrcaXLUUV t=500 xyz=-14.4 -3.9 13.01 (target 12.0) wp 0/12 coverage 359 surveying
+[INFO] orca_rl_sim t=502 src=1 xyz=-13.4 -3.3 13.1 rpy=-8.9 7.9 -22.9 deg u=0.44 r=-0.006 alt=3.2 F=[26691 -8000 12798]
+[WARN] CONTACT: OrcaXLUUV touched FishB2 at t=503.3
+[WARN] CONTACT: OrcaXLUUV touched FishB2 at t=503.5
+[INFO] orca_rl_sim t=504 src=1 xyz=-11.7 -1.2 13.2 rpy=-11.6 8.0 -14.9 deg u=0.46 r=0.358 alt=3.0 F=[29259 -8000 -39146]
+[WARN] CONTACT: OrcaXLUUV touched FishB2 at t=504.1
+[WARN] CONTACT: OrcaXLUUV touched FishB3 at t=505.0
+[INFO] OrcaXLUUV t=505 xyz=-10.3 2.7 14.27 (target 12.0) wp 0/12 coverage 361 surveying
+[INFO] orca_rl_sim t=506 src=1 xyz=-10.4 2.3 14.7 rpy=-36.6 5.3 -18.3 deg u=-0.16 r=-0.070 alt=1.9 F=[37070 -1503 -55000]
+[INFO] orca_rl_sim t=508 src=1 xyz=-10.8 1.0 15.5 rpy=-34.9 1.6 -22.2 deg u=0.25 r=-0.033 alt=1.2 F=[33238 -6076 -48632]
+[INFO] orca_rl_sim t=510 src=1 xyz=-10.7 -0.6 15.5 rpy=-55.7 -1.5 -25.0 deg u=0.29 r=-0.034 alt=1.8 F=[7658 -7708 -26082]
+[INFO] OrcaXLUUV t=510 xyz=-10.8 -1.0 15.49 (target 12.0) wp 0/12 coverage 361 surveying
+[INFO] orca_rl_sim t=512 src=1 xyz=-10.8 -2.1 15.4 rpy=-47.2 -4.2 -27.1 deg u=0.25 r=-0.018 alt=1.8 F=[11584 8000 -45498]
+[INFO] orca_rl_sim t=514 src=1 xyz=-10.9 -3.5 14.5 rpy=-22.1 -5.0 -27.3 deg u=0.23 r=0.004 alt=1.9 F=[11525 8000 -45952]
+[INFO] OrcaXLUUV t=515 xyz=-10.8 -4.2 14.05 (target 12.0) wp 0/12 coverage 362 surveying
+[INFO] orca_rl_sim t=516 src=1 xyz=-10.7 -4.1 14.2 rpy=-9.7 -10.7 -21.5 deg u=0.12 r=0.065 alt=2.1 F=[14880 3573 -55000]
+[WARN] CONTACT: OrcaXLUUV touched Seabed at t=515.9
+[INFO] orca_rl_sim t=518 src=1 xyz=-10.3 -4.2 13.6 rpy=13.9 -11.9 -18.9 deg u=0.25 r=0.008 alt=2.7 F=[30485 -8000 -50609]
+[INFO] orca_rl_sim t=520 src=1 xyz=-9.5 -4.5 12.4 rpy=15.0 -12.0 -17.8 deg u=0.32 r=0.015 alt=3.6 F=[18760 7157 4811]
+[INFO] OrcaXLUUV t=520 xyz=-9.3 -4.6 12.34 (target 12.0) wp 0/12 coverage 366 surveying
+[INFO] orca_rl_sim t=522 src=1 xyz=-8.8 -4.5 12.0 rpy=4.8 -12.2 -15.4 deg u=0.35 r=0.026 alt=4.2 F=[17472 7977 24459]
+[INFO] orca_rl_sim t=524 src=1 xyz=-7.9 -4.8 11.9 rpy=-5.0 -12.3 -12.0 deg u=0.44 r=0.030 alt=4.2 F=[24470 5669 19412]
+[WARN] CONTACT: OrcaXLUUV touched Pillar01 at t=524.2
+[INFO] OrcaXLUUV t=525 xyz=-7.8 -4.1 12.38 (target 12.0) wp 0/12 coverage 368 surveying
+[INFO] orca_rl_sim t=526 src=1 xyz=-7.9 -2.6 13.5 rpy=-21.8 -13.0 -15.4 deg u=-0.42 r=-0.101 alt=2.8 F=[40000 8000 -55000]
+[WARN] CONTACT: OrcaXLUUV touched FishB2 at t=526.0
+[WARN] PHYSICS DIVERGENCE #13 at t=526.6 (speed 26.8 m/s, xyz -7.7 0.1 14.3): OrcaXLUUV respawned at its pose ~2 s earlier
+[WARN] PHYSICS DIVERGENCE #14 at t=526.9 (speed 1749.8 m/s, xyz 254.7 -266.2 -255.3): OrcaXLUUV respawned at its pose ~2 s earlier
+[WARN] CONTACT: OrcaXLUUV touched Pillar01 at t=527.0
+[INFO] orca_rl_sim t=528 src=1 xyz=-8.2 -6.1 12.1 rpy=63.4 -8.7 -10.8 deg u=-0.10 r=-0.030 alt=6.0 F=[11970 8000 -55000]
+[INFO] orca_rl_sim t=530 src=1 xyz=-8.6 -7.6 12.2 rpy=64.7 -7.1 -10.8 deg u=0.01 r=0.001 alt=6.2 F=[9643 8000 -2907]
+[INFO] OrcaXLUUV t=530 xyz=-8.6 -7.8 12.22 (target 12.0) wp 0/12 coverage 370 surveying
+[INFO] orca_rl_sim t=532 src=1 xyz=-8.2 -6.9 11.2 rpy=41.0 -4.6 -5.3 deg u=0.28 r=0.027 alt=5.5 F=[1514 8000 55000]
+[WARN] CONTACT: OrcaXLUUV touched Pillar01 at t=532.3
+[INFO] orca_rl_sim t=534 src=1 xyz=-8.0 -5.9 10.4 rpy=26.0 -7.3 -6.6 deg u=-0.05 r=-0.004 alt=5.6 F=[12261 8000 55000]
+[INFO] OrcaXLUUV t=535 xyz=-8.1 -5.7 10.56 (target 12.0) wp 0/12 coverage 370 surveying
+[INFO] orca_rl_sim t=536 src=1 xyz=-8.0 -5.7 10.8 rpy=-2.1 -8.9 -7.7 deg u=0.02 r=-0.006 alt=5.5 F=[11106 8000 55000]
+[INFO] orca_rl_sim t=538 src=1 xyz=-8.0 -5.5 11.7 rpy=-22.6 -7.3 -8.5 deg u=0.04 r=0.003 alt=4.5 F=[40000 740 24699]
+[INFO] orca_rl_sim t=540 src=1 xyz=-8.1 -5.3 12.6 rpy=-25.2 -4.1 -9.7 deg u=0.15 r=-0.005 alt=3.8 F=[26346 -7031 7178]
+[INFO] OrcaXLUUV t=540 xyz=-8.0 -5.2 12.76 (target 12.0) wp 0/12 coverage 370 surveying
+[INFO] orca_rl_sim t=542 src=1 xyz=-7.6 -5.2 13.4 rpy=-9.9 -2.6 -12.1 deg u=0.27 r=-0.023 alt=3.0 F=[23917 -8000 -12585]
+[WARN] CONTACT: OrcaXLUUV touched Pillar01 at t=543.1
+[INFO] orca_rl_sim t=544 src=1 xyz=-6.3 -6.8 13.9 rpy=-31.7 -2.2 -9.3 deg u=0.96 r=-0.002 alt=2.6 F=[1783 -8000 20900]
+[INFO] OrcaXLUUV t=545 xyz=-5.4 -8.1 14.02 (target 12.0) wp 0/12 coverage 373 surveying
+[INFO] orca_rl_sim t=546 src=1 xyz=-5.3 -8.4 14.1 rpy=-24.5 -3.7 -8.7 deg u=0.53 r=0.001 alt=2.4 F=[13342 3556 -16443]
+[WARN] CONTACT: OrcaXLUUV touched FishB3 at t=546.5
+[WARN] CONTACT: OrcaXLUUV touched Pillar01 at t=547.8
+[INFO] orca_rl_sim t=548 src=1 xyz=-4.5 -6.3 15.6 rpy=8.3 -0.8 -10.4 deg u=-0.07 r=-0.077 alt=-1.0 F=[32364 8000 -55000]
+[INFO] orca_rl_sim t=550 src=1 xyz=-4.3 -5.3 15.0 rpy=40.5 1.5 -16.1 deg u=-0.02 r=-0.030 alt=1.8 F=[34016 8000 -44425]
+[INFO] OrcaXLUUV t=550 xyz=-4.3 -5.1 14.82 (target 12.0) wp 0/12 coverage 377 surveying
+[INFO] orca_rl_sim t=552 src=1 xyz=-5.6 -4.8 14.5 rpy=45.8 6.6 -17.8 deg u=-1.59 r=-0.045 alt=2.4 F=[40000 -122 -55000]
+[WARN] CONTACT: OrcaXLUUV touched Seabed at t=552.2
+[INFO] orca_rl_sim t=554 src=1 xyz=-7.4 -4.6 13.8 rpy=33.3 9.6 -17.3 deg u=-0.37 r=-0.007 alt=2.7 F=[40000 -4057 -14079]
+[INFO] OrcaXLUUV t=555 xyz=-7.8 -4.6 13.13 (target 12.0) wp 0/12 coverage 378 surveying
+[INFO] orca_rl_sim t=556 src=1 xyz=-7.8 -4.5 12.9 rpy=11.6 10.5 -17.6 deg u=0.08 r=-0.006 alt=3.3 F=[40000 -3164 33759]
+[INFO] orca_rl_sim t=558 src=1 xyz=-7.4 -4.8 12.6 rpy=-4.8 11.0 -18.4 deg u=0.38 r=-0.008 alt=3.7 F=[37485 -2127 31513]
+[INFO] orca_rl_sim t=560 src=1 xyz=-6.5 -5.2 12.6 rpy=-9.6 11.1 -19.5 deg u=0.54 r=-0.010 alt=3.5 F=[33346 -2229 19279]
+[INFO] OrcaXLUUV t=560 xyz=-6.2 -5.4 12.78 (target 12.0) wp 0/12 coverage 378 surveying
+[INFO] orca_rl_sim t=562 src=1 xyz=-5.4 -5.7 13.0 rpy=-5.2 11.0 -20.8 deg u=0.60 r=-0.013 alt=3.3 F=[29123 -4289 7960]
+[WARN] CONTACT: OrcaXLUUV touched Seabed at t=562.6
+[INFO] orca_rl_sim t=564 src=1 xyz=-4.2 -6.2 13.3 rpy=1.9 10.2 -22.6 deg u=0.59 r=-0.018 alt=3.1 F=[27704 -7032 6838]
+[INFO] OrcaXLUUV t=565 xyz=-3.3 -6.6 13.45 (target 12.0) wp 0/12 coverage 378 surveying
+[INFO] orca_rl_sim t=566 src=1 xyz=-3.1 -6.8 13.6 rpy=5.0 9.3 -25.2 deg u=0.61 r=-0.025 alt=2.9 F=[25752 -7900 -18564]
+[INFO] orca_rl_sim t=568 src=1 xyz=-2.0 -7.5 13.4 rpy=3.1 8.7 -28.6 deg u=0.62 r=-0.032 alt=3.0 F=[24501 -7791 -6534]
+[INFO] orca_rl_sim t=570 src=1 xyz=-1.2 -8.1 13.6 rpy=0.0 4.9 -31.9 deg u=-1.36 r=-0.149 alt=3.0 F=[40000 8000 -55000]
+[WARN] CONTACT: OrcaXLUUV touched FishC1 at t=570.2
+[INFO] OrcaXLUUV t=570 xyz=-1.7 -7.2 14.07 (target 12.0) wp 0/12 coverage 382 surveying
+[WARN] CONTACT: OrcaXLUUV touched Seabed at t=570.7
+[INFO] orca_rl_sim t=572 src=1 xyz=-5.3 -4.6 14.5 rpy=11.3 4.4 -37.7 deg u=-1.82 r=-0.022 alt=1.9 F=[40000 -8000 -25490]
+[INFO] orca_rl_sim t=574 src=1 xyz=-7.2 -3.3 14.2 rpy=13.0 3.8 -40.2 deg u=-0.77 r=-0.020 alt=2.1 F=[40000 -5408 -13811]
+[INFO] OrcaXLUUV t=575 xyz=-7.9 -2.8 13.97 (target 12.0) wp 0/12 coverage 382 surveying
+[INFO] orca_rl_sim t=576 src=1 xyz=-8.1 -2.6 13.9 rpy=4.7 3.6 -42.6 deg u=-0.18 r=-0.020 alt=2.6 F=[40000 -2707 -1657]
+[INFO] orca_rl_sim t=578 src=1 xyz=-8.2 -2.9 13.4 rpy=-3.1 3.3 -44.9 deg u=0.20 r=-0.019 alt=3.0 F=[40000 -2068 5404]
+[WARN] PHYSICS DIVERGENCE #15 at t=578.8 (speed 15.5 m/s, xyz -8.5 -3.5 13.3): OrcaXLUUV respawned at its pose ~2 s earlier
+[WARN] CONTACT: OrcaXLUUV touched FishBig2 at t=578.8
+[WARN] CONTACT: OrcaXLUUV touched Seabed at t=579.2
+[INFO] orca_rl_sim t=580 src=1 xyz=-7.4 -2.2 15.8 rpy=-3.3 -1.7 -34.2 deg u=0.40 r=0.015 alt=-1.0 F=[27384 -7882 -55000]
+[WARN] CONTACT: OrcaXLUUV touched Seabed at t=580.0
+[INFO] OrcaXLUUV t=580 xyz=-6.9 -2.0 16.01 (target 12.0) wp 0/12 coverage 382 surveying
+[INFO] orca_rl_sim t=582 src=1 xyz=-6.5 -1.3 15.7 rpy=14.5 -2.8 -35.2 deg u=0.00 r=-0.018 alt=-1.0 F=[7810 -8000 -38907]
+[INFO] orca_rl_sim t=584 src=1 xyz=-5.8 -0.8 14.9 rpy=13.9 -2.1 -37.4 deg u=0.11 r=-0.024 alt=1.6 F=[13187 -8000 -7826]
+[INFO] OrcaXLUUV t=585 xyz=-5.5 -0.6 14.27 (target 12.0) wp 0/12 coverage 382 surveying
+[INFO] orca_rl_sim t=586 src=1 xyz=-5.3 -0.6 14.0 rpy=4.2 -0.9 -40.2 deg u=0.16 r=-0.028 alt=2.4 F=[9766 -8000 150]
+[INFO] orca_rl_sim t=588 src=1 xyz=-5.0 -0.6 13.3 rpy=-3.4 0.1 -43.7 deg u=0.16 r=-0.033 alt=3.1 F=[5047 -8000 3600]
+[INFO] orca_rl_sim t=590 src=1 xyz=-4.6 -0.6 13.1 rpy=-4.9 0.8 -48.0 deg u=0.15 r=-0.040 alt=3.3 F=[5008 -7649 26586]
+[INFO] OrcaXLUUV t=590 xyz=-4.6 -0.7 13.17 (target 12.0) wp 0/12 coverage 383 surveying
+[WARN] CONTACT: OrcaXLUUV touched FishBig1 at t=590.4
+[WARN] CONTACT: OrcaXLUUV touched Pillar01 at t=591.0
+[INFO] orca_rl_sim t=592 src=1 xyz=-4.4 -0.6 13.4 rpy=-108.7 -4.1 -38.1 deg u=0.09 r=-0.030 alt=49.9 F=[18182 8000 28806]
+[WARN] CONTACT: OrcaXLUUV touched FishBig2 at t=592.5
+[WARN] CONTACT: OrcaXLUUV touched Seabed at t=592.8
+[INFO] orca_rl_sim t=594 src=1 xyz=-6.2 -2.4 16.0 rpy=-114.0 -3.1 -38.6 deg u=-0.06 r=0.026 alt=-1.0 F=[27169 -8000 -10152]
+[INFO] OrcaXLUUV t=595 xyz=-6.6 -2.6 16.11 (target 12.0) wp 0/12 coverage 386 surveying
+[INFO] orca_rl_sim t=596 src=1 xyz=-6.5 -2.8 16.1 rpy=-117.6 -2.1 -37.1 deg u=0.10 r=-0.009 alt=4.6 F=[23237 -5219 -41652]
+[INFO] orca_rl_sim t=598 src=1 xyz=-6.9 -3.6 16.2 rpy=-116.6 -2.4 -35.8 deg u=0.12 r=-0.008 alt=5.2 F=[23653 -6531 -48787]
+[INFO] orca_rl_sim t=600 src=1 xyz=-7.1 -4.7 16.2 rpy=-116.6 -2.4 -34.4 deg u=0.15 r=-0.007 alt=6.0 F=[13022 -8000 -51177]
+[INFO] OrcaXLUUV t=600 xyz=-7.3 -4.8 16.16 (target 12.0) wp 0/12 coverage 386 surveying
+[INFO] orca_rl_sim t=602 src=1 xyz=-7.4 -5.6 16.1 rpy=-116.6 -2.4 -34.2 deg u=0.19 r=0.004 alt=6.9 F=[11702 8000 -55000]
+[INFO] orca_rl_sim t=604 src=1 xyz=-7.9 -7.0 16.1 rpy=-116.6 -2.4 -35.9 deg u=0.21 r=0.008 alt=8.3 F=[10808 8000 -55000]
+[INFO] OrcaXLUUV t=605 xyz=-8.3 -8.0 16.16 (target 12.0) wp 0/12 coverage 387 surveying
+[INFO] orca_rl_sim t=606 src=1 xyz=-8.4 -8.4 16.1 rpy=-116.6 -2.4 -38.1 deg u=0.21 r=0.009 alt=9.7 F=[10450 8000 -55000]
+[INFO] orca_rl_sim t=608 src=1 xyz=-9.1 -9.7 16.2 rpy=-116.6 -2.4 -40.4 deg u=0.18 r=0.009 alt=-1.0 F=[10866 8000 -55000]
+[INFO] orca_rl_sim t=610 src=1 xyz=-9.9 -11.1 16.1 rpy=-116.6 -2.4 -42.7 deg u=0.17 r=0.009 alt=-1.0 F=[11186 8000 -55000]
+[INFO] OrcaXLUUV t=610 xyz=-10.0 -11.3 16.16 (target 12.0) wp 0/12 coverage 387 surveying
+[INFO] orca_rl_sim t=612 src=1 xyz=-10.6 -12.5 16.1 rpy=-116.6 -2.4 -44.8 deg u=0.17 r=0.008 alt=-1.0 F=[10908 8000 -55000]
+[INFO] orca_rl_sim t=614 src=1 xyz=-11.6 -13.8 16.2 rpy=-116.6 -2.4 -47.0 deg u=0.18 r=0.008 alt=14.8 F=[10403 8000 -55000]
+[INFO] OrcaXLUUV t=615 xyz=-12.2 -14.7 16.16 (target 12.0) wp 0/12 coverage 387 surveying
+[INFO] orca_rl_sim t=616 src=1 xyz=-12.2 -14.8 16.2 rpy=-118.9 -1.8 -49.8 deg u=0.02 r=0.036 alt=-1.0 F=[15471 6741 -55000]
+[INFO] orca_rl_sim t=618 src=1 xyz=-12.5 -15.1 16.0 rpy=-122.9 -0.6 -53.7 deg u=0.02 r=0.027 alt=-1.0 F=[15977 8000 -55000]
+[INFO] orca_rl_sim t=620 src=1 xyz=-12.9 -15.4 15.9 rpy=-118.9 -0.7 -58.8 deg u=0.06 r=0.018 alt=-1.0 F=[15343 8000 -55000]
+[INFO] OrcaXLUUV t=620 xyz=-13.0 -15.5 15.90 (target 12.0) wp 0/12 coverage 387 surveying
+[INFO] orca_rl_sim t=622 src=1 xyz=-13.3 -15.7 16.0 rpy=-113.4 -1.7 -65.2 deg u=0.06 r=0.012 alt=-1.0 F=[15858 8000 -55000]
+[INFO] orca_rl_sim t=624 src=1 xyz=-13.6 -16.0 16.1 rpy=-104.5 -2.8 -71.4 deg u=0.11 r=0.010 alt=14.3 F=[14738 8000 -55000]
+[INFO] OrcaXLUUV t=625 xyz=-14.0 -16.2 16.03 (target 12.0) wp 0/12 coverage 387 surveying
+[INFO] orca_rl_sim t=626 src=1 xyz=-14.1 -16.3 16.0 rpy=-94.8 -2.9 -77.4 deg u=0.14 r=0.007 alt=6.3 F=[13820 8000 -55000]
+[INFO] orca_rl_sim t=628 src=1 xyz=-14.8 -16.6 15.9 rpy=-77.5 -2.2 -83.9 deg u=0.16 r=-0.004 alt=3.0 F=[13174 8000 -55000]
+[INFO] orca_rl_sim t=630 src=1 xyz=-15.5 -16.8 15.3 rpy=-50.5 -1.2 -89.3 deg u=0.19 r=-0.014 alt=1.8 F=[12135 8000 -55000]
+[INFO] OrcaXLUUV t=630 xyz=-15.7 -16.9 15.24 (target 12.0) wp 0/12 coverage 389 surveying
+[INFO] orca_rl_sim t=632 src=1 xyz=-16.6 -17.1 14.5 rpy=-17.2 -0.2 -91.4 deg u=0.21 r=-0.003 alt=1.9 F=[11170 8000 -55000]
+[INFO] orca_rl_sim t=634 src=1 xyz=-17.3 -17.5 13.0 rpy=0.3 0.5 -91.0 deg u=0.21 r=0.010 alt=3.4 F=[10849 8000 -55000]
+[INFO] OrcaXLUUV t=635 xyz=-17.8 -17.8 11.95 (target 12.0) wp 0/12 coverage 392 surveying
+[INFO] orca_rl_sim t=636 src=1 xyz=-17.8 -18.0 11.5 rpy=4.4 1.1 -89.4 deg u=0.18 r=0.017 alt=4.9 F=[5162 8000 -55000]
+[INFO] orca_rl_sim t=638 src=1 xyz=-18.0 -18.2 9.5 rpy=3.3 1.6 -87.1 deg u=0.16 r=0.022 alt=6.7 F=[7376 8000 -55000]
+[INFO] orca_rl_sim t=640 src=1 xyz=-17.9 -18.5 7.6 rpy=1.2 1.7 -84.9 deg u=0.30 r=0.009 alt=8.7 F=[40000 -8000 -1330]
+[INFO] OrcaXLUUV t=640 xyz=-18.0 -18.7 7.34 (target 12.0) wp 0/12 coverage 393 surveying
+[INFO] orca_rl_sim t=642 src=1 xyz=-18.0 -19.4 6.3 rpy=-0.0 1.8 -85.1 deg u=0.48 r=-0.010 alt=10.1 F=[40000 -8000 19426]
+[INFO] orca_rl_sim t=644 src=1 xyz=-17.9 -20.4 5.7 rpy=-0.1 1.7 -86.9 deg u=0.63 r=-0.022 alt=10.7 F=[40000 -8000 26105]
+[INFO] OrcaXLUUV t=645 xyz=-18.1 -21.3 5.62 (target 12.0) wp 0/12 coverage 398 surveying
+[INFO] orca_rl_sim t=646 src=1 xyz=-18.1 -21.7 5.6 rpy=0.4 1.7 -89.9 deg u=0.75 r=-0.030 alt=10.8 F=[40000 -8000 24278]
+[INFO] orca_rl_sim t=648 src=1 xyz=-18.4 -23.3 6.0 rpy=1.0 1.6 -93.5 deg u=0.78 r=-0.032 alt=10.4 F=[40000 -8000 19885]
+[INFO] orca_rl_sim t=650 src=1 xyz=-18.7 -24.9 6.5 rpy=1.0 1.6 -97.2 deg u=0.77 r=-0.033 alt=9.9 F=[40000 -8000 15380]
+[INFO] OrcaXLUUV t=650 xyz=-18.6 -25.1 6.54 (target 12.0) wp 0/12 coverage 399 surveying
+[INFO] orca_rl_sim t=652 src=1 xyz=-18.9 -26.4 7.0 rpy=0.6 1.7 -101.0 deg u=0.76 r=-0.033 alt=1.9 F=[40000 -8000 -50083]
+[INFO] orca_rl_sim t=654 src=1 xyz=-19.3 -28.0 7.2 rpy=0.3 1.8 -104.9 deg u=0.81 r=-0.035 alt=9.2 F=[40000 -8000 -2479]
+[INFO] OrcaXLUUV t=655 xyz=-19.7 -29.0 7.19 (target 12.0) wp 0/12 coverage 400 surveying
+[INFO] orca_rl_sim t=656 src=1 xyz=-19.9 -29.4 7.3 rpy=0.4 1.9 -109.0 deg u=0.84 r=-0.037 alt=9.2 F=[40000 -8000 11609]
+[INFO] orca_rl_sim t=658 src=1 xyz=-20.5 -31.0 7.4 rpy=0.6 2.0 -113.2 deg u=0.84 r=-0.037 alt=9.0 F=[40000 -8000 15550]
+[INFO] orca_rl_sim t=660 src=1 xyz=-21.3 -32.5 7.7 rpy=0.7 2.1 -117.3 deg u=0.82 r=-0.035 alt=8.7 F=[40000 -7838 14918]
+[INFO] OrcaXLUUV t=660 xyz=-21.4 -32.8 7.80 (target 12.0) wp 0/12 coverage 400 surveying
+[INFO] orca_rl_sim t=662 src=1 xyz=-22.0 -33.9 8.3 rpy=0.5 2.1 -121.3 deg u=0.80 r=-0.034 alt=8.2 F=[40000 -7160 16830]
+[INFO] orca_rl_sim t=664 src=1 xyz=-22.9 -35.2 8.7 rpy=0.2 2.1 -125.1 deg u=0.78 r=-0.031 alt=7.7 F=[40000 -6681 15342]
+[INFO] OrcaXLUUV t=665 xyz=-23.5 -36.2 9.10 (target 12.0) wp 0/12 coverage 401 surveying
+[INFO] orca_rl_sim t=666 src=1 xyz=-23.9 -36.5 9.2 rpy=0.0 2.1 -128.6 deg u=0.77 r=-0.030 alt=7.2 F=[39152 -6885 15895]
+[INFO] orca_rl_sim t=668 src=1 xyz=-25.1 -37.7 9.8 rpy=0.0 2.1 -132.0 deg u=0.75 r=-0.030 alt=6.6 F=[33626 -7871 13636]
+[INFO] orca_rl_sim t=670 src=1 xyz=-26.0 -38.7 10.5 rpy=0.1 2.1 -135.6 deg u=0.70 r=-0.032 alt=6.0 F=[30356 -8000 12689]
+[INFO] OrcaXLUUV t=670 xyz=-26.0 -38.9 10.60 (target 12.0) wp 0/12 coverage 406 surveying
+[INFO] orca_rl_sim t=672 src=1 xyz=-27.0 -39.6 11.1 rpy=0.3 2.1 -139.3 deg u=0.66 r=-0.033 alt=5.4 F=[33112 -8000 14170]
+[INFO] orca_rl_sim t=674 src=1 xyz=-28.1 -40.4 11.7 rpy=0.3 2.1 -143.2 deg u=0.66 r=-0.034 alt=4.8 F=[40000 -8000 15526]
+[INFO] OrcaXLUUV t=675 xyz=-28.9 -40.9 12.12 (target 12.0) wp 0/12 coverage 408 surveying
+[INFO] orca_rl_sim t=676 src=1 xyz=-29.3 -41.1 12.4 rpy=0.3 2.1 -147.1 deg u=0.70 r=-0.034 alt=4.2 F=[40000 -8000 13825]
+[INFO] orca_rl_sim t=678 src=1 xyz=-30.6 -41.8 12.9 rpy=0.3 2.1 -151.1 deg u=0.72 r=-0.034 alt=3.6 F=[39233 -8000 13741]
+[INFO] orca_rl_sim t=680 src=1 xyz=-31.9 -42.5 13.4 rpy=0.3 2.1 -155.0 deg u=0.72 r=-0.034 alt=3.1 F=[31512 -8000 -5156]
+[INFO] OrcaXLUUV t=680 xyz=-32.2 -42.6 13.52 (target 12.0) wp 0/12 coverage 410 surveying
+[INFO] orca_rl_sim t=682 src=1 xyz=-33.4 -42.9 13.8 rpy=0.4 2.2 -159.0 deg u=0.70 r=-0.036 alt=2.8 F=[30566 -8000 -16641]
+[INFO] orca_rl_sim t=684 src=1 xyz=-34.7 -43.4 13.7 rpy=0.5 2.2 -163.4 deg u=0.71 r=-0.039 alt=2.8 F=[31940 -8000 -7454]
+[INFO] OrcaXLUUV t=685 xyz=-35.6 -43.5 13.52 (target 12.0) wp 0/12 coverage 413 surveying
+[INFO] orca_rl_sim t=686 src=1 xyz=-36.0 -43.8 13.4 rpy=0.4 2.3 -167.9 deg u=0.71 r=-0.040 alt=3.0 F=[32800 -8000 18118]
+[INFO] orca_rl_sim t=688 src=1 xyz=-37.4 -43.9 13.4 rpy=0.2 2.3 -172.5 deg u=0.73 r=-0.041 alt=3.1 F=[34235 -8000 14171]
+[INFO] orca_rl_sim t=690 src=1 xyz=-38.8 -44.0 13.4 rpy=0.4 2.3 -177.1 deg u=0.73 r=-0.040 alt=3.0 F=[34627 -8000 -15417]
+[INFO] OrcaXLUUV t=690 xyz=-39.1 -44.0 13.55 (target 12.0) wp 0/12 coverage 415 surveying
+[INFO] orca_rl_sim t=692 src=1 xyz=-40.3 -44.0 13.5 rpy=0.5 2.3 178.2 deg u=0.75 r=-0.040 alt=2.9 F=[35446 -6953 -8233]
+[INFO] orca_rl_sim t=694 src=1 xyz=-41.9 -43.9 13.6 rpy=0.4 2.4 173.7 deg u=0.77 r=-0.038 alt=3.0 F=[35064 -5191 12604]
+[INFO] OrcaXLUUV t=695 xyz=-42.9 -43.8 13.49 (target 12.0) wp 0/12 coverage 417 surveying
+[INFO] orca_rl_sim t=696 src=1 xyz=-43.4 -43.6 13.4 rpy=0.2 2.4 169.7 deg u=0.78 r=-0.033 alt=3.0 F=[36940 -3421 -13715]
+[INFO] orca_rl_sim t=698 src=1 xyz=-44.9 -43.3 13.4 rpy=0.0 2.4 166.3 deg u=0.82 r=-0.026 alt=3.0 F=[36586 -1394 -6666]
+[INFO] orca_rl_sim t=700 src=1 xyz=-46.6 -43.2 13.4 rpy=-0.2 2.4 163.7 deg u=0.84 r=-0.019 alt=3.1 F=[32996 823 14169]
+[INFO] OrcaXLUUV t=700 xyz=-46.9 -43.0 13.43 (target 12.0) wp 0/12 coverage 420 surveying
+[INFO] orca_rl_sim t=702 src=1 xyz=-48.3 -42.8 13.6 rpy=-0.4 2.4 162.1 deg u=0.83 r=-0.010 alt=3.0 F=[31059 757 -14301]
+[INFO] orca_rl_sim t=704 src=1 xyz=-49.9 -42.4 13.5 rpy=-0.4 2.4 161.2 deg u=0.83 r=-0.006 alt=3.0 F=[24856 618 -7285]
+[INFO] OrcaXLUUV t=705 xyz=-51.1 -42.0 13.44 (target 12.0) wp 0/12 coverage 424 surveying
+[INFO] orca_rl_sim t=706 src=1 xyz=-51.6 -42.0 13.4 rpy=-0.3 2.4 160.8 deg u=0.77 r=-0.002 alt=3.1 F=[13982 1996 14567]
+[INFO] orca_rl_sim t=708 src=1 xyz=-53.0 -41.6 13.5 rpy=-0.2 2.4 160.8 deg u=0.66 r=0.002 alt=3.0 F=[11219 1446 -13642]
+[INFO] orca_rl_sim t=710 src=1 xyz=-54.2 -41.4 13.5 rpy=-0.2 2.4 161.2 deg u=0.57 r=0.004 alt=3.0 F=[8231 991 -6282]
+[INFO] OrcaXLUUV t=710 xyz=-54.4 -41.3 13.52 (target 12.0) wp 0/12 coverage 426 surveying
+[INFO] orca_rl_sim t=712 src=1 xyz=-55.2 -41.2 13.4 rpy=-0.2 2.5 161.7 deg u=0.49 r=0.005 alt=3.0 F=[4890 707 11845]
+[INFO] orca_rl_sim t=714 src=1 xyz=-56.1 -41.0 13.4 rpy=-0.1 2.5 162.3 deg u=0.41 r=0.004 alt=3.0 F=[5837 -205 -13044]
+[INFO] OrcaXLUUV t=715 xyz=-56.6 -40.9 13.56 (target 12.0) wp 0/12 coverage 430 surveying
+[INFO] orca_rl_sim t=716 src=1 xyz=-56.9 -40.8 13.5 rpy=-0.0 2.5 162.7 deg u=0.36 r=0.003 alt=3.0 F=[5481 -574 -7770]
+[INFO] orca_rl_sim t=718 src=1 xyz=-57.4 -40.6 13.4 rpy=0.0 2.4 162.9 deg u=0.32 r=0.001 alt=3.0 F=[3900 -651 11963]
+[INFO] orca_rl_sim t=720 src=1 xyz=-58.2 -40.5 13.6 rpy=0.1 2.4 162.9 deg u=0.28 r=-0.001 alt=3.0 F=[4911 -642 -11513]
+[INFO] OrcaXLUUV t=720 xyz=-58.2 -40.6 13.56 (target 12.0) wp 0/12 coverage 431 surveying
+[INFO] orca_rl_sim t=722 src=1 xyz=-58.6 -40.4 13.5 rpy=0.0 2.3 162.8 deg u=0.26 r=-0.002 alt=3.0 F=[4747 -513 -6847]
+[INFO] orca_rl_sim t=724 src=1 xyz=-59.1 -40.2 13.4 rpy=0.0 2.3 162.5 deg u=0.23 r=-0.002 alt=3.1 F=[3185 77 15577]
+[INFO] OrcaXLUUV t=725 xyz=-59.5 -40.2 13.40 (target 12.0) wp 0/12 coverage 433 surveying
+[INFO] orca_rl_sim t=726 src=1 xyz=-59.5 -40.1 13.4 rpy=-0.0 2.2 162.3 deg u=0.21 r=-0.001 alt=3.1 F=[3190 227 7909]
+[INFO] orca_rl_sim t=728 src=1 xyz=-59.8 -39.9 13.6 rpy=-0.0 2.1 162.2 deg u=0.19 r=-0.001 alt=2.9 F=[4970 77 -12643]
+[INFO] orca_rl_sim t=730 src=1 xyz=-60.2 -39.9 13.7 rpy=-0.0 2.0 162.2 deg u=0.19 r=-0.000 alt=2.9 F=[4987 133 -7284]
+[INFO] OrcaXLUUV t=730 xyz=-60.3 -39.8 13.60 (target 12.0) wp 0/12 coverage 434 surveying
+[INFO] orca_rl_sim t=732 src=1 xyz=-60.6 -39.9 13.5 rpy=-0.0 1.9 162.2 deg u=0.18 r=-0.000 alt=3.0 F=[3375 174 12317]
+[INFO] orca_rl_sim t=734 src=1 xyz=-60.9 -39.7 13.5 rpy=-0.0 1.8 162.2 deg u=0.16 r=0.001 alt=3.0 F=[3149 352 9368]
+[INFO] OrcaXLUUV t=735 xyz=-61.1 -39.8 13.54 (target 12.0) wp 0/12 coverage 434 surveying
+[INFO] orca_rl_sim t=736 src=1 xyz=-61.2 -39.6 13.6 rpy=-0.0 1.7 162.3 deg u=0.15 r=0.001 alt=2.9 F=[4233 51 -12281]
+[INFO] orca_rl_sim t=738 src=1 xyz=-61.5 -39.5 13.6 rpy=-0.0 1.6 162.4 deg u=0.17 r=-0.000 alt=2.9 F=[35763 -8000 -7457]
+[INFO] orca_rl_sim t=740 src=1 xyz=-62.2 -39.3 13.5 rpy=0.2 1.5 161.3 deg u=0.41 r=-0.017 alt=3.0 F=[34685 -8000 21160]
+[INFO] OrcaXLUUV t=740 xyz=-62.2 -39.2 13.45 (target 12.0) wp 0/12 coverage 435 surveying
+[INFO] orca_rl_sim t=742 src=1 xyz=-63.0 -38.8 13.6 rpy=0.6 1.5 158.7 deg u=0.56 r=-0.028 alt=3.0 F=[33184 -7944 10246]
+[INFO] orca_rl_sim t=744 src=1 xyz=-64.0 -38.2 13.7 rpy=0.9 1.4 155.1 deg u=0.64 r=-0.034 alt=2.9 F=[32098 -7844 -13109]
+[INFO] OrcaXLUUV t=745 xyz=-64.8 -37.7 13.62 (target 12.0) wp 0/12 coverage 438 surveying
+[INFO] orca_rl_sim t=746 src=1 xyz=-65.2 -37.5 13.5 rpy=0.9 1.5 151.1 deg u=0.69 r=-0.037 alt=2.9 F=[33397 -7655 -5264]
+[INFO] orca_rl_sim t=748 src=1 xyz=-66.3 -36.6 13.4 rpy=0.6 1.5 146.7 deg u=0.73 r=-0.038 alt=3.1 F=[35056 -7615 17648]
+[INFO] orca_rl_sim t=750 src=1 xyz=-67.6 -35.6 13.5 rpy=0.4 1.6 142.3 deg u=0.75 r=-0.039 alt=2.9 F=[37131 -8000 -16339]
+[INFO] OrcaXLUUV t=750 xyz=-67.6 -35.5 13.60 (target 12.0) wp 0/12 coverage 443 surveying
+[INFO] orca_rl_sim t=752 src=1 xyz=-68.5 -34.6 13.6 rpy=0.5 1.7 137.8 deg u=0.77 r=-0.040 alt=2.9 F=[36520 -8000 -7882]
+[INFO] orca_rl_sim t=754 src=1 xyz=-69.7 -33.6 13.5 rpy=0.4 1.7 133.2 deg u=0.78 r=-0.039 alt=3.0 F=[34400 -7622 19126]
+[INFO] OrcaXLUUV t=755 xyz=-70.4 -32.9 13.44 (target 12.0) wp 0/12 coverage 447 surveying
+[INFO] orca_rl_sim t=756 src=1 xyz=-70.7 -32.4 13.5 rpy=0.3 1.8 128.8 deg u=0.77 r=-0.039 alt=3.0 F=[34827 -8000 10680]
+[INFO] orca_rl_sim t=758 src=1 xyz=-71.7 -31.1 13.6 rpy=0.4 1.8 124.3 deg u=0.77 r=-0.036 alt=2.9 F=[26498 8000 -11607]
+[INFO] orca_rl_sim t=760 src=1 xyz=-72.5 -30.1 13.6 rpy=0.0 1.9 121.9 deg u=0.74 r=-0.009 alt=3.0 F=[24727 8000 -5025]
+[INFO] OrcaXLUUV t=760 xyz=-72.7 -29.7 13.50 (target 12.0) wp 0/12 coverage 451 surveying
+[INFO] orca_rl_sim t=762 src=1 xyz=-73.5 -28.9 13.5 rpy=-0.8 1.9 122.0 deg u=0.72 r=0.010 alt=3.1 F=[22570 8000 15188]
+[INFO] orca_rl_sim t=764 src=1 xyz=-74.6 -27.9 13.5 rpy=-1.3 2.0 123.8 deg u=0.68 r=0.022 alt=3.0 F=[25430 8000 -12948]
+[INFO] OrcaXLUUV t=765 xyz=-75.3 -27.2 13.53 (target 12.0) wp 0/12 coverage 453 surveying
+[INFO] orca_rl_sim t=766 src=1 xyz=-75.6 -26.8 13.5 rpy=-1.3 2.1 126.8 deg u=0.68 r=0.030 alt=3.0 F=[26724 7871 -8604]
+[INFO] orca_rl_sim t=768 src=1 xyz=-76.6 -26.0 13.4 rpy=-0.9 2.2 130.5 deg u=0.69 r=0.031 alt=3.1 F=[29997 -8000 15028]
+[INFO] orca_rl_sim t=770 src=1 xyz=-77.6 -24.9 13.6 rpy=-0.0 2.3 132.4 deg u=0.74 r=0.005 alt=3.0 F=[33501 -8000 -13655]
+[INFO] OrcaXLUUV t=770 xyz=-77.8 -24.8 13.55 (target 12.0) wp 0/12 coverage 459 surveying
+[INFO] orca_rl_sim t=772 src=1 xyz=-78.6 -23.6 13.6 rpy=0.8 2.4 132.0 deg u=0.80 r=-0.012 alt=3.0 F=[33520 -8000 -7930]
+[INFO] orca_rl_sim t=774 src=1 xyz=-79.5 -22.4 13.3 rpy=1.2 2.4 129.9 deg u=0.83 r=-0.023 alt=3.1 F=[35098 -8000 17068]
+[INFO] OrcaXLUUV t=775 xyz=-80.1 -21.4 13.36 (target 12.0) wp 0/12 coverage 462 surveying
+[INFO] orca_rl_sim t=776 src=1 xyz=-80.4 -20.9 13.4 rpy=1.0 2.5 126.9 deg u=0.83 r=-0.026 alt=3.1 F=[31538 8000 6415]
+[INFO] orca_rl_sim t=778 src=1 xyz=-81.4 -19.6 13.5 rpy=0.2 2.6 125.5 deg u=0.84 r=-0.001 alt=3.0 F=[34283 8000 -1550]
+[INFO] orca_rl_sim t=780 src=1 xyz=-82.5 -18.2 13.6 rpy=-0.8 2.6 126.3 deg u=0.87 r=0.014 alt=2.9 F=[34338 7159 -9872]
+[INFO] OrcaXLUUV t=780 xyz=-82.6 -18.0 13.54 (target 12.0) wp 0/12 coverage 467 surveying
+[INFO] orca_rl_sim t=782 src=1 xyz=-83.6 -17.0 13.4 rpy=-1.2 2.7 128.4 deg u=0.87 r=0.022 alt=3.0 F=[33534 6457 16578]
+[INFO] orca_rl_sim t=784 src=1 xyz=-84.9 -15.7 13.5 rpy=-0.8 2.7 130.5 deg u=0.90 r=0.008 alt=3.1 F=[39229 -8000 5044]
+[INFO] OrcaXLUUV t=785 xyz=-85.6 -14.8 13.47 (target 12.0) wp 0/12 coverage 472 surveying
+[INFO] orca_rl_sim t=786 src=1 xyz=-86.0 -14.4 13.4 rpy=0.3 2.8 130.3 deg u=0.94 r=-0.010 alt=3.0 F=[38030 -8000 -10253]
+[INFO] orca_rl_sim t=788 src=1 xyz=-87.0 -12.7 13.4 rpy=1.1 2.8 128.5 deg u=0.95 r=-0.021 alt=3.0 F=[38190 -7452 6046]
+[INFO] orca_rl_sim t=790 src=1 xyz=-88.1 -11.2 13.4 rpy=1.1 2.9 126.1 deg u=0.91 r=-0.018 alt=3.0 F=[33927 -1283 9624]
+[INFO] OrcaXLUUV t=790 xyz=-88.3 -11.0 13.44 (target 12.0) wp 0/12 coverage 476 surveying
+[INFO] orca_rl_sim t=792 src=1 xyz=-89.1 -9.7 13.5 rpy=0.4 3.0 124.2 deg u=0.89 r=-0.014 alt=3.0 F=[37180 -1876 -12303]
+[INFO] orca_rl_sim t=794 src=1 xyz=-90.1 -8.1 13.4 rpy=-0.3 3.0 122.7 deg u=0.93 r=-0.012 alt=3.0 F=[37991 -975 -7174]
+[INFO] OrcaXLUUV t=795 xyz=-90.8 -7.2 13.39 (target 12.0) wp 0/12 coverage 481 surveying
+[INFO] orca_rl_sim t=796 src=1 xyz=-91.1 -6.5 13.4 rpy=-0.5 3.1 121.5 deg u=0.96 r=-0.009 alt=3.1 F=[37570 -766 7483]
+[INFO] orca_rl_sim t=798 src=1 xyz=-92.2 -4.8 13.4 rpy=-0.3 3.1 120.6 deg u=0.98 r=-0.007 alt=3.1 F=[37789 53 2763]
+[INFO] orca_rl_sim t=800 src=1 xyz=-93.3 -3.1 13.4 rpy=-0.0 3.1 120.0 deg u=0.98 r=-0.003 alt=3.1 F=[38056 963 2340]
+[INFO] OrcaXLUUV t=800 xyz=-93.4 -3.0 13.37 (target 12.0) wp 0/12 coverage 486 surveying
+[INFO] orca_rl_sim t=802 src=1 xyz=-94.3 -1.5 13.4 rpy=0.0 3.1 119.8 deg u=0.99 r=0.001 alt=3.1 F=[38392 1977 411]
+[INFO] orca_rl_sim t=804 src=1 xyz=-95.3 0.2 13.3 rpy=-0.1 3.1 120.1 deg u=1.00 r=0.005 alt=3.1 F=[38416 2843 40]
+[INFO] OrcaXLUUV t=805 xyz=-96.1 1.2 13.41 (target 12.0) wp 0/12 coverage 491 surveying
+[INFO] orca_rl_sim t=806 src=1 xyz=-96.5 1.8 13.5 rpy=-0.3 3.2 120.9 deg u=1.00 r=0.008 alt=3.1 F=[38537 3760 1266]
+[INFO] orca_rl_sim t=808 src=1 xyz=-97.6 3.5 13.3 rpy=-0.4 3.2 122.1 deg u=1.00 r=0.012 alt=3.1 F=[38799 4686 2970]
+[INFO] orca_rl_sim t=810 src=1 xyz=-98.8 5.1 13.4 rpy=-0.4 3.3 123.7 deg u=0.99 r=0.017 alt=3.1 F=[39113 5709 961]
+[INFO] OrcaXLUUV t=810 xyz=-98.9 5.3 13.38 (target 12.0) wp 0/12 coverage 497 surveying
+[INFO] orca_rl_sim t=812 src=1 xyz=-100.0 6.7 13.4 rpy=-0.4 3.3 125.9 deg u=0.98 r=0.021 alt=3.1 F=[39408 6748 2106]
+[INFO] orca_rl_sim t=814 src=1 xyz=-101.2 8.1 13.3 rpy=-0.4 3.4 128.6 deg u=0.96 r=0.026 alt=3.1 F=[39700 7881 1152]
+[INFO] OrcaXLUUV t=815 xyz=-101.9 9.1 13.31 (target 12.0) wp 0/12 coverage 502 surveying
+[INFO] orca_rl_sim t=816 src=1 xyz=-102.5 9.6 13.2 rpy=-0.5 3.4 131.9 deg u=0.94 r=0.030 alt=3.2 F=[39721 8000 1550]
+[INFO] orca_rl_sim t=818 src=1 xyz=-103.9 10.9 13.3 rpy=-0.5 3.5 135.5 deg u=0.92 r=0.033 alt=3.2 F=[39404 8000 1309]
+[INFO] orca_rl_sim t=820 src=1 xyz=-105.2 12.2 13.1 rpy=-0.5 3.5 139.4 deg u=0.91 r=0.034 alt=3.3 F=[38310 8000 -1569]
+[INFO] OrcaXLUUV t=820 xyz=-105.3 12.3 13.18 (target 12.0) wp 0/12 coverage 508 surveying
+[INFO] orca_rl_sim t=822 src=1 xyz=-106.5 13.2 13.1 rpy=-0.4 3.5 143.5 deg u=0.88 r=0.036 alt=3.4 F=[36861 8000 1597]
+[INFO] orca_rl_sim t=824 src=1 xyz=-108.0 14.3 13.0 rpy=-0.3 3.5 147.7 deg u=0.86 r=0.037 alt=3.4 F=[35277 8000 1614]
+[INFO] OrcaXLUUV t=825 xyz=-108.8 14.8 12.97 (target 12.0) wp 0/12 coverage 512 surveying
+[INFO] orca_rl_sim t=826 src=1 xyz=-109.4 15.1 12.9 rpy=-0.2 3.6 152.0 deg u=0.83 r=0.038 alt=3.5 F=[34305 8000 2415]
+[INFO] orca_rl_sim t=828 src=1 xyz=-110.8 15.7 12.9 rpy=-0.3 3.5 156.4 deg u=0.81 r=0.039 alt=3.6 F=[33826 8000 1959]
+[INFO] orca_rl_sim t=830 src=1 xyz=-112.4 16.4 12.9 rpy=-0.3 3.5 160.9 deg u=0.79 r=0.039 alt=3.6 F=[33636 8000 3233]
+[INFO] OrcaXLUUV t=830 xyz=-112.6 16.4 12.85 (target 12.0) wp 0/12 coverage 516 surveying
+[INFO] orca_rl_sim t=832 src=1 xyz=-113.9 16.8 12.8 rpy=-0.3 3.5 165.4 deg u=0.78 r=0.039 alt=3.6 F=[33556 8000 1412]
+[INFO] orca_rl_sim t=834 src=1 xyz=-115.4 17.2 12.8 rpy=-0.3 3.5 170.0 deg u=0.77 r=0.040 alt=3.6 F=[33463 8000 1807]
+[INFO] OrcaXLUUV t=835 xyz=-116.4 17.4 12.82 (target 12.0) wp 0/12 coverage 521 surveying
+[INFO] orca_rl_sim t=836 src=1 xyz=-117.0 17.5 12.8 rpy=-0.3 3.4 174.5 deg u=0.76 r=0.040 alt=3.7 F=[33407 8000 2079]
+[INFO] orca_rl_sim t=838 src=1 xyz=-118.4 17.4 12.7 rpy=-0.3 3.4 179.2 deg u=0.76 r=0.040 alt=3.7 F=[33371 8000 958]
+[INFO] orca_rl_sim t=840 src=1 xyz=-120.0 17.5 12.7 rpy=-0.3 3.3 -176.2 deg u=0.76 r=0.041 alt=3.7 F=[33432 8000 3267]
+[INFO] OrcaXLUUV t=840 xyz=-120.2 17.5 12.75 (target 12.0) wp 0/12 coverage 525 surveying
+[INFO] orca_rl_sim t=842 src=1 xyz=-121.5 17.3 12.7 rpy=-0.3 3.3 -171.5 deg u=0.76 r=0.041 alt=3.7 F=[33691 8000 929]
+[INFO] orca_rl_sim t=844 src=1 xyz=-123.0 17.1 12.7 rpy=-0.3 3.3 -166.9 deg u=0.76 r=0.041 alt=3.8 F=[34128 8000 1394]
+[INFO] OrcaXLUUV t=845 xyz=-123.9 16.8 12.66 (target 12.0) wp 0/12 coverage 529 surveying
+[INFO] orca_rl_sim t=846 src=1 xyz=-124.4 16.6 12.7 rpy=-0.3 3.2 -162.2 deg u=0.77 r=0.041 alt=3.8 F=[34734 8000 1018]
+[INFO] orca_rl_sim t=848 src=1 xyz=-126.0 16.2 12.6 rpy=-0.3 3.2 -157.5 deg u=0.77 r=0.041 alt=3.9 F=[35541 8000 446]
+[INFO] orca_rl_sim t=850 src=1 xyz=-127.3 15.4 12.5 rpy=-0.3 3.2 -152.8 deg u=0.79 r=0.041 alt=3.9 F=[36292 8000 1177]
+[INFO] OrcaXLUUV t=850 xyz=-127.4 15.4 12.55 (target 12.0) wp 0/12 coverage 533 surveying
+[INFO] orca_rl_sim t=852 src=1 xyz=-128.7 14.6 12.5 rpy=-0.3 3.1 -148.1 deg u=0.79 r=0.040 alt=4.0 F=[37179 8000 1677]
+[INFO] orca_rl_sim t=854 src=1 xyz=-130.1 13.8 12.5 rpy=-0.3 3.1 -143.5 deg u=0.81 r=0.040 alt=4.0 F=[37777 8000 368]
+[INFO] OrcaXLUUV t=855 xyz=-130.8 13.1 12.45 (target 12.0) wp 0/12 coverage 539 surveying
+[INFO] orca_rl_sim t=856 src=1 xyz=-131.3 12.8 12.5 rpy=-0.3 3.1 -138.9 deg u=0.82 r=0.040 alt=4.0 F=[38224 8000 1590]
+[INFO] orca_rl_sim t=858 src=1 xyz=-132.5 11.8 12.4 rpy=-0.3 3.0 -134.4 deg u=0.83 r=0.039 alt=4.1 F=[38389 8000 1639]
+[INFO] orca_rl_sim t=860 src=1 xyz=-133.7 10.5 12.4 rpy=-0.3 3.0 -129.9 deg u=0.83 r=0.039 alt=4.1 F=[38375 8000 2003]
+[INFO] OrcaXLUUV t=860 xyz=-133.8 10.2 12.37 (target 12.0) wp 0/12 coverage 543 surveying
+[INFO] orca_rl_sim t=862 src=1 xyz=-134.8 9.1 12.3 rpy=-0.3 3.0 -125.4 deg u=0.83 r=0.039 alt=4.1 F=[38128 8000 1436]
+[INFO] orca_rl_sim t=864 src=1 xyz=-135.7 7.7 12.3 rpy=-0.3 3.0 -120.9 deg u=0.83 r=0.038 alt=4.1 F=[37658 8000 2732]
+[INFO] OrcaXLUUV t=865 xyz=-136.2 6.9 12.35 (target 12.0) wp 0/12 coverage 549 surveying
+[INFO] orca_rl_sim t=866 src=1 xyz=-136.5 6.3 12.4 rpy=-0.3 3.0 -116.5 deg u=0.83 r=0.039 alt=4.1 F=[37149 8000 2437]
+[INFO] orca_rl_sim t=868 src=1 xyz=-137.2 4.7 12.4 rpy=-0.3 3.0 -112.1 deg u=0.82 r=0.039 alt=4.1 F=[36534 8000 1224]
+[INFO] orca_rl_sim t=870 src=1 xyz=-137.8 3.3 12.4 rpy=-0.4 3.0 -107.7 deg u=0.81 r=0.039 alt=4.1 F=[36000 8000 616]
+[INFO] OrcaXLUUV t=870 xyz=-137.8 3.1 12.35 (target 12.0) wp 0/12 coverage 554 surveying
+[INFO] orca_rl_sim t=872 src=1 xyz=-138.3 1.6 12.4 rpy=-0.3 2.9 -103.2 deg u=0.81 r=0.039 alt=4.1 F=[35657 8000 3430]
+[INFO] orca_rl_sim t=874 src=1 xyz=-138.5 0.1 12.4 rpy=-0.4 2.9 -98.8 deg u=0.80 r=0.039 alt=4.1 F=[35495 8000 1504]
+[INFO] OrcaXLUUV t=875 xyz=-138.6 -0.8 12.38 (target 12.0) wp 0/12 coverage 560 surveying
+[INFO] orca_rl_sim t=876 src=1 xyz=-138.7 -1.4 12.4 rpy=-0.4 2.9 -94.3 deg u=0.79 r=0.039 alt=4.1 F=[35530 8000 2830]
+[INFO] orca_rl_sim t=878 src=1 xyz=-138.9 -2.9 12.4 rpy=-0.4 2.9 -89.8 deg u=0.79 r=0.039 alt=4.1 F=[35798 8000 4264]
+[INFO] orca_rl_sim t=880 src=1 xyz=-138.8 -4.7 12.3 rpy=-0.4 2.9 -85.3 deg u=0.79 r=0.039 alt=4.0 F=[36441 8000 3432]
+[INFO] OrcaXLUUV t=880 xyz=-138.7 -4.9 12.43 (target 12.0) wp 0/12 coverage 565 surveying
+[INFO] orca_rl_sim t=882 src=1 xyz=-138.6 -6.2 12.4 rpy=-0.4 2.9 -80.8 deg u=0.80 r=0.039 alt=4.0 F=[37412 8000 2588]
+[INFO] orca_rl_sim t=884 src=1 xyz=-138.3 -7.8 12.5 rpy=-0.4 2.9 -76.3 deg u=0.81 r=0.039 alt=4.0 F=[38681 8000 5494]
+[INFO] OrcaXLUUV t=886 xyz=-138.0 -8.7 12.53 (target 12.0) wp 0/12 coverage 569 surveying
+[INFO] orca_rl_sim t=886 src=1 xyz=-137.8 -9.4 12.6 rpy=-0.4 2.9 -71.9 deg u=0.83 r=0.039 alt=3.9 F=[40000 8000 3260]
+[INFO] orca_rl_sim t=888 src=1 xyz=-137.2 -11.0 12.6 rpy=-0.4 2.8 -67.5 deg u=0.84 r=0.038 alt=3.9 F=[40000 8000 2563]
+[INFO] orca_rl_sim t=890 src=1 xyz=-136.6 -12.5 12.8 rpy=-0.4 2.8 -63.1 deg u=0.84 r=0.037 alt=3.8 F=[40000 8000 10794]
+[INFO] OrcaXLUUV t=891 xyz=-136.4 -12.7 12.71 (target 12.0) wp 0/12 coverage 573 surveying
+[INFO] orca_rl_sim t=892 src=1 xyz=-135.7 -14.1 12.9 rpy=-0.5 2.8 -58.9 deg u=0.84 r=0.036 alt=3.6 F=[40000 8000 10422]
+[INFO] orca_rl_sim t=894 src=1 xyz=-134.8 -15.4 13.2 rpy=-0.5 2.8 -54.8 deg u=0.82 r=0.036 alt=3.3 F=[40000 8000 4600]
+[INFO] OrcaXLUUV t=896 xyz=-134.2 -16.2 13.29 (target 12.0) wp 0/12 coverage 577 surveying
+[INFO] orca_rl_sim t=896 src=1 xyz=-133.9 -16.6 13.4 rpy=-0.5 2.8 -50.7 deg u=0.82 r=0.036 alt=3.1 F=[40000 8000 14]
+[INFO] orca_rl_sim t=898 src=1 xyz=-132.7 -17.9 13.6 rpy=-0.5 2.8 -46.6 deg u=0.83 r=0.036 alt=2.9 F=[40000 8000 -14413]
+[INFO] orca_rl_sim t=900 src=1 xyz=-131.5 -19.2 13.4 rpy=-0.4 2.8 -42.4 deg u=0.86 r=0.037 alt=3.0 F=[40000 8000 -4263]
+[INFO] OrcaXLUUV t=901 xyz=-131.4 -19.4 13.48 (target 12.0) wp 0/12 coverage 581 surveying
+[INFO] orca_rl_sim t=902 src=1 xyz=-130.2 -20.3 13.4 rpy=-0.3 2.9 -38.1 deg u=0.87 r=0.038 alt=3.1 F=[40000 8000 11128]
+[INFO] orca_rl_sim t=904 src=1 xyz=-128.8 -21.3 13.5 rpy=-0.3 2.9 -33.8 deg u=0.86 r=0.037 alt=3.0 F=[40000 8000 6583]
+[INFO] OrcaXLUUV t=906 xyz=-128.0 -21.9 13.51 (target 12.0) wp 0/12 coverage 586 surveying
+[INFO] orca_rl_sim t=906 src=1 xyz=-127.3 -22.2 13.6 rpy=-0.4 2.9 -29.6 deg u=0.85 r=0.037 alt=2.9 F=[40000 8000 -13079]
+[INFO] orca_rl_sim t=908 src=1 xyz=-125.9 -23.1 13.5 rpy=-0.5 2.9 -25.3 deg u=0.87 r=0.037 alt=3.0 F=[40000 8000 -5530]
+[INFO] orca_rl_sim t=910 src=1 xyz=-124.1 -23.8 13.4 rpy=-0.3 2.9 -21.0 deg u=0.87 r=0.038 alt=3.1 F=[40000 8000 14285]
+[INFO] OrcaXLUUV t=911 xyz=-124.1 -23.7 13.41 (target 12.0) wp 0/12 coverage 590 surveying
+[INFO] orca_rl_sim t=912 src=1 xyz=-122.6 -24.3 13.4 rpy=-0.3 2.9 -16.7 deg u=0.86 r=0.037 alt=3.0 F=[40000 8000 5540]
+[INFO] orca_rl_sim t=914 src=1 xyz=-120.9 -24.9 13.6 rpy=-0.4 2.9 -12.5 deg u=0.86 r=0.037 alt=2.9 F=[40000 8000 -11108]
+[INFO] OrcaXLUUV t=916 xyz=-120.0 -25.1 13.51 (target 12.0) wp 0/12 coverage 595 surveying
+[INFO] orca_rl_sim t=916 src=1 xyz=-119.2 -25.2 13.4 rpy=-0.4 2.9 -8.2 deg u=0.87 r=0.037 alt=3.0 F=[40000 8000 18088]
+[INFO] orca_rl_sim t=918 src=1 xyz=-117.5 -25.3 13.5 rpy=-0.3 2.9 -3.9 deg u=0.86 r=0.037 alt=3.0 F=[40000 8000 9925]
+[INFO] orca_rl_sim t=920 src=1 xyz=-115.9 -25.4 13.5 rpy=-0.3 2.9 0.3 deg u=0.86 r=0.035 alt=2.9 F=[40000 5843 -9382]
+[INFO] OrcaXLUUV t=921 xyz=-115.7 -25.5 13.54 (target 12.0) wp 0/12 coverage 599 surveying
+[INFO] orca_rl_sim t=922 src=1 xyz=-114.1 -25.4 13.4 rpy=-0.2 2.9 4.1 deg u=0.88 r=0.032 alt=3.1 F=[40000 5052 19161]
+[INFO] orca_rl_sim t=924 src=1 xyz=-112.3 -25.3 13.4 rpy=-0.0 2.9 7.5 deg u=0.88 r=0.028 alt=3.0 F=[40000 3757 7865]
+[INFO] OrcaXLUUV t=926 xyz=-111.3 -25.2 13.54 (target 12.0) wp 0/12 coverage 603 surveying
+[INFO] orca_rl_sim t=926 src=1 xyz=-110.5 -25.1 13.6 rpy=0.0 2.9 10.3 deg u=0.90 r=0.021 alt=3.0 F=[40000 793 -8876]
+[INFO] orca_rl_sim t=928 src=1 xyz=-108.6 -24.8 13.4 rpy=0.2 2.9 12.4 deg u=0.94 r=0.015 alt=3.1 F=[40000 2159 17907]
+[INFO] orca_rl_sim t=930 src=1 xyz=-106.7 -24.5 13.5 rpy=0.2 2.9 14.0 deg u=0.95 r=0.014 alt=3.0 F=[40000 1932 7916]
+[INFO] OrcaXLUUV t=931 xyz=-106.7 -24.5 13.46 (target 12.0) wp 0/12 coverage 608 surveying
+[INFO] orca_rl_sim t=932 src=1 xyz=-104.8 -24.2 13.6 rpy=0.2 2.9 15.4 deg u=0.97 r=0.009 alt=3.0 F=[40000 -482 -9807]
+[INFO] orca_rl_sim t=934 src=1 xyz=-102.9 -23.7 13.5 rpy=0.2 2.9 16.2 deg u=1.00 r=0.006 alt=3.0 F=[40000 758 9737]
+[INFO] OrcaXLUUV t=936 xyz=-101.8 -23.5 13.49 (target 12.0) wp 0/12 coverage 612 surveying
+[INFO] orca_rl_sim t=936 src=1 xyz=-101.0 -23.2 13.5 rpy=0.2 2.9 16.7 deg u=1.00 r=0.003 alt=3.0 F=[40000 -921 -12125]
+[INFO] orca_rl_sim t=938 src=1 xyz=-98.9 -22.8 13.4 rpy=0.2 2.9 16.9 deg u=1.02 r=0.000 alt=3.0 F=[40000 -269 11833]
+[INFO] orca_rl_sim t=940 src=1 xyz=-97.0 -22.3 13.5 rpy=0.2 2.9 17.0 deg u=1.03 r=0.001 alt=3.0 F=[40000 366 5378]
+[INFO] OrcaXLUUV t=941 xyz=-97.0 -22.3 13.46 (target 12.0) wp 0/12 coverage 617 surveying
+[INFO] orca_rl_sim t=942 src=1 xyz=-95.1 -21.8 13.5 rpy=0.1 2.9 17.0 deg u=1.03 r=-0.001 alt=3.0 F=[40000 -1346 -11992]
+[INFO] orca_rl_sim t=944 src=1 xyz=-93.1 -21.2 13.4 rpy=0.1 2.9 16.8 deg u=1.05 r=-0.002 alt=3.0 F=[40000 -461 9018]
+[INFO] OrcaXLUUV t=946 xyz=-91.9 -21.0 13.42 (target 12.0) wp 0/12 coverage 620 surveying
+[INFO] orca_rl_sim t=946 src=1 xyz=-91.1 -20.7 13.4 rpy=0.1 3.0 16.6 deg u=1.06 r=-0.001 alt=3.1 F=[40000 698 5445]
+[INFO] orca_rl_sim t=948 src=1 xyz=-88.9 -20.0 13.5 rpy=0.0 3.0 16.6 deg u=1.05 r=-0.000 alt=3.0 F=[40000 -458 2075]
+[INFO] orca_rl_sim t=950 src=1 xyz=-86.8 -19.4 13.5 rpy=0.0 3.1 16.5 deg u=1.05 r=-0.002 alt=3.0 F=[40000 -1635 -9068]
+[INFO] OrcaXLUUV t=951 xyz=-86.7 -19.5 13.49 (target 12.0) wp 0/12 coverage 620 surveying
+[INFO] orca_rl_sim t=952 src=1 xyz=-84.8 -18.9 13.6 rpy=0.1 3.2 16.1 deg u=1.06 r=-0.003 alt=3.0 F=[40000 -718 4370]
+[INFO] orca_rl_sim t=954 src=1 xyz=-82.9 -18.4 13.4 rpy=0.1 3.2 15.8 deg u=1.06 r=-0.003 alt=3.1 F=[40000 -387 1323]
+[INFO] OrcaXLUUV t=956 xyz=-81.7 -18.1 13.42 (target 12.0) wp 0/12 coverage 620 surveying
+[INFO] orca_rl_sim t=956 src=1 xyz=-80.7 -17.8 13.4 rpy=0.1 3.3 15.5 deg u=1.06 r=-0.002 alt=3.1 F=[40000 -450 2440]
+[INFO] orca_rl_sim t=959 src=1 xyz=-78.7 -17.3 13.4 rpy=0.0 3.3 15.2 deg u=1.06 r=-0.002 alt=3.1 F=[40000 -494 2467]
+[INFO] orca_rl_sim t=961 src=1 xyz=-76.6 -16.7 13.5 rpy=-0.0 3.3 15.0 deg u=1.06 r=-0.002 alt=3.1 F=[39549 -393 2100]
+[INFO] OrcaXLUUV t=961 xyz=-76.5 -16.7 13.39 (target 12.0) wp 0/12 coverage 621 surveying
+[INFO] orca_rl_sim t=963 src=1 xyz=-74.6 -16.2 13.4 rpy=-0.0 3.4 14.7 deg u=1.06 r=-0.001 alt=3.1 F=[39005 33 2499]
+[INFO] orca_rl_sim t=965 src=1 xyz=-72.5 -15.7 13.4 rpy=-0.0 3.4 14.7 deg u=1.06 r=-0.000 alt=3.2 F=[38595 478 2743]
+[INFO] OrcaXLUUV t=966 xyz=-71.4 -15.4 13.31 (target 12.0) wp 0/12 coverage 625 surveying
+[INFO] orca_rl_sim t=967 src=1 xyz=-70.4 -15.0 13.3 rpy=-0.0 3.5 14.7 deg u=1.05 r=0.001 alt=3.2 F=[38122 838 2613]
+[INFO] orca_rl_sim t=969 src=1 xyz=-68.4 -14.5 13.3 rpy=-0.1 3.5 14.9 deg u=1.05 r=0.002 alt=3.2 F=[37754 967 1428]
+[INFO] orca_rl_sim t=971 src=1 xyz=-66.5 -14.0 13.3 rpy=-0.1 3.5 15.2 deg u=1.03 r=0.003 alt=3.2 F=[37488 1177 2189]
+[INFO] OrcaXLUUV t=971 xyz=-66.4 -14.0 13.25 (target 12.0) wp 0/12 coverage 630 surveying
+[INFO] orca_rl_sim t=973 src=1 xyz=-64.4 -13.5 13.2 rpy=-0.1 3.6 15.6 deg u=1.03 r=0.004 alt=3.2 F=[37061 1233 3547]
+[INFO] orca_rl_sim t=975 src=1 xyz=-62.4 -12.9 13.2 rpy=-0.1 3.6 16.1 deg u=1.01 r=0.005 alt=3.3 F=[36695 1403 2598]
+[INFO] OrcaXLUUV t=976 xyz=-61.4 -12.6 13.20 (target 12.0) wp 0/12 coverage 636 surveying
+[INFO] orca_rl_sim t=977 src=1 xyz=-60.5 -12.3 13.2 rpy=-0.1 3.6 16.7 deg u=1.00 r=0.006 alt=3.3 F=[35791 1640 1639]
+[INFO] orca_rl_sim t=979 src=1 xyz=-58.6 -11.7 13.2 rpy=-0.1 3.7 17.4 deg u=0.98 r=0.007 alt=3.3 F=[34729 2062 1735]
+[INFO] orca_rl_sim t=981 src=1 xyz=-56.8 -11.0 13.2 rpy=-0.1 3.7 18.2 deg u=0.96 r=0.008 alt=3.3 F=[33207 2425 1832]
+[INFO] OrcaXLUUV t=981 xyz=-56.7 -11.0 13.13 (target 12.0) wp 0/12 coverage 641 surveying
+[INFO] orca_rl_sim t=983 src=1 xyz=-55.0 -10.4 13.1 rpy=-0.1 3.7 19.3 deg u=0.94 r=0.010 alt=3.4 F=[31220 2876 1684]
+[INFO] orca_rl_sim t=985 src=1 xyz=-53.3 -9.7 13.0 rpy=-0.1 3.7 20.5 deg u=0.90 r=0.012 alt=3.4 F=[29295 3182 452]
+[INFO] OrcaXLUUV t=986 xyz=-52.3 -9.5 13.06 (target 12.0) wp 0/12 coverage 646 surveying
+[INFO] orca_rl_sim t=987 src=1 xyz=-51.6 -9.2 13.1 rpy=-0.1 3.7 22.0 deg u=0.86 r=0.014 alt=3.4 F=[27343 3277 3254]
+[INFO] orca_rl_sim t=989 src=1 xyz=-50.0 -8.4 13.0 rpy=-0.1 3.7 23.7 deg u=0.82 r=0.015 alt=3.4 F=[25897 2858 2504]
+[INFO] orca_rl_sim t=991 src=1 xyz=-48.6 -7.7 13.0 rpy=-0.1 3.7 25.4 deg u=0.79 r=0.014 alt=3.4 F=[25002 2024 777]
+[INFO] OrcaXLUUV t=991 xyz=-48.6 -7.7 13.02 (target 12.0) wp 0/12 coverage 650 surveying
+[INFO] orca_rl_sim t=993 src=1 xyz=-47.2 -7.0 13.1 rpy=-0.0 3.7 26.9 deg u=0.76 r=0.012 alt=3.4 F=[24023 586 3058]
+[INFO] orca_rl_sim t=995 src=1 xyz=-45.8 -6.4 13.0 rpy=0.1 3.7 28.0 deg u=0.73 r=0.007 alt=3.4 F=[23236 -1362 2660]
+[INFO] OrcaXLUUV t=996 xyz=-45.3 -6.1 13.06 (target 12.0) wp 0/12 coverage 654 surveying
+[INFO] orca_rl_sim t=997 src=1 xyz=-44.2 -6.8 12.2 rpy=3.0 10.1 21.5 deg u=0.68 r=-0.055 alt=4.1 F=[19816 8000 55000]
+[WARN] CONTACT: OrcaXLUUV touched FishB2 at t=996.9
+[WARN] CONTACT: OrcaXLUUV touched FishB2 at t=997.4
+[WARN] CONTACT: OrcaXLUUV touched FishB2 at t=997.8
+[WARN] CONTACT: OrcaXLUUV touched FishB2 at t=998.0
+[WARN] CONTACT: OrcaXLUUV touched FishB2 at t=998.2
+[INFO] orca_rl_sim t=999 src=1 xyz=-41.5 -14.4 10.9 rpy=19.3 20.9 22.6 deg u=0.07 r=-0.065 alt=5.1 F=[10786 8000 -55000]
+[WARN] CONTACT: OrcaXLUUV touched FishB3 at t=998.7
+[WARN] CONTACT: OrcaXLUUV touched FishB2 at t=999.0
+[WARN] CONTACT: OrcaXLUUV touched FishB3 at t=999.4
+[WARN] CONTACT: OrcaXLUUV touched FishB2 at t=999.9
+[WARN] CONTACT: OrcaXLUUV touched FishB3 at t=1000.2
+[WARN] CONTACT: OrcaXLUUV touched FishB2 at t=1000.4
+[INFO] orca_rl_sim t=1001 src=1 xyz=-37.8 -23.5 10.5 rpy=39.2 25.5 22.5 deg u=0.03 r=-0.009 alt=5.8 F=[11087 8000 -55000]
+[INFO] OrcaXLUUV t=1001 xyz=-37.7 -23.7 10.55 (target 12.0) wp 0/12 coverage 658 surveying
+[WARN] CONTACT: OrcaXLUUV touched FishB3 at t=1000.8
+[INFO] orca_rl_sim t=1003 src=1 xyz=-36.0 -28.4 9.8 rpy=46.9 26.0 21.6 deg u=0.06 r=0.002 alt=6.8 F=[7348 8000 49126]
+[INFO] orca_rl_sim t=1005 src=1 xyz=-35.7 -29.6 4.6 rpy=49.7 27.4 21.9 deg u=1.45 r=-0.023 alt=11.9 F=[-22912 8000 55000]
+[INFO] OrcaXLUUV t=1006 xyz=-35.6 -29.7 0.44 (target 12.0) wp 0/12 coverage 658 surveying
+[INFO] orca_rl_sim t=1007 src=1 xyz=-35.6 -29.9 -2.8 rpy=48.6 24.5 20.7 deg u=1.16 r=0.085 alt=18.9 F=[-7891 -731 55000]
+[INFO] orca_rl_sim t=1009 src=1 xyz=-34.6 -30.5 -3.7 rpy=39.8 -1.2 17.9 deg u=0.13 r=0.130 alt=20.1 F=[11894 -8000 55000]
+[INFO] orca_rl_sim t=1011 src=1 xyz=-33.7 -31.4 0.1 rpy=25.6 2.3 16.4 deg u=0.11 r=0.022 alt=15.3 F=[9452 6666 55000]
+[INFO] OrcaXLUUV t=1011 xyz=-33.6 -31.4 -0.10 (target 12.0) wp 0/12 coverage 662 surveying
+[INFO] orca_rl_sim t=1013 src=1 xyz=-33.1 -32.3 -0.8 rpy=3.1 1.7 16.2 deg u=0.25 r=-0.000 alt=16.9 F=[13593 8000 55000]
+[INFO] orca_rl_sim t=1015 src=1 xyz=-32.5 -33.1 -0.8 rpy=-15.2 -1.5 17.4 deg u=0.29 r=0.056 alt=15.9 F=[15668 1442 55000]
+[INFO] OrcaXLUUV t=1016 xyz=-32.2 -33.5 -1.00 (target 12.0) wp 0/12 coverage 667 surveying
+[INFO] orca_rl_sim t=1017 src=1 xyz=-32.2 -33.4 -0.3 rpy=-25.7 -2.9 19.6 deg u=0.08 r=0.004 alt=15.6 F=[27830 8000 55000]
+[INFO] orca_rl_sim t=1019 src=1 xyz=-32.0 -33.4 -0.9 rpy=-20.4 0.3 22.2 deg u=0.01 r=0.001 alt=16.2 F=[30325 8000 55000]
+[INFO] orca_rl_sim t=1021 src=1 xyz=-32.0 -32.8 -0.2 rpy=-7.5 0.4 25.5 deg u=0.10 r=0.030 alt=15.9 F=[23357 5997 55000]
+[INFO] OrcaXLUUV t=1021 xyz=-32.0 -32.9 -0.26 (target 12.0) wp 0/12 coverage 669 surveying
+[INFO] orca_rl_sim t=1023 src=1 xyz=-32.1 -32.1 -0.2 rpy=12.5 -0.3 29.5 deg u=0.14 r=0.030 alt=15.8 F=[28474 6445 55000]
+[INFO] orca_rl_sim t=1025 src=1 xyz=-32.1 -31.7 -0.9 rpy=26.8 -0.5 33.9 deg u=0.16 r=0.023 alt=16.3 F=[27982 8000 55000]
+[INFO] OrcaXLUUV t=1026 xyz=-32.1 -31.5 -0.15 (target 12.0) wp 0/12 coverage 675 surveying
+[INFO] orca_rl_sim t=1027 src=1 xyz=-32.1 -31.4 -0.5 rpy=37.0 -1.8 38.7 deg u=0.10 r=0.028 alt=16.3 F=[34285 7095 55000]
+[INFO] orca_rl_sim t=1029 src=1 xyz=-31.7 -31.7 -0.3 rpy=40.7 -0.6 43.7 deg u=0.02 r=0.075 alt=16.7 F=[37587 -639 55000]
+[INFO] orca_rl_sim t=1031 src=1 xyz=-31.0 -32.2 -0.8 rpy=34.8 1.4 48.3 deg u=0.03 r=0.033 alt=16.5 F=[35853 4149 55000]
+[INFO] OrcaXLUUV t=1031 xyz=-31.0 -32.2 -0.76 (target 12.0) wp 0/12 coverage 675 surveying
+[INFO] orca_rl_sim t=1033 src=1 xyz=-30.0 -33.1 -0.4 rpy=16.8 -0.4 52.4 deg u=0.06 r=0.013 alt=15.8 F=[33181 4445 55000]
+[INFO] orca_rl_sim t=1035 src=1 xyz=-29.0 -34.1 -0.3 rpy=-10.6 -1.7 56.0 deg u=-0.08 r=0.028 alt=15.8 F=[27722 -626 55000]
+[INFO] OrcaXLUUV t=1036 xyz=-28.4 -34.4 -0.42 (target 12.0) wp 0/12 coverage 684 surveying
+[INFO] orca_rl_sim t=1037 src=1 xyz=-28.1 -34.8 -0.7 rpy=-34.7 -0.3 58.9 deg u=-0.16 r=-0.001 alt=16.6 F=[37650 3902 55000]
+[INFO] orca_rl_sim t=1039 src=1 xyz=-27.8 -35.2 -0.5 rpy=-44.3 -0.0 61.5 deg u=-0.12 r=0.012 alt=17.4 F=[35418 -325 55000]
+[INFO] orca_rl_sim t=1041 src=1 xyz=-28.1 -35.2 -0.1 rpy=-38.3 -0.4 63.6 deg u=-0.10 r=0.010 alt=16.4 F=[34027 -3584 55000]
+[INFO] OrcaXLUUV t=1041 xyz=-28.1 -35.2 -0.13 (target 12.0) wp 0/12 coverage 684 surveying
+[INFO] orca_rl_sim t=1043 src=1 xyz=-28.9 -35.1 -0.6 rpy=-15.4 0.1 64.6 deg u=-0.05 r=0.006 alt=16.0 F=[31845 -6975 55000]
+[INFO] orca_rl_sim t=1045 src=1 xyz=-29.7 -34.8 -0.5 rpy=13.6 -0.9 63.9 deg u=-0.04 r=-0.020 alt=16.0 F=[24797 -6335 55000]
+[INFO] OrcaXLUUV t=1046 xyz=-30.0 -34.8 -0.56 (target 12.0) wp 0/12 coverage 687 surveying
+[INFO] orca_rl_sim t=1047 src=1 xyz=-30.1 -34.8 -0.2 rpy=41.1 -1.4 61.9 deg u=-0.12 r=0.002 alt=16.6 F=[34172 -8000 55000]
+[INFO] orca_rl_sim t=1049 src=1 xyz=-30.0 -35.0 -0.6 rpy=61.1 0.4 59.1 deg u=-0.12 r=0.022 alt=21.1 F=[35736 -8000 55000]
+[INFO] OrcaXLUUV t=1051 xyz=-29.3 -35.5 -0.47 (target 12.0) wp 0/12 coverage 687 surveying
+[INFO] orca_rl_sim t=1051 src=1 xyz=-29.3 -35.5 -0.5 rpy=69.3 0.4 56.6 deg u=-0.04 r=-0.026 alt=24.4 F=[34628 2897 55000]
+[INFO] orca_rl_sim t=1053 src=1 xyz=-27.9 -36.6 -0.3 rpy=56.8 -0.8 55.0 deg u=0.00 r=-0.022 alt=19.7 F=[34945 7160 55000]
+[INFO] orca_rl_sim t=1055 src=1 xyz=-25.9 -38.1 -0.5 rpy=20.7 -0.6 54.9 deg u=-0.00 r=0.007 alt=15.8 F=[36022 6851 55000]
+[INFO] OrcaXLUUV t=1056 xyz=-24.9 -38.6 -0.28 (target 12.0) wp 0/12 coverage 688 surveying
+[INFO] orca_rl_sim t=1057 src=1 xyz=-24.0 -39.2 -0.5 rpy=-30.5 -0.5 56.5 deg u=-0.05 r=0.017 alt=16.1 F=[37428 8000 55000]
+[INFO] orca_rl_sim t=1059 src=1 xyz=-22.8 -40.2 -0.4 rpy=-75.7 -0.6 58.9 deg u=-0.10 r=-0.005 alt=27.2 F=[38171 8000 55000]
+[INFO] OrcaXLUUV t=1061 xyz=-22.3 -40.7 -0.61 (target 12.0) wp 0/12 coverage 689 surveying
+[INFO] orca_rl_sim t=1061 src=1 xyz=-22.3 -40.7 -0.6 rpy=-105.1 0.2 61.4 deg u=-0.08 r=-0.002 alt=-1.0 F=[37008 8000 55000]
+[INFO] orca_rl_sim t=1063 src=1 xyz=-22.9 -40.5 -0.7 rpy=-99.2 0.0 63.2 deg u=-0.07 r=-0.008 alt=82.9 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1065 src=1 xyz=-24.1 -40.1 -0.4 rpy=-66.6 -0.4 64.5 deg u=-0.04 r=0.012 alt=23.5 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1066 xyz=-25.1 -39.5 -0.65 (target 12.0) wp 0/12 coverage 689 surveying
+[INFO] orca_rl_sim t=1067 src=1 xyz=-26.2 -39.1 -0.5 rpy=-12.8 -0.3 66.0 deg u=-0.01 r=0.015 alt=15.9 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1069 src=1 xyz=-28.3 -38.1 -0.5 rpy=51.5 -0.4 67.9 deg u=0.06 r=0.001 alt=18.3 F=[38749 2183 55000]
+[INFO] OrcaXLUUV t=1071 xyz=-29.5 -37.5 -0.65 (target 12.0) wp 0/12 coverage 692 surveying
+[INFO] orca_rl_sim t=1071 src=1 xyz=-29.5 -37.5 -0.7 rpy=109.0 -0.7 69.8 deg u=0.05 r=-0.018 alt=-1.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1073 src=1 xyz=-30.2 -37.2 -0.6 rpy=123.8 0.1 71.9 deg u=0.07 r=0.014 alt=-1.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1075 src=1 xyz=-29.9 -37.1 -0.6 rpy=81.8 0.2 74.4 deg u=0.07 r=0.020 alt=35.8 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1076 xyz=-29.2 -37.2 -0.45 (target 12.0) wp 0/12 coverage 695 surveying
+[INFO] orca_rl_sim t=1077 src=1 xyz=-28.5 -37.4 -0.4 rpy=30.1 0.0 76.4 deg u=0.04 r=0.002 alt=16.2 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1079 src=1 xyz=-26.6 -37.9 -0.4 rpy=-23.5 -0.6 76.5 deg u=0.03 r=-0.001 alt=15.7 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1081 xyz=-25.3 -38.2 -0.56 (target 12.0) wp 0/12 coverage 696 surveying
+[INFO] orca_rl_sim t=1081 src=1 xyz=-25.3 -38.2 -0.6 rpy=-67.2 -0.6 75.0 deg u=0.05 r=-0.005 alt=22.7 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1083 src=1 xyz=-24.5 -38.4 -0.7 rpy=-94.2 -0.8 72.9 deg u=0.05 r=0.007 alt=52.8 F=[33496 -2219 55000]
+[INFO] orca_rl_sim t=1085 src=1 xyz=-24.8 -38.3 -0.3 rpy=-102.6 0.2 71.2 deg u=0.02 r=-0.004 alt=-1.0 F=[34248 1715 55000]
+[INFO] OrcaXLUUV t=1086 xyz=-25.4 -37.9 -0.78 (target 12.0) wp 0/12 coverage 696 surveying
+[INFO] orca_rl_sim t=1087 src=1 xyz=-26.2 -37.7 -0.6 rpy=-76.3 -0.4 69.8 deg u=0.03 r=0.007 alt=28.6 F=[35023 1435 55000]
+[INFO] orca_rl_sim t=1089 src=1 xyz=-28.3 -37.0 -0.6 rpy=-28.2 -0.5 69.1 deg u=0.01 r=0.006 alt=16.1 F=[38154 8000 55000]
+[INFO] OrcaXLUUV t=1091 xyz=-30.4 -36.2 -0.22 (target 12.0) wp 0/12 coverage 696 surveying
+[INFO] orca_rl_sim t=1091 src=1 xyz=-30.5 -36.1 -0.3 rpy=34.9 -1.0 68.8 deg u=-0.04 r=-0.002 alt=16.2 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1093 src=1 xyz=-32.0 -35.5 -0.6 rpy=93.8 -0.1 67.4 deg u=-0.05 r=0.043 alt=53.9 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1095 src=1 xyz=-32.7 -35.4 -0.7 rpy=119.1 1.5 66.4 deg u=-0.02 r=0.001 alt=-1.0 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1096 xyz=-32.6 -35.4 -0.57 (target 12.0) wp 0/12 coverage 697 surveying
+[INFO] orca_rl_sim t=1097 src=1 xyz=-32.4 -35.5 -0.6 rpy=87.9 -0.4 66.1 deg u=-0.04 r=-0.033 alt=41.7 F=[40000 -7584 55000]
+[INFO] orca_rl_sim t=1099 src=1 xyz=-31.3 -36.1 -0.3 rpy=38.0 -0.8 65.8 deg u=-0.03 r=-0.004 alt=16.5 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1101 xyz=-29.7 -37.0 -0.74 (target 12.0) wp 0/12 coverage 697 surveying
+[INFO] orca_rl_sim t=1101 src=1 xyz=-29.6 -36.9 -0.7 rpy=-14.3 -0.3 64.4 deg u=-0.00 r=-0.020 alt=16.1 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1103 src=1 xyz=-28.1 -37.7 -0.5 rpy=-61.9 -0.5 62.1 deg u=0.05 r=-0.000 alt=21.2 F=[40000 4415 55000]
+[INFO] orca_rl_sim t=1105 src=1 xyz=-27.5 -37.9 -0.4 rpy=-91.9 -0.6 60.4 deg u=0.06 r=-0.012 alt=48.5 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1106 xyz=-27.4 -37.9 -0.56 (target 12.0) wp 0/12 coverage 697 surveying
+[INFO] orca_rl_sim t=1107 src=1 xyz=-27.6 -37.7 -0.6 rpy=-103.8 0.8 58.9 deg u=0.03 r=-0.012 alt=-1.0 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1109 src=1 xyz=-28.7 -37.0 -0.7 rpy=-91.3 0.1 57.2 deg u=0.03 r=0.013 alt=49.2 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1111 xyz=-30.2 -35.9 -0.34 (target 12.0) wp 0/12 coverage 697 surveying
+[INFO] orca_rl_sim t=1111 src=1 xyz=-30.4 -36.0 -0.3 rpy=-51.2 -0.5 55.9 deg u=0.01 r=0.005 alt=18.5 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1113 src=1 xyz=-32.7 -34.4 -0.6 rpy=15.1 -0.4 55.9 deg u=-0.01 r=0.006 alt=16.0 F=[40000 7070 55000]
+[INFO] orca_rl_sim t=1115 src=1 xyz=-34.6 -33.0 -0.6 rpy=85.3 -0.4 56.4 deg u=-0.00 r=-0.003 alt=35.9 F=[40000 -7311 55000]
+[INFO] OrcaXLUUV t=1116 xyz=-35.2 -32.7 -0.71 (target 12.0) wp 0/12 coverage 698 surveying
+[INFO] orca_rl_sim t=1117 src=1 xyz=-35.7 -32.3 -0.5 rpy=134.1 0.5 57.1 deg u=0.01 r=-0.006 alt=-1.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1119 src=1 xyz=-36.2 -32.1 -0.7 rpy=125.0 -0.1 58.7 deg u=0.00 r=-0.017 alt=-1.0 F=[40000 -5114 55000]
+[INFO] OrcaXLUUV t=1121 xyz=-35.9 -32.2 -0.59 (target 12.0) wp 0/12 coverage 698 surveying
+[INFO] orca_rl_sim t=1121 src=1 xyz=-35.9 -32.2 -0.8 rpy=68.3 -1.0 60.7 deg u=0.01 r=0.028 alt=24.9 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1123 src=1 xyz=-34.6 -32.9 -0.3 rpy=7.5 -0.5 61.9 deg u=-0.07 r=0.006 alt=16.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1125 src=1 xyz=-33.5 -33.5 -0.4 rpy=-48.5 0.4 61.1 deg u=-0.01 r=-0.022 alt=17.7 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1126 xyz=-33.0 -33.8 -0.44 (target 12.0) wp 0/12 coverage 698 surveying
+[INFO] orca_rl_sim t=1127 src=1 xyz=-32.7 -34.0 -0.7 rpy=-84.8 0.3 59.3 deg u=0.04 r=0.040 alt=36.1 F=[40000 1099 55000]
+[INFO] orca_rl_sim t=1129 src=1 xyz=-32.9 -33.9 -0.6 rpy=-100.4 -0.9 57.5 deg u=0.02 r=0.041 alt=81.5 F=[40000 4906 55000]
+[INFO] OrcaXLUUV t=1131 xyz=-33.7 -33.3 -0.52 (target 12.0) wp 0/12 coverage 698 surveying
+[INFO] orca_rl_sim t=1131 src=1 xyz=-33.8 -33.3 -0.5 rpy=-92.5 -1.4 55.9 deg u=0.02 r=-0.042 alt=51.7 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1133 src=1 xyz=-35.4 -32.3 -0.6 rpy=-60.2 0.5 54.5 deg u=-0.05 r=-0.037 alt=21.5 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1135 src=1 xyz=-37.5 -30.7 -0.4 rpy=0.6 0.3 54.1 deg u=-0.01 r=0.003 alt=16.7 F=[40000 7133 55000]
+[INFO] OrcaXLUUV t=1136 xyz=-38.5 -30.1 -0.57 (target 12.0) wp 0/12 coverage 698 surveying
+[INFO] orca_rl_sim t=1137 src=1 xyz=-39.7 -29.4 -0.5 rpy=72.5 -0.4 54.5 deg u=-0.01 r=-0.021 alt=24.5 F=[40000 -3981 55000]
+[INFO] orca_rl_sim t=1139 src=1 xyz=-40.9 -28.5 -0.9 rpy=129.5 0.1 54.7 deg u=-0.00 r=-0.014 alt=-1.0 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1141 xyz=-41.4 -28.1 -0.58 (target 12.0) wp 0/12 coverage 698 surveying
+[INFO] orca_rl_sim t=1141 src=1 xyz=-41.5 -28.2 -0.8 rpy=136.5 -0.1 56.0 deg u=-0.01 r=-0.007 alt=-1.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1143 src=1 xyz=-41.4 -28.2 -0.4 rpy=94.8 0.3 58.1 deg u=0.02 r=0.001 alt=66.4 F=[40000 -7562 55000]
+[INFO] orca_rl_sim t=1145 src=1 xyz=-40.5 -28.7 -0.4 rpy=29.0 0.2 60.0 deg u=0.02 r=-0.004 alt=16.2 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1146 xyz=-39.9 -29.1 -0.23 (target 12.0) wp 0/12 coverage 698 surveying
+[INFO] orca_rl_sim t=1147 src=1 xyz=-39.2 -29.6 -0.6 rpy=-30.0 -0.7 60.1 deg u=0.02 r=0.016 alt=16.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1149 src=1 xyz=-38.2 -30.2 -0.4 rpy=-75.9 -1.8 58.6 deg u=-0.01 r=-0.006 alt=26.6 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1151 xyz=-37.9 -30.4 -0.48 (target 12.0) wp 0/12 coverage 698 surveying
+[INFO] orca_rl_sim t=1151 src=1 xyz=-37.8 -30.5 -0.5 rpy=-103.1 -0.4 56.9 deg u=-0.01 r=-0.036 alt=-1.0 F=[40000 -676 55000]
+[INFO] orca_rl_sim t=1153 src=1 xyz=-38.5 -30.0 -0.7 rpy=-97.6 1.0 55.3 deg u=0.01 r=-0.022 alt=67.8 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1155 src=1 xyz=-39.9 -29.1 -0.3 rpy=-67.2 0.2 53.8 deg u=0.00 r=0.034 alt=23.3 F=[40000 5467 55000]
+[INFO] OrcaXLUUV t=1156 xyz=-40.8 -28.5 -0.60 (target 12.0) wp 0/12 coverage 698 surveying
+[INFO] orca_rl_sim t=1157 src=1 xyz=-41.8 -27.8 -0.5 rpy=-13.1 -0.9 53.4 deg u=0.01 r=0.006 alt=15.9 F=[40000 3678 55000]
+[INFO] orca_rl_sim t=1159 src=1 xyz=-43.8 -26.3 -0.6 rpy=49.8 -0.9 52.9 deg u=-0.05 r=-0.009 alt=18.3 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1161 xyz=-45.0 -25.6 -0.56 (target 12.0) wp 0/12 coverage 699 surveying
+[INFO] orca_rl_sim t=1161 src=1 xyz=-44.9 -25.6 -0.6 rpy=106.7 -0.9 51.8 deg u=-0.06 r=0.009 alt=-1.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1163 src=1 xyz=-45.5 -25.3 -0.5 rpy=126.4 0.7 51.3 deg u=-0.06 r=0.021 alt=-1.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1165 src=1 xyz=-45.4 -25.5 -0.7 rpy=87.9 0.1 51.7 deg u=-0.04 r=-0.008 alt=42.5 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1166 xyz=-44.9 -25.9 -0.36 (target 12.0) wp 0/12 coverage 699 surveying
+[INFO] orca_rl_sim t=1167 src=1 xyz=-44.4 -26.5 -0.5 rpy=38.4 -0.4 52.1 deg u=-0.02 r=-0.016 alt=16.7 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1169 src=1 xyz=-42.7 -27.8 -0.4 rpy=-14.1 -1.0 51.2 deg u=-0.02 r=-0.013 alt=15.8 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1171 xyz=-41.5 -28.9 -0.43 (target 12.0) wp 0/12 coverage 699 surveying
+[INFO] orca_rl_sim t=1171 src=1 xyz=-41.5 -29.0 -0.5 rpy=-61.9 -0.4 49.0 deg u=0.02 r=-0.027 alt=21.2 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1173 src=1 xyz=-40.9 -29.4 -0.6 rpy=-94.5 -0.4 46.4 deg u=0.05 r=0.000 alt=55.6 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1175 src=1 xyz=-40.8 -29.3 -0.5 rpy=-107.7 0.2 44.2 deg u=0.02 r=0.013 alt=-1.0 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1176 xyz=-41.2 -29.0 -0.63 (target 12.0) wp 0/12 coverage 699 surveying
+[INFO] orca_rl_sim t=1177 src=1 xyz=-41.5 -28.5 -0.6 rpy=-78.3 -1.1 42.9 deg u=0.03 r=0.009 alt=30.6 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1179 src=1 xyz=-42.9 -27.0 -0.6 rpy=-30.9 -0.8 41.8 deg u=-0.02 r=-0.013 alt=16.3 F=[40000 -4879 55000]
+[INFO] OrcaXLUUV t=1181 xyz=-44.4 -25.4 -0.25 (target 12.0) wp 0/12 coverage 701 surveying
+[INFO] orca_rl_sim t=1181 src=1 xyz=-44.6 -25.3 -0.4 rpy=29.0 -0.7 39.9 deg u=-0.10 r=-0.006 alt=15.8 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1183 src=1 xyz=-45.6 -24.1 -0.5 rpy=85.2 0.3 37.3 deg u=-0.12 r=0.024 alt=35.7 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1185 src=1 xyz=-46.1 -23.9 -0.7 rpy=118.1 1.2 34.9 deg u=-0.08 r=-0.021 alt=-1.0 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1186 xyz=-46.2 -24.0 -0.53 (target 12.0) wp 0/12 coverage 703 surveying
+[INFO] orca_rl_sim t=1187 src=1 xyz=-45.9 -24.4 -0.6 rpy=94.2 -0.9 33.5 deg u=-0.09 r=-0.024 alt=58.4 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1189 src=1 xyz=-45.3 -25.6 -0.3 rpy=44.8 -0.9 32.5 deg u=-0.08 r=0.007 alt=17.6 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1191 xyz=-44.3 -27.2 -0.63 (target 12.0) wp 0/12 coverage 705 surveying
+[INFO] orca_rl_sim t=1191 src=1 xyz=-44.2 -27.3 -0.5 rpy=-9.0 0.0 30.7 deg u=-0.04 r=-0.024 alt=16.4 F=[40000 -7380 55000]
+[INFO] orca_rl_sim t=1193 src=1 xyz=-43.3 -28.9 -0.5 rpy=-60.8 -0.2 28.5 deg u=0.06 r=-0.001 alt=20.6 F=[40000 -4592 55000]
+[INFO] orca_rl_sim t=1195 src=1 xyz=-42.8 -29.8 -0.6 rpy=-96.4 -0.5 26.4 deg u=0.06 r=0.010 alt=59.3 F=[40000 5454 55000]
+[INFO] OrcaXLUUV t=1196 xyz=-42.7 -29.7 -0.53 (target 12.0) wp 0/12 coverage 705 surveying
+[INFO] orca_rl_sim t=1197 src=1 xyz=-42.8 -29.7 -0.6 rpy=-108.0 0.1 24.5 deg u=0.04 r=-0.015 alt=-1.0 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1199 src=1 xyz=-43.2 -28.8 -0.5 rpy=-88.7 0.0 22.5 deg u=0.04 r=-0.017 alt=44.9 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1201 xyz=-43.8 -27.1 -0.45 (target 12.0) wp 0/12 coverage 707 surveying
+[INFO] orca_rl_sim t=1201 src=1 xyz=-43.8 -27.0 -0.4 rpy=-46.7 0.1 20.9 deg u=0.00 r=-0.001 alt=18.0 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1203 src=1 xyz=-44.8 -24.7 -0.5 rpy=16.6 -0.2 20.9 deg u=0.02 r=-0.001 alt=16.0 F=[40000 6631 55000]
+[INFO] orca_rl_sim t=1205 src=1 xyz=-45.5 -22.7 -0.6 rpy=80.8 -0.8 21.7 deg u=0.01 r=-0.017 alt=30.0 F=[40000 2359 55000]
+[INFO] OrcaXLUUV t=1206 xyz=-45.8 -22.1 -0.63 (target 12.0) wp 0/12 coverage 710 surveying
+[INFO] orca_rl_sim t=1207 src=1 xyz=-45.9 -21.6 -0.5 rpy=126.5 0.1 22.5 deg u=0.02 r=0.004 alt=-1.0 F=[40000 -1655 55000]
+[INFO] orca_rl_sim t=1209 src=1 xyz=-46.0 -21.4 -0.7 rpy=109.8 0.1 23.0 deg u=-0.01 r=-0.001 alt=-1.0 F=[40000 1275 55000]
+[INFO] OrcaXLUUV t=1211 xyz=-45.8 -22.0 -0.62 (target 12.0) wp 0/12 coverage 713 surveying
+[INFO] orca_rl_sim t=1211 src=1 xyz=-45.7 -22.1 -0.6 rpy=60.1 -0.8 23.4 deg u=0.02 r=-0.023 alt=21.6 F=[40000 -1407 55000]
+[INFO] orca_rl_sim t=1213 src=1 xyz=-45.1 -23.6 -0.4 rpy=7.9 -1.2 23.4 deg u=-0.02 r=0.001 alt=16.0 F=[40000 -1094 55000]
+[INFO] orca_rl_sim t=1215 src=1 xyz=-44.3 -25.2 -0.4 rpy=-42.8 -0.4 23.3 deg u=-0.04 r=-0.025 alt=17.1 F=[40000 5839 55000]
+[INFO] OrcaXLUUV t=1216 xyz=-44.2 -25.6 -0.40 (target 12.0) wp 0/12 coverage 713 surveying
+[INFO] orca_rl_sim t=1217 src=1 xyz=-44.0 -26.1 -0.6 rpy=-78.4 0.5 23.7 deg u=-0.01 r=-0.006 alt=19.3 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1219 src=1 xyz=-43.9 -26.0 -0.5 rpy=-93.6 -0.1 24.4 deg u=-0.01 r=0.032 alt=54.0 F=[40000 7400 55000]
+[INFO] OrcaXLUUV t=1221 xyz=-44.5 -25.2 -0.74 (target 12.0) wp 0/12 coverage 713 surveying
+[INFO] orca_rl_sim t=1221 src=1 xyz=-44.4 -25.0 -0.7 rpy=-87.6 -0.9 25.0 deg u=0.00 r=0.024 alt=40.9 F=[40000 7514 55000]
+[INFO] orca_rl_sim t=1223 src=1 xyz=-45.2 -23.2 -0.5 rpy=-54.1 -0.8 25.6 deg u=0.00 r=-0.003 alt=19.2 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1225 src=1 xyz=-46.4 -20.8 -0.4 rpy=6.8 -0.4 26.6 deg u=0.01 r=0.013 alt=16.3 F=[40000 5373 55000]
+[INFO] OrcaXLUUV t=1226 xyz=-46.9 -19.9 -0.53 (target 12.0) wp 0/12 coverage 715 surveying
+[INFO] orca_rl_sim t=1227 src=1 xyz=-47.4 -18.7 -0.4 rpy=77.9 -0.1 27.7 deg u=0.06 r=0.007 alt=29.2 F=[40000 -2826 55000]
+[INFO] orca_rl_sim t=1229 src=1 xyz=-48.0 -17.5 -0.6 rpy=131.1 0.6 28.8 deg u=0.06 r=-0.023 alt=-1.0 F=[40000 -4217 55000]
+[INFO] OrcaXLUUV t=1231 xyz=-48.2 -16.9 -0.76 (target 12.0) wp 0/12 coverage 715 surveying
+[INFO] orca_rl_sim t=1231 src=1 xyz=-48.1 -17.0 -0.8 rpy=128.2 -0.6 30.6 deg u=0.05 r=-0.016 alt=-1.0 F=[40000 -6281 55000]
+[INFO] orca_rl_sim t=1233 src=1 xyz=-47.9 -17.2 -0.5 rpy=77.4 -0.7 32.9 deg u=0.05 r=0.057 alt=30.1 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1235 src=1 xyz=-47.1 -18.1 -0.2 rpy=17.5 0.5 34.4 deg u=-0.02 r=0.014 alt=15.7 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1236 xyz=-46.8 -18.8 -0.41 (target 12.0) wp 0/12 coverage 716 surveying
+[INFO] orca_rl_sim t=1237 src=1 xyz=-46.2 -19.5 -0.5 rpy=-39.2 0.5 34.0 deg u=0.06 r=0.010 alt=16.7 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1239 src=1 xyz=-45.5 -20.3 -0.6 rpy=-79.2 -0.9 32.3 deg u=0.06 r=0.044 alt=30.3 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1241 xyz=-45.3 -20.6 -0.61 (target 12.0) wp 0/12 coverage 716 surveying
+[INFO] orca_rl_sim t=1241 src=1 xyz=-45.4 -20.5 -0.6 rpy=-99.8 -1.5 30.5 deg u=0.05 r=0.004 alt=76.4 F=[40000 -7571 55000]
+[INFO] orca_rl_sim t=1243 src=1 xyz=-45.8 -19.8 -0.7 rpy=-96.3 0.1 29.2 deg u=0.04 r=-0.061 alt=64.5 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1245 src=1 xyz=-46.6 -18.2 -0.4 rpy=-67.7 0.7 28.0 deg u=0.01 r=0.002 alt=23.9 F=[40000 167 55000]
+[INFO] OrcaXLUUV t=1246 xyz=-47.1 -17.4 -0.55 (target 12.0) wp 0/12 coverage 716 surveying
+[INFO] orca_rl_sim t=1247 src=1 xyz=-47.8 -16.0 -0.6 rpy=-11.8 -0.2 27.2 deg u=0.04 r=0.002 alt=15.9 F=[40000 -1593 55000]
+[INFO] orca_rl_sim t=1249 src=1 xyz=-48.9 -14.0 -0.5 rpy=54.1 -1.1 26.2 deg u=-0.04 r=-0.026 alt=18.7 F=[40000 -5157 55000]
+[INFO] OrcaXLUUV t=1251 xyz=-49.7 -12.8 -0.73 (target 12.0) wp 0/12 coverage 717 surveying
+[INFO] orca_rl_sim t=1251 src=1 xyz=-49.6 -12.7 -0.7 rpy=113.1 -1.0 24.7 deg u=-0.04 r=0.010 alt=-1.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1253 src=1 xyz=-50.0 -12.3 -0.5 rpy=127.4 0.7 24.2 deg u=-0.06 r=0.028 alt=-1.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1255 src=1 xyz=-50.0 -12.5 -0.5 rpy=86.5 0.3 24.7 deg u=-0.05 r=-0.004 alt=41.5 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1256 xyz=-49.8 -12.9 -0.51 (target 12.0) wp 0/12 coverage 718 surveying
+[INFO] orca_rl_sim t=1257 src=1 xyz=-49.6 -13.6 -0.4 rpy=33.8 -0.1 25.0 deg u=-0.02 r=-0.014 alt=16.4 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1259 src=1 xyz=-48.9 -15.4 -0.4 rpy=-21.0 -0.7 23.9 deg u=0.00 r=-0.008 alt=15.8 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1261 xyz=-48.3 -16.8 -0.52 (target 12.0) wp 0/12 coverage 718 surveying
+[INFO] orca_rl_sim t=1261 src=1 xyz=-48.3 -16.8 -0.5 rpy=-67.8 -0.9 21.7 deg u=0.02 r=-0.010 alt=22.9 F=[40000 -2268 55000]
+[INFO] orca_rl_sim t=1263 src=1 xyz=-48.1 -17.4 -0.6 rpy=-97.5 -0.6 19.5 deg u=0.04 r=-0.012 alt=64.9 F=[40000 1251 55000]
+[INFO] orca_rl_sim t=1265 src=1 xyz=-48.2 -17.1 -0.6 rpy=-104.5 0.5 17.7 deg u=-0.00 r=-0.008 alt=-1.0 F=[40000 2692 55000]
+[INFO] OrcaXLUUV t=1266 xyz=-48.3 -16.7 -0.52 (target 12.0) wp 0/12 coverage 718 surveying
+[INFO] orca_rl_sim t=1267 src=1 xyz=-48.6 -15.8 -0.6 rpy=-80.6 -0.4 16.1 deg u=0.01 r=0.016 alt=33.4 F=[40000 3738 55000]
+[INFO] orca_rl_sim t=1269 src=1 xyz=-49.1 -13.6 -0.5 rpy=-31.9 -0.7 15.1 deg u=-0.03 r=-0.003 alt=16.3 F=[40000 7884 55000]
+[INFO] OrcaXLUUV t=1271 xyz=-49.8 -11.5 -0.49 (target 12.0) wp 0/12 coverage 721 surveying
+[INFO] orca_rl_sim t=1271 src=1 xyz=-49.8 -11.3 -0.5 rpy=35.9 -0.5 15.0 deg u=-0.05 r=0.005 alt=16.2 F=[40000 -2572 55000]
+[INFO] orca_rl_sim t=1273 src=1 xyz=-50.4 -9.4 -0.6 rpy=101.8 -0.3 14.4 deg u=-0.04 r=0.010 alt=77.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1275 src=1 xyz=-50.7 -8.6 -0.6 rpy=133.4 0.5 14.5 deg u=-0.03 r=0.002 alt=-1.0 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1276 xyz=-50.7 -8.4 -0.71 (target 12.0) wp 0/12 coverage 724 surveying
+[INFO] orca_rl_sim t=1277 src=1 xyz=-50.8 -8.5 -0.6 rpy=104.3 0.0 15.4 deg u=-0.05 r=-0.015 alt=-1.0 F=[40000 -2789 55000]
+[INFO] orca_rl_sim t=1279 src=1 xyz=-50.6 -9.3 -0.5 rpy=49.7 -0.5 16.6 deg u=0.01 r=-0.024 alt=18.3 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1281 xyz=-50.2 -10.8 -0.49 (target 12.0) wp 0/12 coverage 724 surveying
+[INFO] orca_rl_sim t=1281 src=1 xyz=-50.2 -11.0 -0.5 rpy=-4.7 -1.3 16.4 deg u=-0.02 r=-0.008 alt=16.4 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1283 src=1 xyz=-49.8 -12.7 -0.4 rpy=-54.4 -0.8 14.7 deg u=-0.02 r=-0.035 alt=19.1 F=[40000 3138 55000]
+[INFO] orca_rl_sim t=1285 src=1 xyz=-49.5 -13.3 -0.6 rpy=-87.7 0.1 13.1 deg u=0.02 r=-0.025 alt=41.1 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1286 xyz=-49.6 -13.5 -0.66 (target 12.0) wp 0/12 coverage 724 surveying
+[INFO] orca_rl_sim t=1287 src=1 xyz=-49.5 -13.2 -0.4 rpy=-101.4 0.6 11.7 deg u=-0.00 r=0.030 alt=-1.0 F=[40000 732 55000]
+[INFO] orca_rl_sim t=1289 src=1 xyz=-49.8 -12.1 -0.6 rpy=-89.4 -1.4 10.5 deg u=0.01 r=0.013 alt=43.6 F=[40000 1090 55000]
+[INFO] OrcaXLUUV t=1291 xyz=-50.0 -10.3 -0.47 (target 12.0) wp 0/12 coverage 724 surveying
+[INFO] orca_rl_sim t=1291 src=1 xyz=-50.1 -10.1 -0.6 rpy=-52.4 -0.8 9.6 deg u=-0.04 r=-0.021 alt=18.9 F=[40000 1974 55000]
+[INFO] orca_rl_sim t=1293 src=1 xyz=-50.6 -7.4 -0.5 rpy=10.0 -0.1 8.8 deg u=-0.07 r=-0.005 alt=16.1 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1295 src=1 xyz=-51.1 -5.4 -0.5 rpy=79.0 0.3 7.1 deg u=-0.09 r=-0.008 alt=30.1 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1296 xyz=-51.2 -4.9 -0.59 (target 12.0) wp 0/12 coverage 727 surveying
+[INFO] orca_rl_sim t=1297 src=1 xyz=-51.4 -4.3 -0.6 rpy=128.6 0.5 5.7 deg u=-0.07 r=-0.023 alt=-1.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1299 src=1 xyz=-51.6 -3.9 -0.7 rpy=118.4 -0.9 5.5 deg u=-0.08 r=0.001 alt=-1.0 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1301 xyz=-51.6 -4.4 -0.54 (target 12.0) wp 0/12 coverage 729 surveying
+[INFO] orca_rl_sim t=1301 src=1 xyz=-51.6 -4.6 -0.5 rpy=68.6 -1.4 6.0 deg u=-0.07 r=0.034 alt=24.3 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1303 src=1 xyz=-51.5 -6.1 -0.5 rpy=15.7 0.0 6.1 deg u=-0.12 r=0.006 alt=15.9 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1305 src=1 xyz=-51.5 -7.9 -0.4 rpy=-37.3 0.5 4.6 deg u=-0.01 r=-0.017 alt=16.4 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1306 xyz=-51.4 -8.5 -0.55 (target 12.0) wp 0/12 coverage 729 surveying
+[INFO] orca_rl_sim t=1307 src=1 xyz=-51.4 -9.1 -0.5 rpy=-75.7 -0.0 2.3 deg u=0.04 r=0.035 alt=27.8 F=[40000 4132 55000]
+[INFO] orca_rl_sim t=1309 src=1 xyz=-51.4 -9.5 -0.7 rpy=-94.9 -1.2 0.3 deg u=0.03 r=0.028 alt=56.2 F=[40000 6513 55000]
+[INFO] OrcaXLUUV t=1311 xyz=-51.4 -8.8 -0.61 (target 12.0) wp 0/12 coverage 729 surveying
+[INFO] orca_rl_sim t=1311 src=1 xyz=-51.4 -8.6 -0.7 rpy=-94.2 -0.4 -1.2 deg u=0.02 r=-0.055 alt=57.1 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1313 src=1 xyz=-51.4 -7.0 -0.4 rpy=-69.1 0.5 -2.5 deg u=-0.02 r=-0.011 alt=24.5 F=[40000 5937 55000]
+[INFO] orca_rl_sim t=1315 src=1 xyz=-51.2 -4.6 -0.5 rpy=-16.9 0.1 -2.9 deg u=0.02 r=0.005 alt=15.9 F=[40000 -6575 55000]
+[INFO] OrcaXLUUV t=1316 xyz=-51.2 -3.8 -0.38 (target 12.0) wp 0/12 coverage 735 surveying
+[INFO] orca_rl_sim t=1317 src=1 xyz=-51.1 -2.1 -0.5 rpy=48.8 -0.9 -4.0 deg u=-0.04 r=-0.035 alt=17.7 F=[40000 -5647 55000]
+[INFO] orca_rl_sim t=1319 src=1 xyz=-51.2 -0.6 -0.7 rpy=107.9 -1.6 -5.5 deg u=-0.06 r=0.013 alt=-1.0 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1321 xyz=-51.3 -0.3 -0.49 (target 12.0) wp 0/12 coverage 738 surveying
+[INFO] orca_rl_sim t=1321 src=1 xyz=-51.3 -0.2 -0.5 rpy=122.6 0.8 -7.3 deg u=-0.08 r=0.052 alt=-1.0 F=[40000 4261 55000]
+[INFO] orca_rl_sim t=1323 src=1 xyz=-51.4 -0.7 -0.6 rpy=79.2 0.6 -9.6 deg u=-0.07 r=-0.022 alt=32.6 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1325 src=1 xyz=-51.8 -2.2 -0.3 rpy=26.3 -0.7 -10.8 deg u=0.02 r=-0.020 alt=15.8 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1326 xyz=-51.9 -2.7 -0.49 (target 12.0) wp 0/12 coverage 741 surveying
+[INFO] orca_rl_sim t=1327 src=1 xyz=-52.2 -3.8 -0.4 rpy=-27.6 -1.2 -10.5 deg u=-0.03 r=-0.003 alt=15.8 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1329 src=1 xyz=-52.5 -5.2 -0.5 rpy=-70.2 -0.6 -11.6 deg u=-0.01 r=-0.025 alt=24.3 F=[40000 -4188 55000]
+[INFO] OrcaXLUUV t=1331 xyz=-52.6 -5.5 -0.50 (target 12.0) wp 0/12 coverage 741 surveying
+[INFO] orca_rl_sim t=1331 src=1 xyz=-52.5 -5.6 -0.7 rpy=-93.5 -0.3 -13.1 deg u=0.01 r=-0.001 alt=52.3 F=[40000 2888 55000]
+[INFO] orca_rl_sim t=1333 src=1 xyz=-52.4 -5.0 -0.4 rpy=-98.7 0.1 -14.5 deg u=-0.00 r=0.015 alt=75.0 F=[40000 3604 55000]
+[INFO] orca_rl_sim t=1335 src=1 xyz=-52.1 -3.4 -0.7 rpy=-78.6 -0.9 -15.7 deg u=-0.01 r=0.014 alt=31.5 F=[40000 3024 55000]
+[INFO] OrcaXLUUV t=1336 xyz=-51.8 -2.7 -0.40 (target 12.0) wp 0/12 coverage 741 surveying
+[INFO] orca_rl_sim t=1337 src=1 xyz=-51.5 -1.2 -0.6 rpy=-31.4 -1.0 -16.3 deg u=-0.05 r=-0.006 alt=16.3 F=[40000 -5878 55000]
+[INFO] orca_rl_sim t=1339 src=1 xyz=-50.9 1.3 -0.3 rpy=32.8 -0.7 -17.4 deg u=-0.10 r=0.005 alt=15.9 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1341 xyz=-50.4 2.8 -0.68 (target 12.0) wp 0/12 coverage 745 surveying
+[INFO] orca_rl_sim t=1341 src=1 xyz=-50.4 3.0 -0.7 rpy=92.8 0.2 -18.2 deg u=-0.07 r=0.025 alt=46.1 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1343 src=1 xyz=-50.3 3.8 -0.6 rpy=121.1 0.8 -18.8 deg u=-0.07 r=-0.010 alt=-1.0 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1345 src=1 xyz=-50.6 3.6 -0.4 rpy=88.5 -0.8 -20.3 deg u=-0.07 r=-0.019 alt=41.9 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1346 xyz=-50.7 3.4 -0.61 (target 12.0) wp 0/12 coverage 746 surveying
+[INFO] orca_rl_sim t=1347 src=1 xyz=-51.0 2.6 -0.3 rpy=37.3 -0.8 -21.4 deg u=-0.05 r=0.006 alt=16.4 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1349 src=1 xyz=-51.7 0.9 -0.5 rpy=-15.8 0.0 -20.7 deg u=-0.06 r=0.010 alt=16.0 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1351 xyz=-52.1 -0.1 -0.34 (target 12.0) wp 0/12 coverage 746 surveying
+[INFO] orca_rl_sim t=1351 src=1 xyz=-52.3 -0.3 -0.4 rpy=-59.8 -0.4 -20.2 deg u=-0.03 r=0.013 alt=20.6 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1353 src=1 xyz=-52.6 -0.8 -0.5 rpy=-85.4 -0.9 -20.9 deg u=-0.03 r=0.000 alt=37.3 F=[40000 -6470 55000]
+[INFO] orca_rl_sim t=1355 src=1 xyz=-52.4 -0.3 -0.6 rpy=-89.4 -0.5 -21.6 deg u=-0.03 r=-0.013 alt=44.1 F=[40000 -1893 55000]
+[INFO] OrcaXLUUV t=1356 xyz=-52.2 0.1 -0.51 (target 12.0) wp 0/12 coverage 746 surveying
+[INFO] orca_rl_sim t=1357 src=1 xyz=-52.0 1.1 -0.5 rpy=-68.8 -0.3 -22.2 deg u=-0.03 r=-0.003 alt=24.4 F=[40000 -5620 55000]
+[INFO] orca_rl_sim t=1359 src=1 xyz=-51.2 3.1 -0.4 rpy=-21.0 -0.5 -23.4 deg u=-0.05 r=-0.012 alt=15.8 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1361 xyz=-50.5 4.9 -0.39 (target 12.0) wp 0/12 coverage 748 surveying
+[INFO] orca_rl_sim t=1361 src=1 xyz=-50.4 5.2 -0.4 rpy=42.0 -0.7 -25.3 deg u=-0.11 r=-0.000 alt=16.8 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1363 src=1 xyz=-49.9 6.6 -0.6 rpy=99.2 -0.5 -25.7 deg u=-0.08 r=0.015 alt=72.7 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1365 src=1 xyz=-49.8 7.3 -0.5 rpy=122.6 0.5 -26.2 deg u=-0.07 r=0.011 alt=-1.0 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1366 xyz=-49.8 7.2 -0.72 (target 12.0) wp 0/12 coverage 749 surveying
+[INFO] orca_rl_sim t=1367 src=1 xyz=-50.2 6.9 -0.5 rpy=85.7 -0.5 -27.6 deg u=-0.08 r=-0.008 alt=38.8 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1369 src=1 xyz=-50.9 5.6 -0.4 rpy=34.7 -0.5 -28.6 deg u=-0.04 r=-0.002 alt=16.4 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1371 xyz=-51.7 4.5 -0.39 (target 12.0) wp 0/12 coverage 750 surveying
+[INFO] orca_rl_sim t=1371 src=1 xyz=-51.8 4.1 -0.4 rpy=-19.3 -0.4 -27.7 deg u=-0.06 r=0.013 alt=15.8 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1373 src=1 xyz=-52.6 3.0 -0.5 rpy=-64.5 -0.5 -27.2 deg u=-0.05 r=0.003 alt=21.9 F=[40000 -7961 55000]
+[INFO] orca_rl_sim t=1375 src=1 xyz=-52.9 2.5 -0.6 rpy=-92.3 -0.7 -27.8 deg u=-0.04 r=0.003 alt=49.1 F=[40000 -3069 55000]
+[INFO] OrcaXLUUV t=1376 xyz=-53.0 2.5 -0.61 (target 12.0) wp 0/12 coverage 750 surveying
+[INFO] orca_rl_sim t=1377 src=1 xyz=-52.8 2.9 -0.5 rpy=-101.1 0.1 -28.1 deg u=-0.05 r=-0.003 alt=-1.0 F=[40000 -7820 55000]
+[INFO] orca_rl_sim t=1379 src=1 xyz=-52.2 4.2 -0.5 rpy=-84.8 -0.8 -28.2 deg u=-0.04 r=0.012 alt=37.5 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1381 xyz=-51.5 5.8 -0.37 (target 12.0) wp 0/12 coverage 750 surveying
+[INFO] orca_rl_sim t=1381 src=1 xyz=-51.2 6.2 -0.5 rpy=-40.3 -0.7 -28.6 deg u=-0.05 r=-0.009 alt=17.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1383 src=1 xyz=-50.1 8.6 -0.5 rpy=26.4 -0.4 -29.7 deg u=-0.09 r=0.006 alt=15.8 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1385 src=1 xyz=-49.3 10.4 -0.5 rpy=93.2 -0.2 -29.3 deg u=-0.04 r=0.011 alt=48.2 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1386 xyz=-49.1 10.8 -0.60 (target 12.0) wp 0/12 coverage 750 surveying
+[INFO] orca_rl_sim t=1387 src=1 xyz=-48.7 11.3 -0.6 rpy=130.9 0.5 -28.9 deg u=-0.06 r=-0.002 alt=-1.0 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1389 src=1 xyz=-48.8 11.6 -0.6 rpy=105.1 -0.4 -29.9 deg u=-0.02 r=-0.010 alt=-1.0 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1391 xyz=-49.2 10.8 -0.51 (target 12.0) wp 0/12 coverage 751 surveying
+[INFO] orca_rl_sim t=1391 src=1 xyz=-49.3 10.7 -0.5 rpy=51.3 -0.9 -31.0 deg u=-0.02 r=-0.019 alt=18.9 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1393 src=1 xyz=-50.2 9.5 -0.4 rpy=-3.7 -0.9 -30.7 deg u=-0.04 r=0.011 alt=16.8 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1395 src=1 xyz=-50.9 8.2 -0.6 rpy=-53.3 -0.4 -28.7 deg u=-0.09 r=-0.004 alt=18.6 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1396 xyz=-51.2 7.9 -0.51 (target 12.0) wp 0/12 coverage 751 surveying
+[INFO] orca_rl_sim t=1397 src=1 xyz=-51.2 8.0 -0.5 rpy=-85.1 0.0 -26.0 deg u=-0.09 r=-0.014 alt=36.3 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1399 src=1 xyz=-51.1 8.3 -0.4 rpy=-94.5 0.1 -23.4 deg u=-0.07 r=0.005 alt=56.8 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1401 xyz=-50.7 9.5 -0.64 (target 12.0) wp 0/12 coverage 751 surveying
+[INFO] orca_rl_sim t=1401 src=1 xyz=-50.6 9.8 -0.5 rpy=-80.1 -0.2 -21.3 deg u=-0.02 r=0.028 alt=33.0 F=[40000 7734 55000]
+[INFO] orca_rl_sim t=1403 src=1 xyz=-49.8 12.0 -0.5 rpy=-35.8 -0.9 -19.6 deg u=0.02 r=0.018 alt=16.6 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1405 src=1 xyz=-48.8 14.5 -0.4 rpy=31.4 -0.8 -17.6 deg u=0.04 r=0.029 alt=15.9 F=[40000 7835 55000]
+[INFO] OrcaXLUUV t=1406 xyz=-48.5 15.2 -0.48 (target 12.0) wp 0/12 coverage 752 surveying
+[INFO] orca_rl_sim t=1407 src=1 xyz=-48.1 16.5 -0.5 rpy=99.1 -0.2 -15.3 deg u=0.12 r=0.023 alt=76.3 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1409 src=1 xyz=-47.6 17.4 -0.5 rpy=133.4 0.7 -13.6 deg u=0.08 r=-0.010 alt=-1.0 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1411 xyz=-47.5 17.6 -0.67 (target 12.0) wp 0/12 coverage 755 surveying
+[INFO] orca_rl_sim t=1411 src=1 xyz=-47.5 17.5 -0.6 rpy=105.7 -0.5 -13.5 deg u=0.06 r=-0.022 alt=-1.0 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1413 src=1 xyz=-47.4 16.5 -0.5 rpy=47.8 -1.1 -13.7 deg u=0.10 r=-0.013 alt=17.9 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1415 src=1 xyz=-47.8 14.9 -0.6 rpy=-8.8 -1.0 -12.6 deg u=0.02 r=0.016 alt=16.2 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1416 xyz=-47.9 14.5 -0.55 (target 12.0) wp 0/12 coverage 755 surveying
+[INFO] orca_rl_sim t=1417 src=1 xyz=-47.9 13.8 -0.3 rpy=-59.5 -0.5 -10.1 deg u=-0.04 r=-0.013 alt=20.4 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1419 src=1 xyz=-47.9 13.4 -0.6 rpy=-90.0 0.2 -7.2 deg u=-0.04 r=-0.014 alt=45.1 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1421 xyz=-47.9 14.1 -0.64 (target 12.0) wp 0/12 coverage 755 surveying
+[INFO] orca_rl_sim t=1421 src=1 xyz=-48.0 14.1 -0.4 rpy=-98.7 0.6 -4.5 deg u=-0.02 r=0.030 alt=73.1 F=[40000 6733 55000]
+[INFO] orca_rl_sim t=1423 src=1 xyz=-47.8 15.7 -0.6 rpy=-84.1 -1.2 -2.7 deg u=0.03 r=0.039 alt=36.0 F=[40000 6827 55000]
+[INFO] orca_rl_sim t=1425 src=1 xyz=-47.6 18.1 -0.4 rpy=-39.2 -1.2 -1.2 deg u=0.03 r=-0.003 alt=16.8 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1426 xyz=-47.6 19.1 -0.41 (target 12.0) wp 0/12 coverage 758 surveying
+[INFO] orca_rl_sim t=1427 src=1 xyz=-47.4 20.9 -0.5 rpy=28.8 -0.3 0.5 deg u=0.05 r=0.035 alt=16.0 F=[40000 6467 55000]
+[INFO] orca_rl_sim t=1429 src=1 xyz=-47.3 23.2 -0.6 rpy=97.9 0.1 2.7 deg u=0.14 r=0.015 alt=65.7 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1431 xyz=-47.1 24.0 -0.71 (target 12.0) wp 0/12 coverage 765 surveying
+[INFO] orca_rl_sim t=1431 src=1 xyz=-47.1 24.3 -0.6 rpy=135.4 0.4 4.3 deg u=0.11 r=-0.015 alt=-1.0 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1433 src=1 xyz=-46.9 24.4 -0.7 rpy=113.1 -0.6 4.2 deg u=0.09 r=-0.003 alt=-1.0 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1435 src=1 xyz=-46.7 23.6 -0.6 rpy=57.3 -1.2 3.6 deg u=0.09 r=-0.004 alt=20.2 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1436 xyz=-46.6 23.2 -0.46 (target 12.0) wp 0/12 coverage 766 surveying
+[INFO] orca_rl_sim t=1437 src=1 xyz=-46.4 22.1 -0.4 rpy=0.7 -0.8 4.2 deg u=0.03 r=0.013 alt=16.7 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1439 src=1 xyz=-46.1 20.7 -0.4 rpy=-52.6 0.1 6.5 deg u=-0.02 r=-0.007 alt=18.6 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1441 xyz=-46.1 20.2 -0.53 (target 12.0) wp 0/12 coverage 769 surveying
+[INFO] orca_rl_sim t=1441 src=1 xyz=-46.1 20.2 -0.7 rpy=-86.9 0.3 9.3 deg u=-0.03 r=0.009 alt=39.1 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1443 src=1 xyz=-46.2 20.7 -0.5 rpy=-99.7 -0.1 11.9 deg u=-0.02 r=0.034 alt=78.9 F=[40000 6899 55000]
+[INFO] orca_rl_sim t=1445 src=1 xyz=-46.5 22.0 -0.7 rpy=-87.8 -1.7 14.0 deg u=0.03 r=-0.009 alt=41.9 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1446 xyz=-46.6 22.6 -0.55 (target 12.0) wp 0/12 coverage 769 surveying
+[INFO] orca_rl_sim t=1447 src=1 xyz=-47.0 24.3 -0.5 rpy=-48.8 -0.5 15.4 deg u=0.00 r=-0.025 alt=18.4 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1449 src=1 xyz=-47.5 26.9 -0.4 rpy=15.2 0.4 17.1 deg u=0.06 r=0.026 alt=15.9 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1451 xyz=-48.0 28.9 -0.55 (target 12.0) wp 0/12 coverage 778 surveying
+[INFO] orca_rl_sim t=1451 src=1 xyz=-48.1 29.2 -0.5 rpy=83.2 0.3 19.4 deg u=0.14 r=-0.021 alt=32.5 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1453 src=1 xyz=-48.3 30.4 -0.6 rpy=128.8 0.1 21.7 deg u=0.12 r=-0.036 alt=-1.0 F=[40000 2366 55000]
+[INFO] orca_rl_sim t=1455 src=1 xyz=-48.3 30.9 -0.5 rpy=114.2 -0.7 23.6 deg u=0.11 r=0.003 alt=-1.0 F=[40000 4556 55000]
+[INFO] OrcaXLUUV t=1456 xyz=-48.2 30.8 -0.61 (target 12.0) wp 0/12 coverage 782 surveying
+[INFO] orca_rl_sim t=1457 src=1 xyz=-47.9 30.5 -0.5 rpy=62.9 -0.5 25.0 deg u=0.10 r=0.014 alt=22.5 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1459 src=1 xyz=-47.0 29.0 -0.5 rpy=9.4 -0.3 25.5 deg u=0.06 r=-0.002 alt=16.0 F=[40000 -5465 55000]
+[INFO] OrcaXLUUV t=1461 xyz=-46.2 28.0 -0.46 (target 12.0) wp 0/12 coverage 786 surveying
+[INFO] orca_rl_sim t=1461 src=1 xyz=-46.1 27.5 -0.4 rpy=-43.6 -0.2 24.5 deg u=0.08 r=-0.011 alt=17.0 F=[40000 -5291 55000]
+[INFO] orca_rl_sim t=1463 src=1 xyz=-45.6 26.6 -0.6 rpy=-82.5 -0.1 22.9 deg u=0.09 r=0.004 alt=32.8 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1465 src=1 xyz=-45.3 26.7 -0.6 rpy=-102.4 -0.1 21.6 deg u=0.08 r=0.025 alt=-1.0 F=[40000 7047 55000]
+[INFO] OrcaXLUUV t=1466 xyz=-45.4 26.7 -0.53 (target 12.0) wp 0/12 coverage 786 surveying
+[INFO] orca_rl_sim t=1467 src=1 xyz=-45.6 27.5 -0.6 rpy=-96.0 -0.6 20.3 deg u=0.07 r=-0.022 alt=65.1 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1469 src=1 xyz=-46.1 29.1 -0.6 rpy=-65.4 0.0 19.1 deg u=0.03 r=-0.013 alt=23.6 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1471 xyz=-46.7 31.1 -0.35 (target 12.0) wp 0/12 coverage 786 surveying
+[INFO] orca_rl_sim t=1471 src=1 xyz=-47.0 31.7 -0.3 rpy=-6.2 -0.2 18.8 deg u=0.02 r=0.003 alt=16.3 F=[40000 3036 55000]
+[INFO] orca_rl_sim t=1473 src=1 xyz=-47.7 34.0 -0.5 rpy=65.5 -0.4 19.0 deg u=0.02 r=-0.010 alt=22.6 F=[40000 -7229 55000]
+[INFO] orca_rl_sim t=1475 src=1 xyz=-48.2 35.4 -0.7 rpy=125.5 0.0 18.9 deg u=-0.00 r=-0.018 alt=-1.0 F=[40000 -6724 55000]
+[INFO] OrcaXLUUV t=1476 xyz=-48.3 35.7 -0.66 (target 12.0) wp 0/12 coverage 788 surveying
+[INFO] orca_rl_sim t=1477 src=1 xyz=-48.4 36.1 -0.6 rpy=133.6 -0.3 19.8 deg u=0.02 r=-0.001 alt=-1.0 F=[40000 -7614 55000]
+[INFO] orca_rl_sim t=1479 src=1 xyz=-48.3 36.1 -0.5 rpy=90.7 0.3 21.5 deg u=0.04 r=0.025 alt=47.1 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1481 xyz=-48.1 35.4 -0.58 (target 12.0) wp 0/12 coverage 788 surveying
+[INFO] orca_rl_sim t=1481 src=1 xyz=-47.9 35.1 -0.3 rpy=31.1 0.6 23.0 deg u=0.02 r=-0.004 alt=16.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1483 src=1 xyz=-47.3 33.5 -0.6 rpy=-25.9 -0.5 22.7 deg u=0.06 r=0.012 alt=15.9 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1485 src=1 xyz=-46.7 32.3 -0.5 rpy=-69.9 -1.6 20.9 deg u=0.04 r=0.009 alt=24.2 F=[40000 -2658 55000]
+[INFO] OrcaXLUUV t=1486 xyz=-46.6 32.1 -0.51 (target 12.0) wp 0/12 coverage 789 surveying
+[INFO] orca_rl_sim t=1487 src=1 xyz=-46.6 31.9 -0.5 rpy=-95.0 -0.9 19.0 deg u=0.05 r=-0.031 alt=57.1 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1489 src=1 xyz=-46.8 32.5 -0.5 rpy=-99.9 1.1 17.2 deg u=0.03 r=-0.021 alt=79.8 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1491 xyz=-47.1 33.6 -0.59 (target 12.0) wp 0/12 coverage 789 surveying
+[INFO] orca_rl_sim t=1491 src=1 xyz=-47.2 34.1 -0.5 rpy=-79.2 0.1 15.6 deg u=0.01 r=0.047 alt=31.4 F=[40000 3454 55000]
+[INFO] orca_rl_sim t=1493 src=1 xyz=-47.8 36.2 -0.5 rpy=-30.6 -1.2 14.9 deg u=0.01 r=0.010 alt=16.0 F=[40000 6836 55000]
+[INFO] orca_rl_sim t=1495 src=1 xyz=-48.6 38.9 -0.4 rpy=37.8 -1.1 15.2 deg u=-0.04 r=0.011 alt=16.5 F=[40000 -3522 55000]
+[INFO] OrcaXLUUV t=1496 xyz=-48.8 39.4 -0.51 (target 12.0) wp 0/12 coverage 792 surveying
+[INFO] orca_rl_sim t=1497 src=1 xyz=-49.1 40.7 -0.7 rpy=104.8 -0.5 15.4 deg u=-0.02 r=0.022 alt=-1.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1499 src=1 xyz=-49.3 41.5 -0.5 rpy=137.7 0.8 16.1 deg u=-0.01 r=-0.004 alt=-1.0 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1501 xyz=-49.5 41.9 -0.74 (target 12.0) wp 0/12 coverage 792 surveying
+[INFO] orca_rl_sim t=1501 src=1 xyz=-49.5 41.8 -0.6 rpy=113.7 -0.1 17.8 deg u=0.00 r=-0.029 alt=-1.0 F=[40000 -3685 55000]
+[INFO] orca_rl_sim t=1503 src=1 xyz=-49.3 41.2 -0.7 rpy=55.1 -1.5 19.8 deg u=0.01 r=-0.004 alt=19.8 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1505 src=1 xyz=-48.8 39.7 -0.4 rpy=-2.2 -1.3 20.5 deg u=-0.09 r=-0.004 alt=16.7 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1506 xyz=-48.6 39.2 -0.56 (target 12.0) wp 0/12 coverage 793 surveying
+[INFO] orca_rl_sim t=1507 src=1 xyz=-48.3 38.2 -0.4 rpy=-55.1 0.1 19.3 deg u=-0.03 r=-0.048 alt=19.0 F=[40000 -805 55000]
+[INFO] orca_rl_sim t=1509 src=1 xyz=-48.0 37.5 -0.7 rpy=-89.2 0.6 17.5 deg u=0.03 r=0.015 alt=42.4 F=[40000 -622 55000]
+[INFO] OrcaXLUUV t=1511 xyz=-48.1 37.5 -0.53 (target 12.0) wp 0/12 coverage 793 surveying
+[INFO] orca_rl_sim t=1511 src=1 xyz=-48.1 37.7 -0.6 rpy=-102.9 -0.1 15.8 deg u=0.01 r=0.050 alt=-1.0 F=[40000 1363 55000]
+[INFO] orca_rl_sim t=1513 src=1 xyz=-48.4 38.8 -0.6 rpy=-90.1 -1.7 14.2 deg u=0.01 r=-0.018 alt=45.9 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1515 src=1 xyz=-48.9 40.7 -0.5 rpy=-52.9 -0.2 12.9 deg u=-0.06 r=-0.040 alt=19.4 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1516 xyz=-49.1 41.4 -0.41 (target 12.0) wp 0/12 coverage 793 surveying
+[INFO] orca_rl_sim t=1517 src=1 xyz=-49.6 43.3 -0.4 rpy=9.5 0.4 12.4 deg u=-0.04 r=-0.004 alt=16.3 F=[40000 -6157 55000]
+[INFO] orca_rl_sim t=1519 src=1 xyz=-50.1 45.3 -0.5 rpy=77.6 -0.1 11.2 deg u=-0.06 r=-0.029 alt=27.8 F=[40000 -6473 55000]
+[INFO] OrcaXLUUV t=1521 xyz=-50.3 46.4 -0.77 (target 12.0) wp 0/12 coverage 796 surveying
+[INFO] orca_rl_sim t=1521 src=1 xyz=-50.5 46.6 -0.7 rpy=129.1 -0.0 10.1 deg u=-0.07 r=-0.018 alt=-1.0 F=[40000 -7026 55000]
+[INFO] orca_rl_sim t=1523 src=1 xyz=-50.6 46.8 -0.6 rpy=124.6 -0.4 10.2 deg u=-0.09 r=0.010 alt=-1.0 F=[40000 -7581 55000]
+[INFO] orca_rl_sim t=1525 src=1 xyz=-50.7 46.5 -0.4 rpy=77.4 -0.5 11.1 deg u=-0.05 r=0.043 alt=31.2 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1526 xyz=-50.6 46.2 -0.61 (target 12.0) wp 0/12 coverage 797 surveying
+[INFO] orca_rl_sim t=1527 src=1 xyz=-50.5 45.0 -0.4 rpy=22.3 0.4 11.5 deg u=-0.08 r=0.006 alt=15.7 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1529 src=1 xyz=-50.1 43.1 -0.5 rpy=-32.9 0.4 10.3 deg u=0.02 r=0.001 alt=16.1 F=[40000 -3448 55000]
+[INFO] OrcaXLUUV t=1531 xyz=-50.1 42.0 -0.40 (target 12.0) wp 0/12 coverage 797 surveying
+[INFO] orca_rl_sim t=1531 src=1 xyz=-50.0 42.0 -0.5 rpy=-75.0 -0.8 8.7 deg u=0.02 r=0.036 alt=26.5 F=[40000 -3627 55000]
+[INFO] orca_rl_sim t=1533 src=1 xyz=-49.9 41.5 -0.6 rpy=-98.2 -1.1 7.4 deg u=0.02 r=0.003 alt=66.7 F=[40000 5108 55000]
+[INFO] orca_rl_sim t=1535 src=1 xyz=-50.1 42.2 -0.6 rpy=-99.1 0.3 6.3 deg u=0.01 r=-0.040 alt=76.7 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1536 xyz=-50.1 42.5 -0.62 (target 12.0) wp 0/12 coverage 797 surveying
+[INFO] orca_rl_sim t=1537 src=1 xyz=-50.2 43.8 -0.5 rpy=-75.5 0.5 5.2 deg u=-0.01 r=0.012 alt=28.0 F=[40000 6741 55000]
+[INFO] orca_rl_sim t=1539 src=1 xyz=-50.6 46.2 -0.4 rpy=-23.4 -0.5 4.8 deg u=0.01 r=0.009 alt=15.7 F=[40000 2614 55000]
+[INFO] OrcaXLUUV t=1541 xyz=-50.7 48.2 -0.46 (target 12.0) wp 0/12 coverage 799 surveying
+[INFO] orca_rl_sim t=1541 src=1 xyz=-50.7 48.8 -0.5 rpy=47.3 -0.8 4.7 deg u=-0.03 r=-0.009 alt=17.8 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1543 src=1 xyz=-50.9 50.5 -0.8 rpy=112.6 -0.6 3.9 deg u=-0.04 r=-0.001 alt=-1.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1545 src=1 xyz=-51.1 51.3 -0.4 rpy=137.3 0.4 3.9 deg u=-0.03 r=0.012 alt=-1.0 F=[40000 -7124 55000]
+[INFO] OrcaXLUUV t=1546 xyz=-51.2 51.3 -0.67 (target 12.0) wp 0/12 coverage 800 surveying
+[INFO] orca_rl_sim t=1547 src=1 xyz=-51.2 51.4 -0.6 rpy=105.9 0.3 4.7 deg u=-0.05 r=-0.013 alt=-1.0 F=[40000 3708 55000]
+[INFO] orca_rl_sim t=1549 src=1 xyz=-51.2 50.4 -0.5 rpy=45.9 -0.6 5.4 deg u=0.01 r=-0.030 alt=17.8 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1551 xyz=-51.0 49.2 -0.36 (target 12.0) wp 0/12 coverage 801 surveying
+[INFO] orca_rl_sim t=1551 src=1 xyz=-51.1 48.7 -0.5 rpy=-11.5 -1.6 4.8 deg u=-0.02 r=-0.010 alt=16.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1553 src=1 xyz=-51.0 47.2 -0.4 rpy=-62.8 -0.9 2.9 deg u=-0.01 r=-0.046 alt=21.2 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1555 src=1 xyz=-51.0 46.5 -0.6 rpy=-95.1 0.4 1.4 deg u=0.03 r=-0.023 alt=57.3 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1556 xyz=-51.0 46.4 -0.58 (target 12.0) wp 0/12 coverage 801 surveying
+[INFO] orca_rl_sim t=1557 src=1 xyz=-50.9 47.0 -0.6 rpy=-104.1 0.8 0.1 deg u=0.00 r=0.028 alt=-1.0 F=[40000 -178 55000]
+[INFO] orca_rl_sim t=1559 src=1 xyz=-51.0 48.2 -0.5 rpy=-81.8 -1.3 -1.2 deg u=0.02 r=0.031 alt=33.6 F=[40000 396 55000]
+[INFO] OrcaXLUUV t=1561 xyz=-50.8 49.7 -0.43 (target 12.0) wp 0/12 coverage 801 surveying
+[INFO] orca_rl_sim t=1561 src=1 xyz=-50.8 50.4 -0.5 rpy=-36.3 -1.1 -1.9 deg u=-0.04 r=-0.012 alt=16.6 F=[40000 5075 55000]
+[INFO] orca_rl_sim t=1563 src=1 xyz=-50.8 52.9 -0.4 rpy=27.5 -0.4 -2.2 deg u=-0.07 r=0.010 alt=15.8 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1565 src=1 xyz=-50.8 54.8 -0.5 rpy=91.1 0.3 -3.3 deg u=-0.06 r=0.022 alt=44.6 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1566 xyz=-50.8 55.1 -0.54 (target 12.0) wp 0/12 coverage 807 surveying
+[INFO] orca_rl_sim t=1567 src=1 xyz=-51.0 55.6 -0.5 rpy=128.0 0.9 -4.1 deg u=-0.05 r=-0.018 alt=-1.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1569 src=1 xyz=-50.9 55.7 -0.7 rpy=101.9 -0.8 -3.9 deg u=-0.05 r=-0.017 alt=-1.0 F=[40000 -6339 55000]
+[INFO] OrcaXLUUV t=1571 xyz=-51.1 55.1 -0.53 (target 12.0) wp 0/12 coverage 808 surveying
+[INFO] orca_rl_sim t=1571 src=1 xyz=-51.1 54.8 -0.5 rpy=51.7 -0.8 -3.4 deg u=-0.04 r=0.004 alt=18.9 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1573 src=1 xyz=-51.3 53.0 -0.5 rpy=-1.0 -0.4 -4.0 deg u=-0.05 r=-0.012 alt=16.9 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1575 src=1 xyz=-51.5 51.3 -0.4 rpy=-52.2 -0.2 -5.9 deg u=0.02 r=-0.016 alt=18.5 F=[40000 -694 55000]
+[INFO] OrcaXLUUV t=1576 xyz=-51.5 51.0 -0.48 (target 12.0) wp 0/12 coverage 809 surveying
+[INFO] orca_rl_sim t=1577 src=1 xyz=-51.6 50.3 -0.5 rpy=-88.6 -0.3 -8.0 deg u=0.04 r=0.000 alt=41.3 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1579 src=1 xyz=-51.5 50.3 -0.5 rpy=-107.1 0.3 -9.9 deg u=0.01 r=0.016 alt=-1.0 F=[40000 6792 55000]
+[INFO] OrcaXLUUV t=1581 xyz=-51.3 50.7 -0.72 (target 12.0) wp 0/12 coverage 810 surveying
+[INFO] orca_rl_sim t=1581 src=1 xyz=-51.3 51.2 -0.6 rpy=-91.0 -0.7 -11.8 deg u=0.02 r=-0.009 alt=49.4 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1583 src=1 xyz=-50.9 53.1 -0.5 rpy=-52.5 -0.3 -13.3 deg u=-0.03 r=-0.015 alt=19.2 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1585 src=1 xyz=-50.5 55.5 -0.4 rpy=10.1 -0.1 -13.4 deg u=-0.03 r=0.006 alt=16.3 F=[40000 6039 55000]
+[INFO] OrcaXLUUV t=1586 xyz=-50.3 56.1 -0.42 (target 12.0) wp 0/12 coverage 818 surveying
+[INFO] orca_rl_sim t=1587 src=1 xyz=-49.9 57.7 -0.5 rpy=77.9 -0.1 -12.8 deg u=0.00 r=-0.012 alt=27.9 F=[40000 -1090 55000]
+[INFO] orca_rl_sim t=1589 src=1 xyz=-49.7 58.9 -0.6 rpy=127.5 0.4 -12.0 deg u=0.00 r=-0.022 alt=-1.0 F=[40000 -5620 55000]
+[INFO] OrcaXLUUV t=1591 xyz=-49.6 59.4 -0.63 (target 12.0) wp 0/12 coverage 821 surveying
+[INFO] orca_rl_sim t=1591 src=1 xyz=-49.6 59.5 -0.7 rpy=117.4 -0.4 -10.5 deg u=-0.00 r=-0.007 alt=-1.0 F=[40000 -5639 55000]
+[INFO] orca_rl_sim t=1593 src=1 xyz=-49.5 59.0 -0.5 rpy=67.0 -1.0 -8.7 deg u=0.01 r=0.017 alt=24.4 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1595 src=1 xyz=-49.8 57.5 -0.5 rpy=14.0 -0.4 -7.9 deg u=-0.06 r=0.007 alt=15.8 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1596 xyz=-49.8 57.2 -0.49 (target 12.0) wp 0/12 coverage 821 surveying
+[INFO] orca_rl_sim t=1598 src=1 xyz=-50.1 55.9 -0.4 rpy=-38.5 0.1 -8.8 deg u=-0.00 r=-0.022 alt=16.6 F=[40000 -7672 55000]
+[INFO] orca_rl_sim t=1600 src=1 xyz=-50.3 54.7 -0.5 rpy=-76.7 0.1 -10.9 deg u=0.05 r=0.018 alt=28.9 F=[40000 4779 55000]
+[INFO] OrcaXLUUV t=1601 xyz=-50.4 54.5 -0.69 (target 12.0) wp 0/12 coverage 821 surveying
+[INFO] orca_rl_sim t=1602 src=1 xyz=-50.2 54.5 -0.7 rpy=-95.6 -0.7 -12.8 deg u=0.04 r=0.030 alt=59.9 F=[40000 6891 55000]
+[INFO] orca_rl_sim t=1604 src=1 xyz=-50.1 55.3 -0.7 rpy=-95.6 -0.4 -14.4 deg u=0.03 r=-0.040 alt=60.4 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1606 src=1 xyz=-49.7 56.9 -0.4 rpy=-72.0 0.3 -15.7 deg u=-0.01 r=-0.014 alt=25.9 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1606 xyz=-49.6 57.3 -0.45 (target 12.0) wp 0/12 coverage 821 surveying
+[INFO] orca_rl_sim t=1608 src=1 xyz=-49.1 59.4 -0.5 rpy=-18.8 0.0 -16.2 deg u=0.00 r=0.003 alt=15.8 F=[40000 -3857 55000]
+[INFO] orca_rl_sim t=1610 src=1 xyz=-48.3 61.7 -0.5 rpy=51.6 -0.6 -17.1 deg u=-0.04 r=-0.028 alt=18.6 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1611 xyz=-48.0 63.0 -0.62 (target 12.0) wp 0/12 coverage 825 surveying
+[INFO] orca_rl_sim t=1612 src=1 xyz=-47.9 63.3 -0.8 rpy=115.4 -0.9 -18.6 deg u=-0.06 r=-0.013 alt=-1.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1614 src=1 xyz=-47.8 63.9 -0.5 rpy=131.3 0.1 -19.0 deg u=-0.06 r=0.030 alt=-1.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1616 src=1 xyz=-48.0 64.0 -0.6 rpy=92.3 0.8 -18.5 deg u=-0.04 r=0.009 alt=51.0 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1616 xyz=-48.0 63.8 -0.44 (target 12.0) wp 0/12 coverage 828 surveying
+[INFO] orca_rl_sim t=1618 src=1 xyz=-48.3 63.0 -0.4 rpy=37.5 0.2 -17.5 deg u=0.00 r=-0.021 alt=16.6 F=[40000 -467 55000]
+[INFO] orca_rl_sim t=1620 src=1 xyz=-48.9 61.4 -0.6 rpy=-16.0 -1.1 -17.4 deg u=0.00 r=0.004 alt=15.8 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1621 xyz=-49.4 60.4 -0.38 (target 12.0) wp 0/12 coverage 829 surveying
+[INFO] orca_rl_sim t=1622 src=1 xyz=-49.5 60.1 -0.5 rpy=-60.0 -1.4 -18.8 deg u=-0.02 r=-0.015 alt=20.5 F=[40000 -641 55000]
+[INFO] orca_rl_sim t=1624 src=1 xyz=-49.7 59.4 -0.6 rpy=-86.6 -0.6 -20.5 deg u=-0.00 r=-0.040 alt=38.9 F=[40000 7523 55000]
+[INFO] orca_rl_sim t=1626 src=1 xyz=-49.7 59.9 -0.4 rpy=-92.5 0.2 -21.9 deg u=-0.01 r=-0.023 alt=50.9 F=[40000 5564 55000]
+[INFO] OrcaXLUUV t=1626 xyz=-49.6 60.1 -0.59 (target 12.0) wp 0/12 coverage 830 surveying
+[INFO] orca_rl_sim t=1628 src=1 xyz=-49.2 61.2 -0.6 rpy=-74.8 0.3 -23.0 deg u=-0.02 r=0.017 alt=28.1 F=[40000 1098 55000]
+[INFO] orca_rl_sim t=1630 src=1 xyz=-48.3 63.3 -0.6 rpy=-29.6 -0.7 -23.5 deg u=-0.00 r=0.010 alt=16.1 F=[40000 -6268 55000]
+[INFO] OrcaXLUUV t=1631 xyz=-47.7 65.0 -0.34 (target 12.0) wp 0/12 coverage 833 surveying
+[INFO] orca_rl_sim t=1632 src=1 xyz=-47.5 65.5 -0.5 rpy=33.8 -1.2 -24.8 deg u=-0.09 r=-0.012 alt=16.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1634 src=1 xyz=-46.9 67.0 -0.6 rpy=94.5 -0.7 -26.6 deg u=-0.09 r=0.040 alt=49.6 F=[40000 6740 55000]
+[INFO] orca_rl_sim t=1636 src=1 xyz=-46.8 67.6 -0.6 rpy=123.0 1.2 -28.2 deg u=-0.07 r=0.016 alt=-1.0 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1636 xyz=-46.7 67.7 -0.59 (target 12.0) wp 0/12 coverage 835 surveying
+[INFO] orca_rl_sim t=1638 src=1 xyz=-47.0 67.5 -0.6 rpy=88.2 -0.1 -30.2 deg u=-0.08 r=-0.027 alt=44.7 F=[40000 -6564 55000]
+[INFO] orca_rl_sim t=1640 src=1 xyz=-47.8 66.4 -0.4 rpy=36.6 -1.0 -31.3 deg u=-0.03 r=-0.012 alt=16.5 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1641 xyz=-48.4 65.3 -0.54 (target 12.0) wp 0/12 coverage 841 surveying
+[INFO] orca_rl_sim t=1642 src=1 xyz=-48.8 65.0 -0.6 rpy=-17.0 -0.6 -31.9 deg u=-0.05 r=-0.014 alt=15.9 F=[40000 -7844 55000]
+[INFO] orca_rl_sim t=1644 src=1 xyz=-49.7 63.6 -0.5 rpy=-63.9 -0.2 -33.2 deg u=-0.01 r=-0.008 alt=21.7 F=[40000 7923 55000]
+[INFO] orca_rl_sim t=1646 src=1 xyz=-49.9 63.1 -0.5 rpy=-91.9 -0.4 -33.9 deg u=-0.00 r=-0.002 alt=47.8 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1646 xyz=-50.0 63.2 -0.59 (target 12.0) wp 0/12 coverage 841 surveying
+[INFO] orca_rl_sim t=1648 src=1 xyz=-49.7 63.5 -0.6 rpy=-100.9 0.2 -34.5 deg u=-0.01 r=0.015 alt=-1.0 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1650 src=1 xyz=-49.0 64.8 -0.6 rpy=-87.6 -1.0 -35.2 deg u=-0.01 r=-0.008 alt=42.4 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1651 xyz=-48.1 66.0 -0.45 (target 12.0) wp 0/12 coverage 842 surveying
+[INFO] orca_rl_sim t=1652 src=1 xyz=-47.7 66.6 -0.3 rpy=-46.7 -0.5 -35.7 deg u=-0.05 r=-0.021 alt=18.0 F=[40000 3228 55000]
+[INFO] orca_rl_sim t=1654 src=1 xyz=-46.1 68.8 -0.4 rpy=19.3 0.2 -36.3 deg u=-0.05 r=-0.003 alt=15.8 F=[40000 -7813 55000]
+[INFO] orca_rl_sim t=1656 src=1 xyz=-44.9 70.6 -0.5 rpy=86.1 -0.1 -37.1 deg u=-0.05 r=-0.020 alt=35.1 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1656 xyz=-44.8 70.9 -0.61 (target 12.0) wp 0/12 coverage 845 surveying
+[INFO] orca_rl_sim t=1658 src=1 xyz=-44.3 71.5 -0.5 rpy=128.6 -0.0 -37.5 deg u=-0.05 r=-0.008 alt=-1.0 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1660 src=1 xyz=-44.2 71.7 -0.7 rpy=107.4 -0.5 -39.1 deg u=-0.04 r=0.014 alt=-1.0 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1661 xyz=-44.7 71.4 -0.54 (target 12.0) wp 0/12 coverage 849 surveying
+[INFO] orca_rl_sim t=1662 src=1 xyz=-44.9 71.1 -0.4 rpy=53.1 -0.6 -40.9 deg u=-0.03 r=-0.013 alt=18.9 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1664 src=1 xyz=-46.0 69.9 -0.5 rpy=-2.3 -0.6 -41.3 deg u=-0.02 r=-0.002 alt=16.7 F=[40000 -6065 55000]
+[INFO] orca_rl_sim t=1666 src=1 xyz=-47.1 68.8 -0.4 rpy=-52.9 -0.6 -42.2 deg u=-0.01 r=-0.014 alt=18.8 F=[40000 -20 55000]
+[INFO] OrcaXLUUV t=1666 xyz=-47.2 68.5 -0.50 (target 12.0) wp 0/12 coverage 852 surveying
+[INFO] orca_rl_sim t=1668 src=1 xyz=-47.6 68.2 -0.6 rpy=-86.7 -0.2 -43.2 deg u=0.01 r=-0.015 alt=39.7 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1670 src=1 xyz=-47.4 68.4 -0.4 rpy=-100.6 0.4 -43.9 deg u=-0.00 r=0.022 alt=85.4 F=[40000 6592 55000]
+[INFO] OrcaXLUUV t=1671 xyz=-46.9 68.9 -0.61 (target 12.0) wp 0/12 coverage 852 surveying
+[INFO] orca_rl_sim t=1672 src=1 xyz=-46.6 69.3 -0.6 rpy=-91.9 -1.2 -44.8 deg u=0.00 r=0.003 alt=48.9 F=[40000 4536 55000]
+[INFO] orca_rl_sim t=1674 src=1 xyz=-45.2 70.8 -0.5 rpy=-56.5 -0.5 -45.4 deg u=-0.04 r=-0.020 alt=19.9 F=[40000 5247 55000]
+[INFO] orca_rl_sim t=1676 src=1 xyz=-43.2 72.8 -0.5 rpy=7.7 -0.1 -46.1 deg u=-0.05 r=-0.009 alt=16.3 F=[40000 -6821 55000]
+[INFO] OrcaXLUUV t=1676 xyz=-42.9 73.1 -0.52 (target 12.0) wp 0/12 coverage 859 surveying
+[INFO] orca_rl_sim t=1678 src=1 xyz=-41.7 74.3 -0.4 rpy=79.6 -0.4 -46.9 deg u=-0.05 r=-0.006 alt=30.5 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1680 src=1 xyz=-40.7 75.4 -0.7 rpy=131.1 0.3 -47.0 deg u=-0.05 r=-0.006 alt=-1.0 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1681 xyz=-40.5 75.7 -0.56 (target 12.0) wp 0/12 coverage 860 surveying
+[INFO] orca_rl_sim t=1682 src=1 xyz=-40.4 75.7 -0.7 rpy=124.7 -0.4 -48.5 deg u=-0.05 r=0.006 alt=-1.0 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1684 src=1 xyz=-41.0 75.3 -0.4 rpy=74.3 -1.2 -50.7 deg u=-0.07 r=0.028 alt=27.5 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1686 src=1 xyz=-42.1 74.5 -0.4 rpy=18.0 0.1 -51.8 deg u=-0.06 r=0.010 alt=15.8 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1686 xyz=-42.4 74.3 -0.38 (target 12.0) wp 0/12 coverage 864 surveying
+[INFO] orca_rl_sim t=1688 src=1 xyz=-43.4 73.5 -0.6 rpy=-37.7 0.5 -51.1 deg u=-0.02 r=0.009 alt=16.5 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1690 src=1 xyz=-44.3 72.9 -0.5 rpy=-77.2 -0.3 -50.9 deg u=-0.01 r=0.044 alt=28.7 F=[40000 4236 55000]
+[INFO] OrcaXLUUV t=1691 xyz=-44.4 72.8 -0.67 (target 12.0) wp 0/12 coverage 864 surveying
+[INFO] orca_rl_sim t=1692 src=1 xyz=-44.3 72.9 -0.6 rpy=-96.2 -1.2 -50.6 deg u=-0.02 r=0.013 alt=60.2 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1694 src=1 xyz=-43.7 73.5 -0.8 rpy=-93.1 -0.6 -50.3 deg u=-0.02 r=-0.066 alt=54.1 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1696 src=1 xyz=-42.3 74.8 -0.3 rpy=-65.2 0.6 -50.2 deg u=-0.03 r=-0.014 alt=22.8 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1696 xyz=-41.9 75.0 -0.42 (target 12.0) wp 0/12 coverage 864 surveying
+[INFO] orca_rl_sim t=1698 src=1 xyz=-40.3 76.4 -0.4 rpy=-10.2 0.2 -50.0 deg u=0.05 r=0.012 alt=16.0 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1700 src=1 xyz=-38.4 78.0 -0.5 rpy=54.8 -1.1 -48.7 deg u=0.06 r=-0.024 alt=18.9 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1701 xyz=-37.5 78.7 -0.60 (target 12.0) wp 0/12 coverage 864 surveying
+[INFO] orca_rl_sim t=1702 src=1 xyz=-37.3 79.0 -0.7 rpy=112.4 -1.5 -46.8 deg u=0.03 r=-0.011 alt=-1.0 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1704 src=1 xyz=-36.8 79.5 -0.6 rpy=124.4 0.4 -45.8 deg u=0.02 r=0.038 alt=-1.0 F=[40000 5337 55000]
+[INFO] orca_rl_sim t=1706 src=1 xyz=-36.8 79.0 -0.5 rpy=82.0 0.2 -45.9 deg u=0.03 r=-0.005 alt=35.3 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1706 xyz=-37.1 79.0 -0.38 (target 12.0) wp 0/12 coverage 865 surveying
+[INFO] orca_rl_sim t=1708 src=1 xyz=-37.8 78.1 -0.5 rpy=31.1 -0.3 -45.8 deg u=0.06 r=-0.011 alt=16.2 F=[40000 6484 55000]
+[INFO] orca_rl_sim t=1710 src=1 xyz=-39.1 76.8 -0.5 rpy=-21.4 -1.0 -44.5 deg u=0.00 r=0.022 alt=15.7 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1711 xyz=-39.7 76.2 -0.54 (target 12.0) wp 0/12 coverage 865 surveying
+[INFO] orca_rl_sim t=1712 src=1 xyz=-39.8 76.1 -0.5 rpy=-64.4 -0.6 -41.8 deg u=-0.07 r=-0.008 alt=21.8 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1714 src=1 xyz=-40.1 75.9 -0.6 rpy=-89.2 -0.2 -38.7 deg u=-0.07 r=-0.013 alt=43.1 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1716 src=1 xyz=-39.6 76.5 -0.4 rpy=-92.5 -0.3 -35.9 deg u=-0.05 r=-0.008 alt=51.4 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1716 xyz=-39.6 76.7 -0.46 (target 12.0) wp 0/12 coverage 865 surveying
+[INFO] orca_rl_sim t=1718 src=1 xyz=-38.6 78.1 -0.5 rpy=-70.2 0.0 -33.6 deg u=-0.00 r=0.005 alt=25.7 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1720 src=1 xyz=-37.2 79.9 -0.7 rpy=-18.5 -0.2 -31.8 deg u=0.08 r=0.023 alt=15.9 F=[40000 7041 55000]
+[INFO] OrcaXLUUV t=1721 xyz=-36.2 81.5 -0.36 (target 12.0) wp 0/12 coverage 870 surveying
+[INFO] orca_rl_sim t=1722 src=1 xyz=-35.9 82.1 -0.4 rpy=48.2 -1.1 -30.2 deg u=0.08 r=-0.000 alt=17.3 F=[40000 -125 55000]
+[INFO] orca_rl_sim t=1724 src=1 xyz=-34.9 83.5 -0.6 rpy=109.2 -0.7 -29.1 deg u=0.07 r=0.007 alt=-1.0 F=[40000 -1067 55000]
+[INFO] orca_rl_sim t=1726 src=1 xyz=-34.3 84.1 -0.7 rpy=123.9 0.5 -28.1 deg u=0.05 r=0.014 alt=-1.0 F=[40000 -3025 55000]
+[INFO] OrcaXLUUV t=1726 xyz=-34.3 84.1 -0.63 (target 12.0) wp 0/12 coverage 872 surveying
+[INFO] orca_rl_sim t=1728 src=1 xyz=-34.3 83.7 -0.6 rpy=82.1 -0.1 -27.4 deg u=0.08 r=0.007 alt=33.7 F=[40000 -1527 55000]
+[INFO] orca_rl_sim t=1730 src=1 xyz=-34.8 82.7 -0.4 rpy=28.3 -0.2 -26.8 deg u=0.05 r=0.001 alt=15.9 F=[40000 -7133 55000]
+[INFO] OrcaXLUUV t=1731 xyz=-35.3 81.6 -0.58 (target 12.0) wp 0/12 coverage 874 surveying
+[INFO] orca_rl_sim t=1732 src=1 xyz=-35.6 80.9 -0.5 rpy=-26.0 -0.1 -27.5 deg u=0.07 r=-0.005 alt=15.9 F=[40000 -5398 55000]
+[INFO] orca_rl_sim t=1734 src=1 xyz=-36.1 79.8 -0.5 rpy=-68.8 -0.6 -28.8 deg u=0.08 r=0.015 alt=24.1 F=[40000 -2733 55000]
+[INFO] orca_rl_sim t=1736 src=1 xyz=-36.3 79.4 -0.5 rpy=-92.9 -1.1 -30.1 deg u=0.07 r=-0.002 alt=50.8 F=[40000 -6714 55000]
+[INFO] OrcaXLUUV t=1736 xyz=-36.2 79.4 -0.59 (target 12.0) wp 0/12 coverage 874 surveying
+[INFO] orca_rl_sim t=1738 src=1 xyz=-35.7 79.9 -0.5 rpy=-98.6 0.1 -31.2 deg u=0.06 r=-0.010 alt=73.8 F=[40000 -5611 55000]
+[INFO] orca_rl_sim t=1740 src=1 xyz=-34.8 81.2 -0.6 rpy=-82.0 -0.6 -31.9 deg u=0.04 r=0.014 alt=33.9 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1741 xyz=-34.0 82.4 -0.40 (target 12.0) wp 0/12 coverage 874 surveying
+[INFO] orca_rl_sim t=1742 src=1 xyz=-33.6 83.1 -0.4 rpy=-34.8 -0.7 -32.7 deg u=0.02 r=-0.007 alt=16.3 F=[40000 2236 55000]
+[INFO] orca_rl_sim t=1744 src=1 xyz=-32.1 85.5 -0.4 rpy=34.9 -0.3 -33.6 deg u=-0.04 r=0.001 alt=16.3 F=[40000 -7504 55000]
+[INFO] orca_rl_sim t=1746 src=1 xyz=-31.0 87.0 -0.8 rpy=102.2 -0.1 -34.9 deg u=-0.04 r=0.005 alt=-1.0 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1746 xyz=-31.0 87.2 -0.66 (target 12.0) wp 0/12 coverage 877 surveying
+[INFO] orca_rl_sim t=1748 src=1 xyz=-30.5 87.8 -0.6 rpy=135.9 0.3 -35.6 deg u=-0.04 r=0.004 alt=-1.0 F=[40000 -5451 55000]
+[INFO] orca_rl_sim t=1750 src=1 xyz=-30.5 88.1 -0.5 rpy=110.5 0.0 -35.5 deg u=-0.04 r=-0.007 alt=-1.0 F=[40000 -1124 55000]
+[INFO] OrcaXLUUV t=1751 xyz=-30.7 87.8 -0.56 (target 12.0) wp 0/12 coverage 879 surveying
+[INFO] orca_rl_sim t=1752 src=1 xyz=-31.1 87.4 -0.6 rpy=50.1 -0.8 -35.2 deg u=-0.01 r=-0.020 alt=18.6 F=[40000 -2346 55000]
+[INFO] orca_rl_sim t=1754 src=1 xyz=-32.0 86.2 -0.5 rpy=-7.6 -1.2 -35.3 deg u=-0.04 r=-0.003 alt=16.3 F=[40000 -316 55000]
+[INFO] orca_rl_sim t=1756 src=1 xyz=-32.8 85.1 -0.4 rpy=-59.0 -0.6 -35.7 deg u=-0.05 r=-0.035 alt=20.0 F=[40000 8000 55000]
+[INFO] OrcaXLUUV t=1756 xyz=-32.9 85.0 -0.43 (target 12.0) wp 0/12 coverage 879 surveying
+[INFO] orca_rl_sim t=1758 src=1 xyz=-33.2 84.7 -0.7 rpy=-90.8 0.3 -35.7 deg u=-0.02 r=-0.017 alt=45.9 F=[40000 7703 55000]
+[INFO] orca_rl_sim t=1760 src=1 xyz=-32.9 85.0 -0.4 rpy=-101.1 0.6 -35.8 deg u=-0.03 r=0.031 alt=-1.0 F=[40000 -564 55000]
+[INFO] OrcaXLUUV t=1761 xyz=-32.5 85.8 -0.60 (target 12.0) wp 0/12 coverage 879 surveying
+[INFO] orca_rl_sim t=1762 src=1 xyz=-32.1 86.3 -0.6 rpy=-87.0 -1.5 -35.9 deg u=-0.01 r=0.025 alt=40.3 F=[40000 -2628 55000]
+[INFO] orca_rl_sim t=1764 src=1 xyz=-30.8 88.1 -0.5 rpy=-45.0 -0.9 -36.1 deg u=-0.04 r=-0.019 alt=17.7 F=[40000 1999 55000]
+[INFO] orca_rl_sim t=1766 src=1 xyz=-29.3 90.3 -0.4 rpy=21.3 -0.1 -36.8 deg u=-0.07 r=0.001 alt=15.9 F=[40000 -5367 55000]
+[INFO] OrcaXLUUV t=1766 xyz=-29.0 90.7 -0.55 (target 12.0) wp 0/12 coverage 880 surveying
+[INFO] orca_rl_sim t=1768 src=1 xyz=-28.1 92.0 -0.5 rpy=90.3 -0.0 -38.0 deg u=-0.07 r=0.010 alt=42.3 F=[40000 3471 55000]
+[INFO] orca_rl_sim t=1770 src=1 xyz=-27.5 92.9 -0.6 rpy=133.2 0.7 -38.6 deg u=-0.07 r=-0.005 alt=-1.0 F=[40000 -6547 55000]
+[INFO] OrcaXLUUV t=1771 xyz=-27.3 93.3 -0.65 (target 12.0) wp 0/12 coverage 880 surveying
+[INFO] orca_rl_sim t=1772 src=1 xyz=-27.4 93.3 -0.8 rpy=116.4 -0.3 -38.3 deg u=-0.04 r=-0.014 alt=-1.0 F=[40000 -2109 55000]
+[INFO] orca_rl_sim t=1774 src=1 xyz=-27.8 92.8 -0.5 rpy=65.0 -1.5 -37.7 deg u=-0.04 r=0.004 alt=23.1 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1776 src=1 xyz=-28.8 91.8 -0.4 rpy=11.6 -0.7 -36.6 deg u=-0.11 r=0.020 alt=15.9 F=[40000 1050 55000]
+[INFO] OrcaXLUUV t=1776 xyz=-29.0 91.5 -0.43 (target 12.0) wp 0/12 coverage 880 surveying
+[INFO] orca_rl_sim t=1778 src=1 xyz=-29.8 90.6 -0.4 rpy=-40.3 0.5 -35.0 deg u=-0.10 r=-0.004 alt=16.6 F=[40000 6772 55000]
+[INFO] orca_rl_sim t=1780 src=1 xyz=-30.4 90.0 -0.5 rpy=-75.9 0.3 -33.0 deg u=-0.09 r=0.030 alt=27.5 F=[40000 3947 55000]
+[INFO] OrcaXLUUV t=1781 xyz=-30.4 90.0 -0.74 (target 12.0) wp 0/12 coverage 880 surveying
+[INFO] orca_rl_sim t=1782 src=1 xyz=-30.5 90.2 -0.6 rpy=-90.3 -0.8 -30.9 deg u=-0.09 r=0.033 alt=44.9 F=[40000 4424 55000]
+[INFO] orca_rl_sim t=1784 src=1 xyz=-30.0 91.2 -0.6 rpy=-81.2 -1.1 -29.0 deg u=-0.07 r=0.006 alt=33.8 F=[40000 6008 55000]
+[INFO] orca_rl_sim t=1786 src=1 xyz=-29.1 93.0 -0.3 rpy=-44.7 -0.8 -27.4 deg u=-0.06 r=-0.010 alt=17.6 F=[40000 6289 55000]
+[INFO] OrcaXLUUV t=1786 xyz=-28.9 93.5 -0.44 (target 12.0) wp 0/12 coverage 880 surveying
+[INFO] orca_rl_sim t=1788 src=1 xyz=-27.9 95.3 -0.3 rpy=15.0 0.2 -26.6 deg u=-0.02 r=0.015 alt=15.9 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1790 src=1 xyz=-27.0 97.1 -0.5 rpy=76.8 0.4 -25.9 deg u=0.03 r=-0.020 alt=29.0 F=[40000 -4026 55000]
+[INFO] OrcaXLUUV t=1791 xyz=-26.6 97.8 -0.65 (target 12.0) wp 0/12 coverage 885 surveying
+[INFO] orca_rl_sim t=1792 src=1 xyz=-26.5 98.1 -0.6 rpy=121.4 -0.0 -25.1 deg u=0.02 r=-0.045 alt=-1.0 F=[40000 -4832 55000]
+[INFO] orca_rl_sim t=1794 src=1 xyz=-26.4 98.3 -0.6 rpy=105.9 -0.9 -23.8 deg u=0.02 r=0.018 alt=-1.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1796 src=1 xyz=-26.6 97.5 -0.6 rpy=58.0 -0.1 -22.3 deg u=0.00 r=0.024 alt=20.3 F=[40000 -8000 55000]
+[INFO] OrcaXLUUV t=1796 xyz=-26.7 97.4 -0.53 (target 12.0) wp 0/12 coverage 888 surveying
+[INFO] orca_rl_sim t=1798 src=1 xyz=-27.3 95.9 -0.5 rpy=6.9 -0.0 -21.9 deg u=0.00 r=-0.005 alt=16.3 F=[40000 -8000 55000]
+[INFO] [1791736907.545928957] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] orca_rl_sim t=1800 src=1 xyz=-28.0 94.3 -0.2 rpy=-45.0 -0.5 -23.1 deg u=0.04 r=-0.004 alt=17.3 F=[40000 -3451 55000]
+[INFO] OrcaXLUUV t=1801 xyz=-28.2 93.5 -0.51 (target 12.0) wp 0/12 coverage 891 surveying
+[INFO] orca_rl_sim t=1802 src=1 xyz=-28.4 93.3 -0.5 rpy=-82.7 -0.4 -24.5 deg u=0.04 r=-0.005 alt=34.3 F=[40000 4481 55000]
+[INFO] orca_rl_sim t=1804 src=1 xyz=-28.3 93.2 -0.5 rpy=-101.6 -0.1 -25.5 deg u=0.04 r=0.021 alt=-1.0 F=[40000 -8000 55000]
+[INFO] orca_rl_sim t=1806 src=1 xyz=-27.9 94.0 -0.5 rpy=-97.9 -0.6 -26.0 deg u=0.02 r=-0.003 alt=69.7 F=[40000 -7947 55000]
+[INFO] OrcaXLUUV t=1806 xyz=-27.9 94.2 -0.60 (target 12.0) wp 0/12 coverage 891 surveying
+[INFO] orca_rl_sim t=1808 src=1 xyz=-27.0 95.7 -0.6 rpy=-67.9 -0.3 -26.3 deg u=0.01 r=-0.006 alt=24.1 F=[40000 8000 55000]
+[INFO] orca_rl_sim t=1810 src=1 xyz=-25.9 97.9 -0.5 rpy=-8.2 -0.4 -26.1 deg u=0.01 r=0.007 alt=16.1 F=[40000 7768 55000]

@@ -1,0 +1,19 @@
+[ES] gen   0/80  mean_fit=  606.04  best_fit=  752.95  elapsed= 21.5s
+[ES] gen   5/80  mean_fit=  606.36  best_fit=  764.99  elapsed=135.7s
+[ES] gen  10/80  mean_fit=  354.87  best_fit=  658.70  elapsed=240.5s
+[ES] gen  15/80  mean_fit=  383.69  best_fit=  611.49  elapsed=369.5s
+[ES] gen  20/80  mean_fit=  632.96  best_fit=  765.18  elapsed=538.4s
+[ES] gen  25/80  mean_fit=  390.59  best_fit=  658.74  elapsed=665.8s
+[ES] gen  30/80  mean_fit=  490.68  best_fit=  711.01  elapsed=781.8s
+[ES] gen  35/80  mean_fit=  552.57  best_fit=  692.27  elapsed=896.3s
+[ES] gen  40/80  mean_fit=  632.06  best_fit=  771.59  elapsed=1001.5s
+[ES] gen  45/80  mean_fit=  671.70  best_fit=  761.23  elapsed=1114.4s
+[ES] gen  50/80  mean_fit=  606.46  best_fit=  790.80  elapsed=1227.6s
+[ES] gen  55/80  mean_fit=  699.00  best_fit=  748.21  elapsed=1329.6s
+[ES] gen  60/80  mean_fit=  629.55  best_fit=  744.16  elapsed=1442.2s
+[ES] gen  65/80  mean_fit=  636.64  best_fit=  750.15  elapsed=1555.9s
+[ES] gen  70/80  mean_fit=  575.53  best_fit=  760.13  elapsed=1663.6s
+[ES] gen  75/80  mean_fit=  647.20  best_fit=  775.78  elapsed=1767.0s
+[ES] gen  79/80  mean_fit=  525.70  best_fit=  731.82  elapsed=1847.6s
+TRAINING COMPLETE in 1848s; held-out eval (40 seeds): {'goal_fraction': 0.85, 'collision_rate': 0.175, 'all_goals_rate': 0.725, 'mean_steps': 299.525}
+saved logs/trained_policy_obstacle.npz

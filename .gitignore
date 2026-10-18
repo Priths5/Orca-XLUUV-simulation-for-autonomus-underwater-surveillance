@@ -1,0 +1,9 @@
+# build outputs
+stonefish_sim/build/
+docs/_build/
+# Python caches
+__pycache__/
+*.pyc
+.pytest_cache/
+# screenshot-capture scratch runs
+docs/figures/.capture*

@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<!--
+    orca_xluuv_survey.scn
+    Survey-capable variant of the Orca XLUUV robot description.
+
+    Identical hull/propulsion/base sensors to data/orca_xluuv.scn, plus:
+      - a second "push" actuator (YawThruster) mounted off-centerline at the
+        bow so it produces a steering (yaw) moment - the base file only had
+        surge control (MainThruster on the centerline), with nothing to
+        turn the vehicle. Using "push" again (not "rudder"/"thruster") for
+        the same reason as the original file: those need a propeller mesh
+        this project doesn't ship, and Rudder additionally expects a
+        <visual><mesh.../> block we don't have either.
+      - Odometry sensor: used by the demo controller as a stand-in ground
+        truth position/heading source. A real vehicle would fuse DVL + IMU
+        + (occasional) GPS through an INS/EKF instead of reading this
+        directly - see src/OrcaController.cpp for the note on this
+        simplification.
+      - Profiler ("profiler" type): single-plane rotating-beam range sensor,
+        mounted facing forward, used for reactive obstacle avoidance
+        (rocks, fish, other hulls).
+      - Multibeam ("multibeam" type): fan of beams facing down, used to
+        survey/scan the seabed under the vehicle track (the "surveying"
+        part of the mission).
+
+    Tag/attribute names checked against stonefish.readthedocs.io (v1.6)
+    /sensors.html and /actuators.html.
+-->
+<scenario>
+
+    <looks>
+        <!-- Low metalness so the hull stays visible in blue water.
+             A dark mirror just reflects the empty ocean and turns black. -->
+        <look name="hull_grey"  rgb="0.55 0.64 0.70" roughness="0.48" metalness="0.06"/>
+        <look name="hull_bow"   rgb="0.72 0.78 0.80" roughness="0.42" metalness="0.05"/>
+        <look name="mast_black" rgb="0.18 0.20 0.22" roughness="0.55" metalness="0.08"/>
+        <look name="fin_grey"   rgb="0.30 0.42 0.48" roughness="0.5" metalness="0.05"/>
+        <look name="band_amber" rgb="0.92 0.55 0.12" roughness="0.45" metalness="0.04"/>
+        <look name="cargo_look" rgb="0.45 0.40 0.32" roughness="0.6"  metalness="0.04"/>
+        <look name="prop_bronze" rgb="0.86 0.58 0.22" roughness="0.32" metalness="0.25"/>
+    </looks>
+
+    <robot name="$(arg name)" fixed="false" self_collisions="false">
+
+        <world_transform xyz="$(arg start_x) $(arg start_y) $(arg start_z)" rpy="0.0 0.0 0.0"/>
+
+        <base_link name="Hull" type="compound" physics="submerged">
+
+            <external_part name="MainHull" type="cylinder">
+                <material name="HullShell"/>
+                <look name="hull_grey"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 1.5708 0.0"/>
+                <dimensions radius="1.3" height="26.0" thickness="0.04"/>
+                <compound_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </external_part>
+
+            <external_part name="NoseCone" type="sphere">
+                <material name="HullShell"/>
+                <look name="hull_bow"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions radius="1.30" thickness="0.04"/>
+                <compound_transform xyz="12.55 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </external_part>
+
+            <!-- Rounded stern, tucked ahead of the propeller. -->
+            <external_part name="SternCap" type="sphere">
+                <material name="HullShell"/>
+                <look name="hull_grey"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions radius="1.15" thickness="0.04"/>
+                <compound_transform xyz="-12.15 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </external_part>
+
+            <!-- Sail rooted in the hull. NED -Z is up. -->
+            <external_part name="Sail" type="box">
+                <material name="SyntacticFoam"/>
+                <look name="fin_grey"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions xyz="3.4 0.42 1.35"/>
+                <compound_transform xyz="5.2 0.0 -1.82" rpy="0.0 0.0 0.0"/>
+            </external_part>
+
+            <external_part name="CommsMast" type="cylinder">
+                <material name="SyntacticFoam"/>
+                <look name="mast_black"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions radius="0.07" height="1.1" thickness="0.01"/>
+                <compound_transform xyz="6.2 0.0 -2.85" rpy="0.0 0.0 0.0"/>
+            </external_part>
+
+            <internal_part name="PayloadMass" type="cylinder">
+                <material name="Composite"/>
+                <look name="cargo_look"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 1.5708 0.0"/>
+                <dimensions radius="1.1" height="10.0"/>
+                <mass value="4000.0"/>
+                <compound_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </internal_part>
+
+            <!-- Hydrostatic trim (added for the RL integration; numbers from
+                 Stonefish's own mass properties). With a solid Composite sail
+                 the CG sat 0.05 m ABOVE the CB and the hull pitched up and
+                 rolled over within ~35 s in every scenario. Sail + mast are now
+                 syntactic foam and the removed 2.5 t is carried low here,
+                 placed so CG and CB line up fore-aft: same net buoyancy as
+                 before (+42 kg), CG now ~0.08 m below CB. -->
+            <internal_part name="KeelBallast" type="box">
+                <material name="Composite"/>
+                <look name="cargo_look"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions xyz="2.0 0.5 0.25"/>
+                <mass value="2768.7"/>
+                <compound_transform xyz="4.176 0.0 1.05" rpy="0.0 0.0 0.0"/>
+            </internal_part>
+
+            <external_part name="FinTop" type="box">
+                <material name="Composite"/>
+                <look name="fin_grey"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions xyz="1.7 0.16 1.35"/>
+                <compound_transform xyz="-11.6 0.0 -1.85" rpy="0.0 0.0 0.0"/>
+            </external_part>
+            <external_part name="FinBottom" type="box">
+                <material name="Composite"/>
+                <look name="fin_grey"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions xyz="1.7 0.16 1.35"/>
+                <compound_transform xyz="-11.6 0.0 1.85" rpy="0.0 0.0 0.0"/>
+            </external_part>
+            <external_part name="FinPort" type="box">
+                <material name="Composite"/>
+                <look name="fin_grey"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions xyz="1.7 1.35 0.16"/>
+                <compound_transform xyz="-11.6 -1.85 0.0" rpy="0.0 0.0 0.0"/>
+            </external_part>
+            <external_part name="FinStbd" type="box">
+                <material name="Composite"/>
+                <look name="fin_grey"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <dimensions xyz="1.7 1.35 0.16"/>
+                <compound_transform xyz="-11.6 1.85 0.0" rpy="0.0 0.0 0.0"/>
+            </external_part>
+
+            <!-- Painted survey bands so the cylinder reads as a vehicle, not a pipe. -->
+            <external_part name="BandBow" type="torus">
+                <material name="Composite"/>
+                <look name="band_amber"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 1.5708 0.0"/>
+                <dimensions major_radius="1.34" minor_radius="0.07"/>
+                <compound_transform xyz="8.5 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </external_part>
+            <external_part name="BandStern" type="torus">
+                <material name="Composite"/>
+                <look name="band_amber"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 1.5708 0.0"/>
+                <dimensions major_radius="1.34" minor_radius="0.07"/>
+                <compound_transform xyz="-8.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </external_part>
+
+        </base_link>
+
+        <!-- ==================== PROPULSION / STEERING ==================== -->
+        <actuator name="MainThruster" type="simple_thruster">
+            <link name="Hull"/>
+            <origin xyz="-13.55 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <propeller right="true">
+                <mesh filename="data/propeller.obj" scale="1.8"/>
+                <material name="Composite"/>
+                <look name="prop_bronze"/>
+            </propeller>
+            <specs inverted="false" lower_thrust_limit="-40000.0" upper_thrust_limit="40000.0"/>
+        </actuator>
+
+        <!-- Bow-mounted lateral push -> yaw moment about the hull CG. -->
+        <actuator name="YawThruster" type="push">
+            <link name="Hull"/>
+            <origin xyz="12.0 0.0 0.0" rpy="0.0 0.0 1.5708"/>
+            <specs inverted="false" lower_limit="-8000.0" upper_limit="8000.0"/>
+        </actuator>
+
+        <!-- Vertical push through the CG. +force is downward (NED +Z). -->
+        <actuator name="HeaveThruster" type="push">
+            <link name="Hull"/>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 -1.5708 0.0"/>
+            <specs inverted="false" lower_limit="-60000.0" upper_limit="60000.0"/>
+        </actuator>
+
+        <!-- ============================ SENSORS ============================ -->
+        <sensor name="IMU" type="imu" rate="100.0">
+            <link name="Hull"/>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <noise angle="0.0001" angular_velocity="0.0001"/>
+        </sensor>
+
+        <!-- Beams follow sensor -Z. Pitch 180 aims them at the seabed. -->
+        <sensor name="DVL" type="dvl" rate="10.0">
+            <link name="Hull"/>
+            <origin xyz="0.0 0.0 1.45" rpy="0.0 3.14159 0.0"/>
+            <specs beam_angle="30.0"/>
+            <range velocity="15.0" altitude_min="0.5" altitude_max="100.0"/>  <!-- explicit altitude range: without it Stonefish uses ~1e30 and the DVL ray-march never runs (no bottom lock, ever) -->
+            <noise velocity="0.0015"/>
+        </sensor>
+
+        <!-- At the CG, so gauge pressure / (rho g) is the vehicle depth. -->
+        <sensor name="Pressure" type="pressure" rate="10.0">
+            <link name="Hull"/>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <noise pressure="10.0"/>
+        </sensor>
+
+        <sensor name="GPS" type="gps" rate="1.0">
+            <link name="Hull"/>
+            <origin xyz="9.0 0.0 -3.2" rpy="0.0 0.0 0.0"/>
+            <noise ned_position="0.5"/>
+            <history samples="10"/>
+        </sensor>
+
+        <!-- Ground-truth-ish position/heading feed used by the demo
+             waypoint controller (see note at top of file). -->
+        <sensor name="Odometry" type="odometry" rate="20.0">
+            <link name="Hull"/>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <noise position="0.05" velocity="0.01" angle="0.05" angular_velocity="0.02"/>
+            <history samples="1"/>
+        </sensor>
+
+        <!-- Forward obstacle sensor: rocks, fish, other hulls. 160 deg fan,
+             10 m safety range. -->
+        <sensor name="Profiler" type="profiler" rate="10.0">
+            <link name="Hull"/>
+            <origin xyz="14.05 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <specs fov="160.0" steps="64"/>
+            <range distance_min="0.3" distance_max="30.0"/>
+            <noise distance="0.05"/>
+            <!-- >= one full back-and-forth sweep (2*steps), so the
+                 controller's most-recent-sweep obstacle search always has
+                 full angular coverage to look back over. -->
+            <history samples="150"/>
+        </sensor>
+
+        <!-- Downward fan. Pitch -90 maps sensor +X onto body +Z (down). -->
+        <sensor name="Multibeam" type="multibeam" rate="2.0">
+            <link name="Hull"/>
+            <origin xyz="0.0 0.0 1.48" rpy="0.0 -1.5708 0.0"/>
+            <specs fov="120.0" steps="128"/>
+            <range distance_min="0.3" distance_max="80.0"/>
+            <noise distance="0.1"/>
+            <history samples="1"/>
+        </sensor>
+
+        <light name="BowLight">
+            <link name="Hull"/>
+            <origin xyz="13.9 0.0 0.2" rpy="0.0 -1.5708 0.0"/>
+            <specs illuminance="140000.0" radius="35.0" cone_angle="28.0"/>
+            <color rgb="0.75 0.86 1.0"/>
+        </light>
+        <light name="DownLight">
+            <link name="Hull"/>
+            <origin xyz="2.0 0.0 1.5" rpy="0.0 3.14159 0.0"/>
+            <specs illuminance="110000.0" radius="24.0" cone_angle="55.0"/>
+            <color rgb="0.80 0.90 1.0"/>
+        </light>
+
+    </robot>
+</scenario>
