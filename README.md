@@ -469,3 +469,11 @@ docs/capture_screenshots.sh rl 20 45     # new Stonefish screenshots (opens the 
 | headless crash "Lights not supported in console mode" | handled: `--headless` strips `<light>` elements after parsing includes |
 | position estimate jumps / ground truth alternates between two places / many odd contacts | two `orca_rl_sim` instances on the same `ROS_DOMAIN_ID` (e.g. a headless one still running): `ros2 node list` shows `/orca_stonefish` twice. `pkill -x orca_rl_sim` or use a different `ROS_DOMAIN_ID` per run |
 | hull rolls over | use the trimmed models in this folder (see stonefish_sim/README "Fixes"); check with `./orca_mass_probe <world>.scn OrcaXLUUV ./resources/` |
+
+## License
+
+This project is released under the [MIT License](LICENSE).
+
+It builds against [Stonefish](https://github.com/patrykcieslak/stonefish), which is licensed under
+GPL-3.0 and is not included in this repository. Binaries that link Stonefish (such as `orca_rl_sim`)
+are therefore covered by the GPL-3.0 when distributed; the source code here remains MIT.
